@@ -79,7 +79,7 @@ t_10mw = tc_10mw[:-1] / 100  * c_10mw[:-1]# thickness is in percentage in the DT
 r = r * scale_ratio_blade
 
 # %% Inputs
-tsr = 7  # Tip-Speed-Ratio [-]
+tsr = 8  # Tip-Speed-Ratio [-]
 r_hub = 2.8  # Hub radius [m]
 R = r_hub + r[-1]  # Rotor radius [m]
 
@@ -98,7 +98,7 @@ cl_scale = 1.0  # Change this value to scale the cl-values
 # )
 
 cl_des, cd_des, aoa_des, tc_vals, cl_vals, cd_vals, aoa_vals = get_design_functions(
-    1
+    2
 )
 
 

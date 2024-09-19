@@ -3,7 +3,7 @@ import numpy as np
 from pathlib import Path
 from scipy.interpolate import interp1d
 from aero_design_functions_10MW import get_design_functions_10MW, single_point_design, get_design_functions
-
+import pprint
 
 def read_data(file_path):
     """Reads a data file and extracts three columns of float data."""
@@ -71,7 +71,7 @@ def run_design(tsr_values, design_function_int=1.0, plot_comparison=False):
     cp_list, ct_list = [], []
 
     for tsr in tsr_values:
-        print(f"Running new design for TSR = {tsr}")
+        # print(f"Running new design for TSR = {tsr}")
 
         # Perform the design for the current TSR
         chord, tc, twist, cl, cd, aoa, a, CLT, CLP, CT, CP = single_point_design(
@@ -114,7 +114,7 @@ def run_old_design(tsr_values, design_function_int=1.0, plot_comparison=False):
     cp_list, ct_list = [], []
 
     for tsr in tsr_values:
-        print(f"Running old design for TSR = {tsr}")
+        # print(f"Running old design for TSR = {tsr}")
 
         # Perform the design for the current TSR
         chord, tc, twist, cl, cd, aoa, a, CLT, CLP, CT, CP = single_point_design(
@@ -160,6 +160,9 @@ def compare_designs(tsr_values, design_function_int=1.0):
 
     # Run new design and collect results
     cp_new, ct_new = run_design(tsr_values, design_function_int=design_function_int, plot_comparison=True)
+    # pprint.pprint(cp_new)
+    for i in range(len(cp_new)):
+        print(f'{tsr_values[i]} {cp_new[i]}')
 
     # Run old design and collect results
     cp_old, ct_old = run_old_design(tsr_values, design_function_int=design_function_int, plot_comparison=True)
@@ -193,4 +196,4 @@ def compare_designs(tsr_values, design_function_int=1.0):
 tsr_values = np.linspace(6, 10, 20)  # Example range of TSR values
 
 # Run the comparison of old and new designs
-compare_designs(tsr_values, design_function_int=3)
+compare_designs(tsr_values, design_function_int=1)
