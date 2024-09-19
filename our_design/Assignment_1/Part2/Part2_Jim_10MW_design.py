@@ -72,7 +72,8 @@ r, c_10mw, tc_10mw = read_data(our_design_file)
 
 c_10mw = c_10mw * scale_ratio_blade
 c_10mw[:4] = 5.38 # first 4 values of our design maintain identical chord
-
+c_10mw[4] = 5.386
+c_10mw[5] = 5.5
 t_10mw = tc_10mw[:-1] / 100  * c_10mw[:-1]# thickness is in percentage in the DTU_10MW_RWT_ae.dat file
 
 r = r * scale_ratio_blade
@@ -83,8 +84,6 @@ r_hub = 2.8  # Hub radius [m]
 R = r_hub + r[-1]  # Rotor radius [m]
 
 r = r[:-1] + r_hub # Rotor hub is added to the blade length entries
-
-
 
 
 # r = np.linspace(r_hub, R - 0.1, 40)  # Rotor span [m]
