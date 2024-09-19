@@ -65,32 +65,22 @@ def interpolate_data(x, y, x_new):
     return interpolator(x_new)
 
 our_design_file = Path.cwd() / 'DTU_10MW_RWT_our_design_ae.dat'# Update with your actual file path
-scale_ratio_blade = 1.0388359746215876 # from Alex calculations
-our_design_file = Path.cwd().parent.parent / 'data' / 'DTU_10MW_RWT_ae.dat'# Update with your actual file path
 
 # Read the data
 r, c_10mw, tc_10mw = read_data(our_design_file)
 
-c_10mw = c_10mw * scale_ratio_blade
-c_10mw[:4] = 5.38 # first 4 values of our design maintain identical chord
-c_10mw[4] = 5.386
-c_10mw[5] = 5.5
 t_10mw = tc_10mw[:-1] / 100  * c_10mw[:-1]# thickness is in percentage in the DTU_10MW_RWT_ae.dat file
 
-r = r * scale_ratio_blade
-
 # %% Inputs
-tsr = 8  # Tip-Speed-Ratio [-]
+tsr = 8.0  # Tip-Speed-Ratio [-]
 r_hub = 2.8  # Hub radius [m]
 R = r_hub + r[-1]  # Rotor radius [m]
-
+print(R)
 r = r[:-1] + r_hub # Rotor hub is added to the blade length entries
 print(r)
 
-
 # r = np.linspace(r_hub, R - 0.1, 40)  # Rotor span [m]
 chord_max = 6.20  # Maximum chord size [m]
-chord_max = 6.20 * scale_ratio_blade # Maximum chord size [m]
 chord_root = 5.38  # Chord size at the root [m]
 B = 3  # Number of blades [#]
 # Aero dynamic polar design functions and the values (t/c vs. cl, cd, aoa)
@@ -101,7 +91,7 @@ cl_scale = 1.0  # Change this value to scale the cl-values
 # )
 
 cl_des, cd_des, aoa_des, tc_vals, cl_vals, cd_vals, aoa_vals = get_design_functions(
-    2
+    1
 )
 
 
