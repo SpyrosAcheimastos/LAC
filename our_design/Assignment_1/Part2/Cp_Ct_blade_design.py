@@ -50,6 +50,8 @@ def run_design(tsr_values, design_function_int=1.0, plot_comparison=False):
     r, c_10mw, tc_10mw = read_data(file_path)
     c_10mw *= scale_ratio_blade
     c_10mw[:4] = 5.38  # First 4 values of our design maintain identical chord
+    c_10mw[4] = 5.386
+    c_10mw[5] = 5.5
     t_10mw = tc_10mw[:-1] / 100 * c_10mw[:-1]
     r *= scale_ratio_blade
 
