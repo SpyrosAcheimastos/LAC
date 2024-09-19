@@ -66,6 +66,7 @@ def interpolate_data(x, y, x_new):
 
 our_design_file = Path.cwd() / 'DTU_10MW_RWT_our_design_ae.dat'# Update with your actual file path
 scale_ratio_blade = 1.0388359746215876 # from Alex calculations
+our_design_file = Path.cwd().parent.parent / 'data' / 'DTU_10MW_RWT_ae.dat'# Update with your actual file path
 
 # Read the data
 r, c_10mw, tc_10mw = read_data(our_design_file)
@@ -84,9 +85,11 @@ r_hub = 2.8  # Hub radius [m]
 R = r_hub + r[-1]  # Rotor radius [m]
 
 r = r[:-1] + r_hub # Rotor hub is added to the blade length entries
+print(r)
 
 
 # r = np.linspace(r_hub, R - 0.1, 40)  # Rotor span [m]
+chord_max = 6.20  # Maximum chord size [m]
 chord_max = 6.20 * scale_ratio_blade # Maximum chord size [m]
 chord_root = 5.38  # Chord size at the root [m]
 B = 3  # Number of blades [#]
