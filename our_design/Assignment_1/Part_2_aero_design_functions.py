@@ -31,7 +31,7 @@ def get_design_functions(i_des_funs):
     ValueError
         If `i_des_funs` is out of range 1-3
     """
-    tc = [0.0, 24.1, 30.1, 36.0, 48.0, 100, 105]
+    tc = [0.0, 24.1, 30.1, 36.0, 48.0, 100, 105] # These are the airfoils
     if i_des_funs == 1:
         cl = [
             1.5138999999999958,
