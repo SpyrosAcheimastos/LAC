@@ -64,7 +64,7 @@ def interpolate_data(x, y, x_new):
     interpolator = interp1d(x, y, kind='linear', fill_value="extrapolate")
     return interpolator(x_new)
 
-our_design_file = Path.cwd().parent.parent / 'data' / 'DTU_10MW_RWT_ae.dat'# Update with your actual file path
+our_design_file = Path.cwd() / 'DTU_10MW_RWT_our_design_ae.dat'# Update with your actual file path
 
 # Read the data
 r, c_10mw, tc_10mw = read_data(our_design_file)
