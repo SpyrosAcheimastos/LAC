@@ -1,10 +1,11 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from aero_design_functions_10MW import get_design_functions
-
+import pandas as pd
+import pprint
 
 # Function to plot cl, cd, and alpha for different inputs to get_design_functions
-def plot_design_functions_for_different_inputs():
+def plot_design_functions_for_different_inputs(df_polar):
     # Prepare to store labels and line styles for each input
     inputs = [1, 2, 3]
     colors = ['b', 'g', 'r']
@@ -44,11 +45,30 @@ def plot_design_functions_for_different_inputs():
     for ax in axs:
         ax.legend()
 
+    axs[0].plot(df_polar['t/c'],df_polar['cl_des'], 'x', color ='black')
+    axs[1].plot(df_polar['t/c'],df_polar['cd_for_des'], 'x', color ='black')
+    axs[2].plot(df_polar['t/c'],df_polar['aoa_for_des'], 'x', color ='black')
     # Adjust layout for better spacing
     fig.tight_layout()
 
     # Show the plot
     plt.show()
 
+df_result = pd.read_csv('polar_results.csv')
 # Call the function to generate and display the plot
-plot_design_functions_for_different_inputs()
+plot_design_functions_for_different_inputs(df_result)
+
+
+df_result = pd.read_csv('polar_results.csv')
+
+pprint.pprint(df_result)
+
+tc = df_result['t/c']
+cd_for_des = df_result['cd_for_des']
+cl_for_des = df_result['cl_des']
+aoa_for_des = df_result['aoa_for_des']
+
+print(tc)
+print(cd_for_des)
+print(aoa_for_des)
+
