@@ -5,6 +5,20 @@ from scipy.interpolate import interp1d
 from aero_design_functions_10MW import get_design_functions_10MW, single_point_design, get_design_functions
 import pprint
 
+import scienceplots
+import matplotlib
+
+# matplotlib.rcParams.update(matplotlib.rcParamsDefault) # TO RESET  PLOTS
+plt.style.use('science')
+
+# # Set global font properties
+plt.rcParams['legend.frameon'] = True  # Enable the legend frame
+plt.rcParams['legend.fancybox'] = False  # No fancybox, just a regular box
+plt.rcParams['legend.edgecolor'] = 'black'  # Black edge color
+plt.rcParams['legend.framealpha'] = 1  # No transparency
+plt.rcParams['font.size'] = 12
+plt.rcParams['font.weight'] = 'normal'
+
 def read_data(file_path):
     """Reads a data file and extracts three columns of float data."""
     column_1, column_2, column_3 = [], [], []
@@ -167,33 +181,44 @@ def compare_designs(tsr_values, design_function_int=1.0):
     # Run old design and collect results
     cp_old, ct_old = run_old_design(tsr_values, design_function_int=design_function_int, plot_comparison=True)
 
-    # Plot both designs together
-    fig, ax = plt.subplots(2, 1, figsize=(6, 8))
+    # Find Cp max for the new design
+    cp_max_index = np.argmax(cp_new)
+    cp_max_tsr = tsr_values[cp_max_index]
+    cp_max_value = cp_new[cp_max_index]
 
     # Plot CP comparison
-    ax[0].plot(tsr_values, cp_new, 'o-', label="New Design $C_P$")
-    ax[0].plot(tsr_values, cp_old, 's--', label="Old Design $C_P$")
-    ax[0].set_ylabel("$C_P$ [-]")
-    ax[0].set_xlabel("TSR [-]")
-    ax[0].grid(True)
-    ax[0].set_title("Power Coefficient vs TSR (Comparison)")
-    ax[0].legend()
+    figure = plt.figure(figsize=(4, 3))
+    plt.plot(cp_max_tsr, cp_max_value, 'rx', label=r'Max $C_p$')
+    plt.plot(tsr_values, cp_new)
+    plt.ylabel("$C_P$ [-]")
+    plt.xlabel("$\lambda$ [-]")
+    legend = plt.legend(fancybox=False, edgecolor="black")
+    legend.get_frame().set_linewidth(0.5)
+    plt.grid(True, linewidth=0.5, linestyle='--')
+
+    # Save and show the figure
+    plt.tight_layout()
+    figure.savefig('Cp_TSR.pdf', dpi=300, bbox_inches='tight')
+    plt.show()
+
+    # Create a new figure for CT comparison
+    figure = plt.figure(figsize=(4, 3))
 
     # Plot CT comparison
-    ax[1].plot(tsr_values, ct_new, 'o-', label="New Design $C_T$")
-    ax[1].plot(tsr_values, ct_old, 's--', label="Old Design $C_T$")
-    ax[1].set_ylabel("$C_T$ [-]")
-    ax[1].set_xlabel("TSR [-]")
-    ax[1].grid(True)
-    ax[1].set_title("Thrust Coefficient vs TSR (Comparison)")
-    ax[1].legend()
+    plt.plot(tsr_values, ct_new)
+    plt.ylabel("$C_T$ [-]")
+    plt.xlabel("$\lambda$ [-]")
+    plt.grid(True, linewidth=0.5, linestyle='--')
 
-    fig.tight_layout()
+    # Save and show the figure
+    plt.tight_layout()
+    plt.savefig('ct_comparison_plot.pdf', dpi=300, bbox_inches='tight')
     plt.show()
+    figure.savefig('Ct_TSR.pdf', dpi=300, bbox_inches='tight')  # Save the figure for Cl
 
 
 # Define a range of TSR values to test
 tsr_values = np.linspace(6, 10, 20)  # Example range of TSR values
 
 # Run the comparison of old and new designs
-compare_designs(tsr_values, design_function_int=1)
+compare_designs(tsr_values, design_function_int=2)
