@@ -196,4 +196,4 @@ def compare_designs(tsr_values, design_function_int=1.0):
 tsr_values = np.linspace(6, 10, 20)  # Example range of TSR values
 
 # Run the comparison of old and new designs
-compare_designs(tsr_values, design_function_int=1)
+compare_designs(tsr_values, design_function_int=2)
