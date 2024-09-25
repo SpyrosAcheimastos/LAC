@@ -5,6 +5,7 @@ Requires myteampack (which requires lacbox).
 """
 from myteampack import MyHTC
 
+omega_rated_rpm = 1.0
 
 if __name__ == '__main__':
     ORIG_PATH = '_master/BB_redesign.htc'
@@ -18,6 +19,7 @@ if __name__ == '__main__':
                     append='_hawc2s_1wsp',
                     opt_path='./data/dtu_10mw_1wsp.opt',
                     compute_steady_states=True,
+                    genspeed=(0,50*omega_rated_rpm),
                     save_power=True)
 
     # # make rigid hawc2s file for multi-tsr opt file
