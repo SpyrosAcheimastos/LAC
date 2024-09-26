@@ -32,7 +32,7 @@ if __name__ == '__main__':
                     compute_steady_states=True,
                     genspeed=(0,50*omega_rated_rpm),
                     minpitch = 0,
-                    opt_lambda =7.8,
+                    opt_lambda =7.5,
                     save_power=True)
 
     # # make rigid hawc2s file for multi-tsr opt file
