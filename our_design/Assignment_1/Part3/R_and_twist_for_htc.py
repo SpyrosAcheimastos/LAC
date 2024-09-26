@@ -1,5 +1,11 @@
+from lacbox.io import load_c2def, save_c2def
+from lacbox.test import test_data_path
+import matplotlib.pyplot as plt
 import numpy as np
-from scipy.interpolate import interp1d
+
+
+htc_path = test_data_path + '/dtu_10_mw/DTU_10MW_RWT.htc'
+c2_def = load_c2def(htc_path)
 
 # # 27-piece dataset (last two columns)
 # data_27_pieces = [
@@ -139,7 +145,18 @@ twist_27_interp = np.interp(r_27, r_39, twist_39)
 """Actual twist is negative inside hawc2 so we put the minus sign"""
 twist_27 = -twist_27_interp
 
-print(twist_27)
+# print(twist_27)
 
 """New blade length, still kinda wtf because the aero_ae.dat is different"""
-print(r_27)
+# print(r_27)
+
+c2_def_new = c2_def.copy()
+c2_def_new[:, 2] = r_27
+c2_def_new[:, -1] = twist_27
+
+
+print(c2_def_new)
+# print(c2_def)
+save_path = 'c2_def_updated.txt'
+
+save_c2def(save_path, c2_def_new)

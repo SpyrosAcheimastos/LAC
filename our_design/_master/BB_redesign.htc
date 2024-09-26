@@ -24,7 +24,7 @@ begin new_htc_structure;  material properties, orientations and constraints of b
     node_distribution     c2_def ;
     damping_posdef   0.0 0.0 0.0 4.12E-03 4.12E-03 4.5E-04 ;  tuned by Larh
      begin timoschenko_input;
-      filename ./data/BB_RWT_Tower.dat;
+      filename ./data/DTU_10MW_RWT_Tower_st.dat;
       set 1 1 ;  1 1=flexibe, 1 2=stiff
     end timoschenko_input;
     begin c2_def;  definition of centerline in main_body coordinates
@@ -39,12 +39,12 @@ begin new_htc_structure;  material properties, orientations and constraints of b
       sec	8	0	0	-80.50	0	;
       sec	9	0	0	-92.00	0	 ;
       sec	10	0	0	-103.50	0	;
-      sec	11	0	0	-115.63	0	;	  
+      sec	11	0	0	-115.63	0	;
      end c2_def ;
     end main_body;
 ;
   begin main_body;  towertop
-    name        towertop ;              
+    name        towertop ;
     type        timoschenko ;
     nbodies     1 ;
     node_distribution     c2_def ;
@@ -52,17 +52,17 @@ begin new_htc_structure;  material properties, orientations and constraints of b
 	concentrated_mass	2.0	0.0	2.6870E+00	3.0061E-01	4.4604E+05	4.1060E+06	4.1060E+05	4.1060E+06	;  nacelle mass and inertia corrected by Anyd 25/4/13
 	begin timoschenko_input;
       filename ./data/DTU_10MW_RWT_Towertop_st.dat ;
-      set 1 2 ;  1 1=flexibe, 1 2=stiff    
+      set 1 2 ;  1 1=flexibe, 1 2=stiff
     end timoschenko_input;
     begin c2_def;              Definition of centerline (main_body coordinates)
       nsec 2;
       sec 1 0.0 0.0  0.0    0.0 ; x,y,z,twist
-      sec 2 0.0 0.0 -2.75   0.0 ; 
+      sec 2 0.0 0.0 -2.75   0.0 ;
     end c2_def ;
   end main_body;
 ;
   begin main_body;  shaft
-    name        shaft ;              
+    name        shaft ;
     type        timoschenko ;
     nbodies     1 ;
     node_distribution     c2_def ;
@@ -71,32 +71,32 @@ begin new_htc_structure;  material properties, orientations and constraints of b
     concentrated_mass	5.0	0.0	0.0	0.0	1.0552E+05	0.0	0.0	3.257E+05 ;	hub mass and inertia re-tuned by Anyd 20/2/13
 	begin timoschenko_input;
       filename ./data/DTU_10MW_RWT_Shaft_st.dat ;
-      set 1 1 ;  1 1=flexibe, 1 2=stiff          
+      set 1 1 ;  1 1=flexibe, 1 2=stiff
     end timoschenko_input;
     begin c2_def;  definition of centerline in main_body coordinates
       nsec 5;
       sec 1 0.0 0.0 0.0 0.0 ; x, y, z, twist
-      sec 2 0.0 0.0 1.5 0.0 ; 
-      sec 3 0.0 0.0 3.0 0.0 ; 
+      sec 2 0.0 0.0 1.5 0.0 ;
+      sec 3 0.0 0.0 3.0 0.0 ;
       sec 4 0.0 0.0 4.4	0.0 ;  main bearing
       sec 5 0.0 0.0 7.1 0.0 ;  rotor centre
     end c2_def ;
-  end main_body;	
+  end main_body;
 ;
   begin main_body;  hub1
-    name        hub1 ;              
+    name        hub1 ;
     type        timoschenko ;
     nbodies     1 ;
     node_distribution     c2_def ;
     damping_posdef  0.0  0.0  0.0  0.0 0.0 0.0 ;
 	begin timoschenko_input;
       filename ./data/DTU_10MW_RWT_Hub_st.dat ;
-      set 1 2 ;  1 1=flexibe, 1 2=stiff              
+      set 1 2 ;  1 1=flexibe, 1 2=stiff
     end timoschenko_input;
     begin c2_def;  definition of centerline in main_body coordinates
       nsec 2;
       sec 1 0.0 0.0 0.0 0.0 ;  x, y, z, twist
-      sec 2 0.0 0.0 2.8 0.0 ; 
+      sec 2 0.0 0.0 2.8 0.0 ;
     end c2_def ;
   end main_body;
 ;
@@ -111,45 +111,45 @@ begin new_htc_structure;  material properties, orientations and constraints of b
   end main_body;
 ;
   begin main_body;  blade1
-    name        blade1 ;        
+    name        blade1 ;
     type        timoschenko ;
     nbodies     10 ;
     node_distribution    c2_def;
 	damping_posdef   0.0 0.0 0.0 1.53e-3 2.55e-3 3.3e-4 ;  3% damping tuned by tkim 23/03/13, unable to fit 3rd and higher mode
     begin timoschenko_input ;
-      filename ./data/BB_RWT_Blade_st.dat;
-      set 1 1 ;  1 1=flexibe, 1 2=stiff 
+      filename ./data/DTU_10MW_RWT_Blade_st.dat;
+      set 1 1 ;  1 1=flexibe, 1 2=stiff
     end timoschenko_input;
-    begin c2_def;  definition of centerline in main_body coordinates
-		nsec 27 ;
-			sec	1	0.00000E+00	7.00600E-05	4.44089E-16	-2.0E+01	;
-			sec	2	-2.06477E-05	-1.22119E-02	3.11650792E+00	-2.0+01	;
-			sec	3	-7.28810E-03	-2.49251E-02	6.23301585E+00	-2.0E+01	;
-			sec	4	-1.89235E-02	-2.73351E-02	7.2718933E+00	-2.0E+01	;
-			sec	5	-5.41282E-02	-2.82163E-02	9.03840279E+00	-2.0E+01	;
-			sec	6	-1.26633E-01	-2.13210E-02	1.08059718E+01	-2.0E+01	;
-			sec	7	-2.25666E-01	-1.28378E-02	1.26785775E+01	-2.0E+01	;
-			sec	8	-2.88563E-01	-7.70659E-03	1.37193873E+01	-2.0E+01	;
-			sec	9	-3.99194E-01	-4.88317E-03	1.55929280E+01	-1.997657113.E+01	;
-			sec	10	-5.76634E-01	-1.80296E-02	1.89225012E+01	-1.804676709E+00	;
-			sec	11	-7.07136E-01	-5.01772E-02	2.22495811E+01	-1.454140255E+00	;
-			sec	12	-7.91081E-01	-9.41228E-02	2.55749990E+01	-1.13109169E+00	;
-			sec	13	-8.37195E-01	-1.48880E-01	2.8899689E+01	-8.25878461E+00	;
-			sec	14	-8.53948E-01	-2.14514E-01	3.22240686E+01	-5.75692513E+00	;
-			sec	15	-8.49367E-01	-2.90618E-01	3.55486554E+01	-4.23133514E+00	;
-			sec	16	-7.93920E-01	-4.62574E-01	4.1782398E+01 -2.3863134E+00	;
-			sec	17	-7.16284E-01	-6.88437E-01	4.8432299E+01	-0.85713586E+00	;
-			sec	18	-6.34358E-01	-9.60017E-01	5.5082407E+01	0.36005177E+00	;
-			sec	19	-5.53179E-01	-1.28424E+00	6.17323084E+01	1.33392428E+00	;
-			sec	20	-4.75422E-01	-1.66402E+00	6.83818974E+01	2.12492584E+00	;
-			sec	21	-4.03180E-01	-2.10743E+00	7.50310710E+01	2.75803865E+00	;
-			sec	22	-3.30085E-01	-2.65630E+00	8.20956750E+01	3.28346098E+00	;
-			sec	23	-3.10140E-01	-2.78882E+00	8.365403297E+01	3.38742899E+00	;
-			sec	24	-2.86719E-01	-2.92517E+00	8.52127024E+01 3.4877273E+00	;
-			sec	25	-2.55823E-01	-3.06577E+00	8.6771268E+01	3.58453622E+00	;
-			sec	26	-2.07891E-01	-3.20952E+00	8.8329833E+01	3.67826453E+00	;
-			sec	27	-8.98940E-02	-3.33685E+00	8.9719588E+01	3.72196621E+00	;
-     end c2_def ;                                 
+      begin c2_def;
+    nsec 27;
+    sec  1    0.00000e+00    7.00600e-05    4.61336e-16   -2.00000e+01 ;
+    sec  2   -2.06477e-05   -1.22119e-02    3.11651e+00   -2.00000e+01 ;
+    sec  3   -7.28810e-03   -2.49251e-02    6.23302e+00   -2.00000e+01 ;
+    sec  4   -1.89235e-02   -2.73351e-02    7.27189e+00   -2.00000e+01 ;
+    sec  5   -5.41282e-02   -2.82163e-02    9.03840e+00   -2.00000e+01 ;
+    sec  6   -1.26633e-01   -2.13210e-02    1.08060e+01   -2.00000e+01 ;
+    sec  7   -2.25666e-01   -1.28378e-02    1.26786e+01   -2.00000e+01 ;
+    sec  8   -2.88563e-01   -7.70659e-03    1.37194e+01   -2.00000e+01 ;
+    sec  9   -3.99194e-01   -4.88317e-03    1.55929e+01   -1.99766e+01 ;
+    sec 10   -5.76634e-01   -1.80296e-02    1.89225e+01   -1.80468e+01 ;
+    sec 11   -7.07136e-01   -5.01772e-02    2.22496e+01   -1.45414e+01 ;
+    sec 12   -7.91081e-01   -9.41228e-02    2.55750e+01   -1.13109e+01 ;
+    sec 13   -8.37195e-01   -1.48880e-01    2.88997e+01   -8.25878e+00 ;
+    sec 14   -8.53948e-01   -2.14514e-01    3.22241e+01   -5.75693e+00 ;
+    sec 15   -8.49367e-01   -2.90618e-01    3.55487e+01   -4.23134e+00 ;
+    sec 16   -7.93920e-01   -4.62574e-01    4.17824e+01   -2.38631e+00 ;
+    sec 17   -7.16284e-01   -6.88437e-01    4.84323e+01   -8.57136e-01 ;
+    sec 18   -6.34358e-01   -9.60017e-01    5.50824e+01    3.60052e-01 ;
+    sec 19   -5.53179e-01   -1.28424e+00    6.17323e+01    1.33392e+00 ;
+    sec 20   -4.75422e-01   -1.66402e+00    6.83819e+01    2.12493e+00 ;
+    sec 21   -4.03180e-01   -2.10743e+00    7.50311e+01    2.75804e+00 ;
+    sec 22   -3.30085e-01   -2.65630e+00    8.20957e+01    3.28346e+00 ;
+    sec 23   -3.10140e-01   -2.78882e+00    8.36540e+01    3.38743e+00 ;
+    sec 24   -2.86719e-01   -2.92517e+00    8.52127e+01    3.48773e+00 ;
+    sec 25   -2.55823e-01   -3.06577e+00    8.67713e+01    3.58454e+00 ;
+    sec 26   -2.07891e-01   -3.20952e+00    8.83298e+01    3.67826e+00 ;
+    sec 27   -8.98940e-02   -3.33685e+00    8.97196e+01    3.72197e+00 ;
+  end c2_def;
    end main_body;
 ;
   begin main_body;  blade2
@@ -162,14 +162,14 @@ begin new_htc_structure;  material properties, orientations and constraints of b
     copy_main_body blade1 ;
   end main_body;
 ;
-;-------------------------------------------------------------------------------------------------------------------------------                   
+;-------------------------------------------------------------------------------------------------------------------------------
   begin orientation;  orientations of body coordinate systems
     begin base;  tower to ground
       mbdy   tower;
       inipos        0.0 0.0 0.0 ;  initial position of node 1
       mbdy_eulerang 0.0 0.0 0.0;  same as global; zT down and yT downwind.
     end base;
-; 
+;
     begin relative;  towertop to tower
       mbdy1  tower last;
       mbdy2  towertop 1;
@@ -179,57 +179,57 @@ begin new_htc_structure;  material properties, orientations and constraints of b
     begin relative;  shaft to towertop
       mbdy1  towertop last;
       mbdy2  shaft 1;
-      mbdy2_eulerang 90.0 0.0 0.0; 
+      mbdy2_eulerang 90.0 0.0 0.0;
       mbdy2_eulerang 5.0 0.0 0.0;  5 deg tilt angle; zS directed upwind along shaft, xS parallel to ground
       mbdy2_ini_rotvec_d1 0.0 0.0 -1.0 0.2 ;  initial shaft rotation
     end relative;
 ;
-    begin relative;  hub1 to shaft    
-      mbdy1  shaft last;  
+    begin relative;  hub1 to shaft
+      mbdy1  shaft last;
       mbdy2  hub1 1;
-      mbdy2_eulerang -90.0 0.0 0.0;    
-      mbdy2_eulerang 0.0 180.0 0.0;    
+      mbdy2_eulerang -90.0 0.0 0.0;
+      mbdy2_eulerang 0.0 180.0 0.0;
       mbdy2_eulerang 2.5 0.0 0.0;  2.5deg cone angle; yH downwind along shaft, zH outward towards blade tip
     end relative;
 ;
-    begin relative;  hub2 to shaft  
-      mbdy1  shaft last;         
+    begin relative;  hub2 to shaft
+      mbdy1  shaft last;
       mbdy2  hub2 1;
-      mbdy2_eulerang -90.0 0.0 0.0;    
-      mbdy2_eulerang 0.0 60.0 0.0;   
+      mbdy2_eulerang -90.0 0.0 0.0;
+      mbdy2_eulerang 0.0 60.0 0.0;
       mbdy2_eulerang 2.5 0.0 0.0;  2.5deg cone angle; yH downwind along shaft, zH outward towards blade tip
     end relative;
 ;
-    begin relative;  hub3 to shaft  
-      mbdy1  shaft last;         
+    begin relative;  hub3 to shaft
+      mbdy1  shaft last;
       mbdy2  hub3 1;
-      mbdy2_eulerang -90.0 0.0 0.0;    
-      mbdy2_eulerang 0.0 -60.0 0.0;    
+      mbdy2_eulerang -90.0 0.0 0.0;
+      mbdy2_eulerang 0.0 -60.0 0.0;
       mbdy2_eulerang 2.5 0.0 0.0;  2.5deg cone angle; yH downwind along shaft, zH outward towards blade tip
     end relative;
 ;
     begin relative;  blade1 to hub1
-      mbdy1  hub1 last;         
+      mbdy1  hub1 last;
       mbdy2  blade1 1;
-      mbdy2_eulerang 0.0 0.0 0; same as hub1; yB downwind along shaft, zB outward towards blade tip 
+      mbdy2_eulerang 0.0 0.0 0; same as hub1; yB downwind along shaft, zB outward towards blade tip
     end relative;
 ;
     begin relative;  blade2 to hub2
-      mbdy1  hub2 last;         
+      mbdy1  hub2 last;
       mbdy2  blade2 1;
-      mbdy2_eulerang 0.0 0.0 0.0; same as hub2; yB downwind along shaft, zB outward towards blade tip 
+      mbdy2_eulerang 0.0 0.0 0.0; same as hub2; yB downwind along shaft, zB outward towards blade tip
     end relative;
 ;
     begin relative;  blade3 to hub3
-      mbdy1  hub3 last;         
+      mbdy1  hub3 last;
       mbdy2  blade3 1;
-      mbdy2_eulerang 0.0 0.0 0.0; same as hub3; yB downwind along shaft, zB outward towards blade tip 
+      mbdy2_eulerang 0.0 0.0 0.0; same as hub3; yB downwind along shaft, zB outward towards blade tip
     end relative;
 ;
  	end orientation;
 ;
 ;-------------------------------------------------------------------------------------------------------------------------------
-begin constraint;  constraints of each body to another 
+begin constraint;  constraints of each body to another
 ;
     begin fix0;  tower fixed to ground in translation and rotation of node 1
       mbdy tower;
@@ -245,7 +245,7 @@ begin constraint;  constraints of each body to another
 		mbdy1 towertop last;
 		mbdy2 shaft 1;
 		bearing_vector 2 0.0 0.0 -1.0;
-	end bearing1; 
+	end bearing1;
 ;
      begin fix1;  bottom of hub1 rigidly fixed to shaft
 		   mbdy1 shaft last ;
@@ -260,24 +260,24 @@ begin constraint;  constraints of each body to another
      begin fix1;  bottom of hub3 rigidly fixed to shaft
 		   mbdy1 shaft last ;
 		   mbdy2 hub3 1;
-		 end fix1; 
-;	
+		 end fix1;
+;
     begin bearing2;  pitch1: blade1 rotates about its -z axis with respect to hub
-      name pitch1;		
+      name pitch1;
       mbdy1 hub1 last;
       mbdy2 blade1 1;
 	  bearing_vector 2 0.0 0.0 -1.0;
    end bearing2;
 ;
     begin bearing2;  pitch2: blade2 rotates about its -z axis with respect to hub
-      name pitch2;		
+      name pitch2;
       mbdy1 hub2 last;
       mbdy2 blade2 1;
 	  bearing_vector 2 0.0 0.0 -1.0;
     end bearing2;
 ;
     begin bearing2;  pitch3: blade3 rotates about its -z axis with respect to hub
-      name pitch3;		
+      name pitch3;
       mbdy1 hub3 last;
       mbdy2 blade3 1;
 	  bearing_vector 2 0.0 0.0 -1.0;
@@ -286,7 +286,7 @@ end constraint;
 ;
 end new_htc_structure;
 ;
-;---------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+;----------------------------------------------------------------------------------------------------------------------------------------------------------------
 begin wind ;  wind input to structure
   density                 1.225 ;
   wsp                     8.0   ;
@@ -321,8 +321,8 @@ begin aerodrag ;  aerodynamic drag
     mbdy_name shaft;
     aerodrag_sections uniform 2 ;
     nsec 2 ;
-    sec 0.0   0.8 10.0 ;  
-    sec 7.01  0.8 10.0 ;  
+    sec 0.0   0.8 10.0 ;
+    sec 7.01  0.8 10.0 ;
   end aerodrag_element;
 end aerodrag;
 ;
@@ -332,8 +332,8 @@ begin aero ;  aerodynamic forces
   link 1 mbdy_c2_def blade1;
   link 2 mbdy_c2_def blade2;
   link 3 mbdy_c2_def blade3;
-  ae_filename        ./data/BB_RWT_ae.dat ;
-  pc_filename        ./data/BB_RWT_pc.dat ;
+  ae_filename        ./data/DTU_10MW_RWT_ae.dat ;
+  pc_filename        ./data/DTU_10MW_RWT_pc.dat ;
   induction_method   1 ;     0=none, 1=normal
   aerocalc_method    1 ;     0=no aero calculations, 1=with aero calculations
   aerosections       50 ;
