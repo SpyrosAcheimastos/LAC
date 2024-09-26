@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from pathlib import Path
-from aero_design_functions_10MW import get_design_functions_10MW, single_point_design, get_design_functions
+from our_design.Assignment_1.Part_2_aero_design_functions import single_point_design, get_design_functions
 from lacbox.io import load_ae, save_ae
 from lacbox.test import test_data_path
 import matplotlib.pyplot as plt
@@ -20,39 +20,17 @@ not sure what to do about this"""
 
 tsr_max_cp = 7.05
 
-def read_data(file_path):
-    """Reads a data file and extracts three columns of float data."""
-    column_1, column_2, column_3 = [], [], []
-    with open(file_path, 'r') as file:
-        for line in file:
-            line = line.strip()
-            if not line:
-                continue
-            try:
-                if ';' in line:
-                    line = line.split(';')[0]  # Remove comments
-                values = list(map(float, line.split()))
-                if len(values) >= 3:
-                    column_1.append(values[0])
-                    column_2.append(values[1])
-                    column_3.append(values[2])
-            except ValueError:
-                continue  # Skip lines with invalid data
-    return np.array(column_1), np.array(column_2), np.array(column_3)
-
-def write_data(file_path, r_blade, c_BB, tc_BB):
-    """Writes the updated r, c_10mw, and tc_10mw columns into a new .dat file."""
-    with open(file_path, 'w') as file:
-        for r_val, c_val, tc_val in zip(r_blade, c_BB, tc_BB):
-            # Format the values to match the original format
-            file.write(f"{r_val:.4E}\t{c_val:.4E}\t{tc_val:.4E}\n")
 
 # File path and scaling factor for new design
 file_path = Path.cwd() / 'DTU_10MW_RWT_our_design_ae.dat'
 scale_ratio_blade = 1.0388359746215876
 
+ae_path = test_data_path + '/dtu_10_mw/data/DTU_10MW_RWT_ae.dat'
+
+ae = load_ae(ae_path)
+
 # Read new design data
-r, c_10mw, tc_10mw = read_data(file_path)
+r, c_10mw, tc_10mw, pcset = load_ae(ae_path, unpack=True)
 print(len(r))
 print(r)
 c_10mw *= scale_ratio_blade
@@ -65,7 +43,7 @@ r *= scale_ratio_blade
 r_hub = 2.8  # Hub radius [m]
 R = r_hub + r[-1]  # Rotor radius [m]
 print(R)
-r = r[:-1] + r_hub  # Adjust rotor span with hub radius
+r_with_hub = r[:-1] + r_hub  # Adjust rotor span with hub radius
 
 
 
@@ -81,7 +59,7 @@ cl_des, cd_des, aoa_des, tc_vals, cl_vals, cd_vals, aoa_vals = get_design_functi
 
 # Perform the design for the TSR_max_cp
 chord_BB, tc_BB, twist_BB, cl, cd, aoa, a, CLT, CLP, CT, CP = single_point_design(
-    r, t_10mw, tsr_max_cp, R, cl_des, cd_des, aoa_des, chord_root, chord_max, B
+    r_with_hub, t_10mw, tsr_max_cp, R, cl_des, cd_des, aoa_des, chord_root, chord_max, B
         )
 
 
@@ -93,3 +71,34 @@ print(len(chord_BB))
 print(len(tc_BB))
 
 # Write the updated data into the new .dat file
+
+save_path = 'DTU_10MW_RWT_ae.dat'
+
+# Convert numpy arrays to lists
+chord_BB_list = chord_BB.tolist()
+tc_BB_list = tc_BB.tolist()
+
+"""Last element of the blade is interpolation of the previous element. """
+# Perform linear fit for the last 5 elements of both chord_BB and tc_BB
+last_5_indices = np.arange(len(chord_BB_list) - 5, len(chord_BB_list))
+
+# Linear fit for chord_BB
+chord_fit_coeff = np.polyfit(last_5_indices, chord_BB_list[-5:], 1)
+next_index = len(chord_BB_list)
+next_chord_value = np.polyval(chord_fit_coeff, next_index)  # Predict the next value
+
+
+chord_BB_list.append(next_chord_value)
+tc_BB_list.append(tc_BB_list[-1])
+
+# Update the ae_new array with the new lists
+ae_new = ae.copy()
+ae_new[:, 0] = r  # Update radii
+ae_new[:, 1] = np.array(chord_BB_list)  # Convert the list back to numpy array for assignment
+ae_new[:, 2] = np.array(tc_BB_list)  # Convert the list back to numpy array for assignment
+
+# Print updated data for verification
+print(ae_new)
+
+# Save the updated aerodynamic design data to a new file
+save_ae(save_path, ae_new)
