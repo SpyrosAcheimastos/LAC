@@ -191,6 +191,8 @@ def compare_designs(tsr_values, design_function_int=1.0):
     fig.tight_layout()
     plt.show()
 
+    print(f'Cp max ={max(cp_new)} is at lambda = {tsr_values[cp_new.index(max(cp_new))]}')
+    print(f'this is at design function {design_function_int}')
 
 # Define a range of TSR values to test
 tsr_values = np.linspace(6, 10, 20)  # Example range of TSR values
