@@ -122,8 +122,8 @@ twist_39 = np.array([20., 20., 20., 20., 20., 20., 20., 20., 20., 20.,
 
 """
 # Target r-values (27 data points) from master.htc file with scaled factor"""
-blade_scale_factor = 1.3
-r_27 = np.array([4.44089E-16, 3.00000E+00, 6.00000E+00, 7.00004E+00, 8.70051E+00,
+scale_ratio_blade = 1.0388359746215876
+r_27 = scale_ratio_blade * np.array([4.44089E-16, 3.00000E+00, 6.00000E+00, 7.00004E+00, 8.70051E+00,
                  1.04020E+01, 1.22046E+01, 1.32065E+01, 1.50100E+01, 1.82151E+01,
                  2.14178E+01, 2.46189E+01, 2.78193E+01, 3.10194E+01, 3.42197E+01,
                  4.02204E+01, 4.66217E+01, 5.30232E+01, 5.94245E+01, 6.58255E+01,
@@ -131,7 +131,12 @@ r_27 = np.array([4.44089E-16, 3.00000E+00, 6.00000E+00, 7.00004E+00, 8.70051E+00
                  8.50277E+01, 8.63655E+01])
 
 # Interpolating the y-values from 39 points to match 27 points
-twist_27 = np.interp(r_27, r_39, twist_39)
+twist_27_interp = np.interp(r_27, r_39, twist_39)
 
-# Print the interpolated y-values for 27 points
+# Print the interpolated twist value
+# print(twist_27_interp)
+
+"""Actual twist is negative inside hawc2 so we put the minus sign"""
+twist_27 = -twist_27_interp
+
 print(twist_27)
