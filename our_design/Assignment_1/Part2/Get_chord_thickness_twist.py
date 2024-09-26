@@ -90,3 +90,4 @@ write_data(output_file_path, r[:-1] - r_hub , chord_BB, tc_BB)
 
 print(f"Updated .dat file created at: {output_file_path}")
 
+print(twist_BB)
