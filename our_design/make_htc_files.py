@@ -3,7 +3,7 @@ Make all the htc files for the LAC course from a single base file.
 
 Requires myteampack (which requires lacbox).
 """
-from myteampack import MyHTC
+from src.myteampack import MyHTC
 
 omega_rated_rpm = 1.0
 
