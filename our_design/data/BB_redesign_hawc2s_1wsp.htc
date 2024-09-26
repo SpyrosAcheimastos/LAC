@@ -12,7 +12,7 @@
       node_distribution	c2_def;
       damping_posdef	0 0 0 0.00412 0.00412 0.00045;	tuned by Larh
       begin timoschenko_input;
-        filename	./data/DTU_10MW_RWT_Tower_st.dat;
+        filename	./data/BB_RWT_Tower.dat;
         set	1 1;	1 1=flexibe, 1 2=stiff
       end timoschenko_input;
       begin c2_def;	definition of centerline in main_body coordinates
@@ -105,38 +105,38 @@
       node_distribution	c2_def;
       damping_posdef	0 0 0 0.00153 0.00255 0.00033;	3% damping tuned by tkim 23/03/13, unable to fit 3rd and higher mode
       begin timoschenko_input;
-        filename	./data/DTU_10MW_RWT_Blade_st.dat;
+        filename	./data/BB_RWT_Blade_st.dat;
         set	1 1;	1 1=flexibe, 1 2=stiff
       end timoschenko_input;
       begin c2_def;	definition of centerline in main_body coordinates
         nsec	27;
-        sec	1 0 7.006e-05 4.44089e-16 -14.5;
-        sec	2 -2.06477e-05 -0.0122119 3 -14.5;
-        sec	3 -0.0072881 -0.0249251 6 -14.4851;
-        sec	4 -0.0189235 -0.0273351 7.00004 -14.461;
-        sec	5 -0.0541282 -0.0282163 8.70051 -14.3388;
-        sec	6 -0.126633 -0.021321 10.402 -14.0201;
-        sec	7 -0.225666 -0.0128378 12.2046 -13.3904;
-        sec	8 -0.288563 -0.00770659 13.2065 -12.9371;
-        sec	9 -0.399194 -0.00488317 15.01 -11.9445;
-        sec	10 -0.576634 -0.0180296 18.2151 -9.98243;
-        sec	11 -0.707136 -0.0501772 21.4178 -8.45147;
-        sec	12 -0.791081 -0.0941228 24.6189 -7.46417;
-        sec	13 -0.837195 -0.14888 27.8193 -6.72916;
-        sec	14 -0.853948 -0.214514 31.0194 -6.08842;
-        sec	15 -0.849367 -0.290618 34.2197 -5.49322;
-        sec	16 -0.79392 -0.462574 40.2204 -4.39222;
-        sec	17 -0.716284 -0.688437 46.6217 -3.09315;
-        sec	18 -0.634358 -0.960017 53.0232 -1.75629;
-        sec	19 -0.553179 -1.28424 59.4245 -0.50065;
-        sec	20 -0.475422 -1.66402 65.8255 0.601964;
-        sec	21 -0.40318 -2.10743 72.2261 1.5556;
-        sec	22 -0.330085 -2.6563 79.0266 2.51935;
-        sec	23 -0.31014 -2.78882 80.5267 2.7295;
-        sec	24 -0.286719 -2.92517 82.0271 2.93201;
-        sec	25 -0.255823 -3.06577 83.5274 3.11874;
-        sec	26 -0.207891 -3.20952 85.0277 3.28847;
-        sec	27 -0.089894 -3.33685 86.3655 3.42796;
+        sec	1 0 7.006e-05 4.44089e-16 -20;
+        sec	2 -2.06477e-05 -0.0122119 3.11650792 -2.0+01;
+        sec	3 -0.0072881 -0.0249251 6.23301585 -20;
+        sec	4 -0.0189235 -0.0273351 7.2718933 -20;
+        sec	5 -0.0541282 -0.0282163 9.03840279 -20;
+        sec	6 -0.126633 -0.021321 10.8059718 -20;
+        sec	7 -0.225666 -0.0128378 12.6785775 -20;
+        sec	8 -0.288563 -0.00770659 13.7193873 -20;
+        sec	9 -0.399194 -0.00488317 15.592928 -1.997657113.E+01;
+        sec	10 -0.576634 -0.0180296 18.9225012 -1.804676709;
+        sec	11 -0.707136 -0.0501772 22.2495811 -1.454140255;
+        sec	12 -0.791081 -0.0941228 25.574999 -1.13109169;
+        sec	13 -0.837195 -0.14888 28.899689 -8.25878461;
+        sec	14 -0.853948 -0.214514 32.2240686 -5.75692513;
+        sec	15 -0.849367 -0.290618 35.5486554 -4.23133514;
+        sec	16 -0.79392 -0.462574 41.782398 -2.3863134;
+        sec	17 -0.716284 -0.688437 48.432299 -0.85713586;
+        sec	18 -0.634358 -0.960017 55.082407 0.36005177;
+        sec	19 -0.553179 -1.28424 61.7323084 1.33392428;
+        sec	20 -0.475422 -1.66402 68.3818974 2.12492584;
+        sec	21 -0.40318 -2.10743 75.031071 2.75803865;
+        sec	22 -0.330085 -2.6563 82.095675 3.28346098;
+        sec	23 -0.31014 -2.78882 83.65403297 3.38742899;
+        sec	24 -0.286719 -2.92517 85.2127024 3.4877273;
+        sec	25 -0.255823 -3.06577 86.771268 3.58453622;
+        sec	26 -0.207891 -3.20952 88.329833 3.67826453;
+        sec	27 -0.089894 -3.33685 89.719588 3.72196621;
       end c2_def;
     end main_body;
 ;
@@ -281,8 +281,8 @@
     link	1 mbdy_c2_def blade1;
     link	2 mbdy_c2_def blade2;
     link	3 mbdy_c2_def blade3;
-    ae_filename	./data/DTU_10MW_RWT_ae.dat;
-    pc_filename	./data/DTU_10MW_RWT_pc.dat;
+    ae_filename	./data/BB_RWT_ae.dat;
+    pc_filename	./data/BB_RWT_pc.dat;
     induction_method	1;	0=none, 1=normal
     aerocalc_method	1;	0=no aero calculations, 1=with aero calculations
     aerosections	50;
@@ -312,7 +312,7 @@
 ; settings for compute_optimal_pitch_angle
     begin operational_data;
       windspeed	4 25 22;	cut-in [m/s], cut-out [m/s], points [-] -- used if operational_data_file_wind is 0
-      genspeed	0 480;	min, max generator speed [rpm]
+      genspeed	0 50.0;	min, max generator speed [rpm]
       gearratio	50;	gear ratio [-]
       minpitch	0;	min. pitch angle [deg]
       opt_lambda	8;	optimal TSR [-]
