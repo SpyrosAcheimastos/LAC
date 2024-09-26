@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9039ea3f-f1d9-490e-957d-bc2b1184c35d" name="Changes" comment="Updated the values of the radius here" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Jim_testing_branch" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2mFBMU4TSQljSjgNUnMTjVcmVh5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.10MW_code.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Cl_Cd_tc_curves.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Cp_Ct_blade_design.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Get_chord_thickness_twist.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Part2_Jim_10MW_design (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.R_and_twist_for_htc.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Structural_scaling.executor&quot;: &quot;Run&quot;,
+    &quot;Python.make_htc_files (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.make_htc_files.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scratch_11.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scratch_12.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testing.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jimwi/PycharmProjects/LAC/LAC/our_design/data&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;Python&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\our_design\data" />
+      <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\our_design" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\our_design\data" />
+      <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\our_design" />
+      <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\our_design\Assignment_1\Part2" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.R_and_twist_for_htc">
+    <configuration name="R_and_twist_for_htc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LAC" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/our_design/Assignment_1/Part3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/our_design/Assignment_1/Part3/R_and_twist_for_htc.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Structural_scaling" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LAC" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/our_design/Assignment_1/Part3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/our_design/Assignment_1/Part3/Structural_scaling.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="make_htc_files" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LAC" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/our_design" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/our_design/make_htc_files.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch_11" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LAC" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_11.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="testing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LAC" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/our_design/Assignment_1/Part2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/our_design/Assignment_1/Part2/testing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.testing" />
+        <item itemvalue="Python.Structural_scaling" />
+        <item itemvalue="Python.scratch_11" />
+        <item itemvalue="Python.R_and_twist_for_htc" />
+        <item itemvalue="Python.make_htc_files" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-PY-241.14494.241" />
+        <option value="bundled-python-sdk-0509580d9d50-28c9f5db9ffe-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.14494.241" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9039ea3f-f1d9-490e-957d-bc2b1184c35d" name="Changes" comment="" />
+      <created>1726662396346</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1726662396346</updated>
+      <workItem from="1726662397483" duration="3812000" />
+      <workItem from="1726731893353" duration="10822000" />
+      <workItem from="1726748408932" duration="7895000" />
+      <workItem from="1727098250998" duration="614000" />
+      <workItem from="1727179591528" duration="6046000" />
+      <workItem from="1727248111438" duration="6688000" />
+      <workItem from="1727337793977" duration="12875000" />
+      <workItem from="1727357627657" duration="336000" />
+    </task>
+    <task id="LOCAL-00001" summary="Part2 10Mw">
+      <option name="closed" value="true" />
+      <created>1726739485188</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726739485188</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Part2 10Mw">
+      <option name="closed" value="true" />
+      <created>1726739513819</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726739513819</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Part2 10Mw">
+      <option name="closed" value="true" />
+      <created>1726739681075</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726739681075</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Made plotting for Cp and Ct vs tsr.">
+      <option name="closed" value="true" />
+      <created>1726742424891</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726742424891</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Made plotting for Cp and Ct vs tsr.">
+      <option name="closed" value="true" />
+      <created>1726750881763</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1726750881763</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Made plotting for Cp and Ct vs tsr.">
+      <option name="closed" value="true" />
+      <created>1726751644734</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1726751644734</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Made plotting for Cp and Ct vs tsr.">
+      <option name="closed" value="true" />
+      <created>1726752334668</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1726752334668</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Made plotting for Cp and Ct vs tsr.">
+      <option name="closed" value="true" />
+      <created>1726757615270</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1726757615270</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Made plotting for Cp and Ct vs tsr.">
+      <option name="closed" value="true" />
+      <created>1727184174687</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1727184174687</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Made plotting for Cp and Ct vs tsr.">
+      <option name="closed" value="true" />
+      <created>1727249260901</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1727249260901</updated>
+    </task>
+    <task id="LOCAL-00011" summary="genspeed">
+      <option name="closed" value="true" />
+      <created>1727256079279</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1727256079279</updated>
+    </task>
+    <task id="LOCAL-00012" summary="BB redesign files">
+      <option name="closed" value="true" />
+      <created>1727338537867</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1727338537867</updated>
+    </task>
+    <task id="LOCAL-00013" summary="BB redesign files">
+      <option name="closed" value="true" />
+      <created>1727341705189</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1727341705189</updated>
+    </task>
+    <task id="LOCAL-00014" summary="BB redesign files">
+      <option name="closed" value="true" />
+      <created>1727342249624</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1727342249624</updated>
+    </task>
+    <task id="LOCAL-00015" summary="BB redesign files">
+      <option name="closed" value="true" />
+      <created>1727342304887</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1727342304887</updated>
+    </task>
+    <task id="LOCAL-00016" summary="BB redesign files">
+      <option name="closed" value="true" />
+      <created>1727345124771</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1727345124771</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Updated the values of the twist here">
+      <option name="closed" value="true" />
+      <created>1727345517971</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1727345517971</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Updated the values of the radius here">
+      <option name="closed" value="true" />
+      <created>1727345771716</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1727345771716</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Updated the values of the radius here">
+      <option name="closed" value="true" />
+      <created>1727347853038</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1727347853038</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Updated the values of the radius here">
+      <option name="closed" value="true" />
+      <created>1727357157126</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1727357157126</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Updated the values of the radius here">
+      <option name="closed" value="true" />
+      <created>1727357445935</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1727357445935</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Part2 10Mw" />
+    <MESSAGE value="Made plotting for Cp and Ct vs tsr." />
+    <MESSAGE value="genspeed" />
+    <MESSAGE value="BB redesign files" />
+    <MESSAGE value="Updated the values of the twist here" />
+    <MESSAGE value="Updated the values of the radius here" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the values of the radius here" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/LAC$testing.coverage" NAME="testing Coverage Results" MODIFIED="1726740079115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part2" />
+    <SUITE FILE_PATH="coverage/LAC$scratch_11.coverage" NAME="scratch_11 Coverage Results" MODIFIED="1726733836155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/LAC$Cp_Ct_blade_design.coverage" NAME="Cp_Ct_blade_design Coverage Results" MODIFIED="1727338809173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part2" />
+    <SUITE FILE_PATH="coverage/LAC$Get_chord_thickness_twist.coverage" NAME="Get_chord_thickness_twist Coverage Results" MODIFIED="1727342278051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part2" />
+    <SUITE FILE_PATH="coverage/LAC$Part2_Jim_10MW_design__1_.coverage" NAME="Part2_Jim_10MW_design (1) Coverage Results" MODIFIED="1727256146766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part2" />
+    <SUITE FILE_PATH="coverage/LAC$make_htc_files.coverage" NAME="make_htc_files Coverage Results" MODIFIED="1727348634549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design" />
+    <SUITE FILE_PATH="coverage/LAC$Cl_Cd_tc_curves.coverage" NAME="Cl_Cd_tc_curves Coverage Results" MODIFIED="1727248536023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part2" />
+    <SUITE FILE_PATH="coverage/LAC$Structural_scaling.coverage" NAME="Structural_scaling Coverage Results" MODIFIED="1727346248089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part3" />
+    <SUITE FILE_PATH="coverage/LAC$make_htc_files__1_.coverage" NAME="make_htc_files (1) Coverage Results" MODIFIED="1727182428008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design" />
+    <SUITE FILE_PATH="coverage/LAC$scratch_12.coverage" NAME="scratch_12 Coverage Results" MODIFIED="1726750660691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/LAC$R_and_twist_for_htc.coverage" NAME="R_and_twist_for_htc Coverage Results" MODIFIED="1727356431301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part3" />
+    <SUITE FILE_PATH="coverage/LAC$10MW_code.coverage" NAME="10MW_code Coverage Results" MODIFIED="1726739302970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part2" />
+  </component>
+</project>
