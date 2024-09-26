@@ -140,3 +140,6 @@ twist_27_interp = np.interp(r_27, r_39, twist_39)
 twist_27 = -twist_27_interp
 
 print(twist_27)
+
+"""New blade length, still kinda wtf because the aero_ae.dat is different"""
+print(r_27)
