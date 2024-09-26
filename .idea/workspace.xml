@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9039ea3f-f1d9-490e-957d-bc2b1184c35d" name="Changes" comment="Updated the values of the radius here" />
+    <list default="true" id="9039ea3f-f1d9-490e-957d-bc2b1184c35d" name="Changes" comment="everything is ready to run hawc2s but it does not work">
+      <change afterPath="$PROJECT_DIR$/.idea/LAC.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/our_design/BB_redesign_hawc2s_1wsp.htc" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/data/BB_redesign_hawc2s_1wsp.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/our_design/BB_redesign_hawc2s_1wsp.log" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/BB_redesign_hawc2s_1wsp.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/our_design/make_htc_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/make_htc_files.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myteampack/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/myteampack/__init__.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,6 +61,8 @@
     "Python.scratch_12.executor": "Run",
     "Python.testing.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "Part3",
     "last_opened_file_path": "C:/Users/jimwi/PycharmProjects/LAC/LAC/our_design/data",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -226,6 +239,7 @@
       <workItem from="1727248111438" duration="6688000" />
       <workItem from="1727337793977" duration="12875000" />
       <workItem from="1727357627657" duration="336000" />
+      <workItem from="1727359359276" duration="634000" />
     </task>
     <task id="LOCAL-00001" summary="Part2 10Mw">
       <option name="closed" value="true" />
@@ -395,7 +409,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727357445935</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="everything is ready to run hawc2s but it does not work">
+      <option name="closed" value="true" />
+      <created>1727359404538</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1727359404538</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,16 +441,17 @@
     <MESSAGE value="BB redesign files" />
     <MESSAGE value="Updated the values of the twist here" />
     <MESSAGE value="Updated the values of the radius here" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the values of the radius here" />
+    <MESSAGE value="everything is ready to run hawc2s but it does not work" />
+    <option name="LAST_COMMIT_MESSAGE" value="everything is ready to run hawc2s but it does not work" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/LAC$scratch_11.coverage" NAME="scratch_11 Coverage Results" MODIFIED="1726733836155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/LAC$testing.coverage" NAME="testing Coverage Results" MODIFIED="1726740079115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part2" />
+    <SUITE FILE_PATH="coverage/LAC$scratch_11.coverage" NAME="scratch_11 Coverage Results" MODIFIED="1726733836155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/LAC$Get_chord_and_thickness.coverage" NAME="Get_chord_and_thickness Coverage Results" MODIFIED="1727359047645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part3" />
     <SUITE FILE_PATH="coverage/LAC$Cp_Ct_blade_design.coverage" NAME="Cp_Ct_blade_design Coverage Results" MODIFIED="1727338809173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part2" />
     <SUITE FILE_PATH="coverage/LAC$Get_chord_thickness_twist.coverage" NAME="Get_chord_thickness_twist Coverage Results" MODIFIED="1727342278051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part2" />
     <SUITE FILE_PATH="coverage/LAC$Part2_Jim_10MW_design__1_.coverage" NAME="Part2_Jim_10MW_design (1) Coverage Results" MODIFIED="1727256146766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part2" />
-    <SUITE FILE_PATH="coverage/LAC$make_htc_files.coverage" NAME="make_htc_files Coverage Results" MODIFIED="1727359272558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design" />
+    <SUITE FILE_PATH="coverage/LAC$make_htc_files.coverage" NAME="make_htc_files Coverage Results" MODIFIED="1727359564663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design" />
     <SUITE FILE_PATH="coverage/LAC$Cl_Cd_tc_curves.coverage" NAME="Cl_Cd_tc_curves Coverage Results" MODIFIED="1727248536023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part2" />
     <SUITE FILE_PATH="coverage/LAC$Structural_scaling.coverage" NAME="Structural_scaling Coverage Results" MODIFIED="1727359112285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part3" />
     <SUITE FILE_PATH="coverage/LAC$make_htc_files__1_.coverage" NAME="make_htc_files (1) Coverage Results" MODIFIED="1727182428008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design" />

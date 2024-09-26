@@ -31,6 +31,8 @@ if __name__ == '__main__':
                     opt_path='./data/dtu_10mw_1wsp.opt',
                     compute_steady_states=True,
                     genspeed=(0,50*omega_rated_rpm),
+                    minpitch = 0,
+                    opt_lambda =7.8,
                     save_power=True)
 
     # # make rigid hawc2s file for multi-tsr opt file
