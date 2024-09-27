@@ -54,5 +54,15 @@ if __name__ == '__main__':
     # make rigid hawc2s file for multi-tsr opt file
     htc = MyHTC(ORIG_PATH)
     # INSERT CODE HERE WHEN PROMPTED (A0)
+    htc.make_hawc2s(SAVE_HAWC2S_DIR,
+                    rigid=False,
+                    append='_compute_flex_opt',
+                    opt_path='./data/dtu_10mw_rigid.opt',
+                    compute_steady_states=True,
+                    genspeed=(0, 50 * omega_rated_rpm),
+                    save_power=True,
+                    minpitch = 0,
+                    opt_lambda =7.05)
+    # Should probably take the value that hawc calculates here and not 7.05
 
     
