@@ -7,7 +7,7 @@ from myteampack import MyHTC
 
 
 if __name__ == '__main__':
-    ORIG_PATH = 'our_design/_master/dtu_10mw.htc'
+    ORIG_PATH = 'our_design/_master/BB_redesign.htc'
     SAVE_HAWC2S_DIR = '.'
 
     # ORIGINAL
