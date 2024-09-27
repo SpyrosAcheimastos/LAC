@@ -8,15 +8,24 @@ import numpy as np
 from src.myteampack import MyHTC
 
 
-omega_DTU_10MW_10ms_rpm = 8.029
-V0 = 10
-R_DTU_10MW = 89.16
-tsr_DTU_10MW  = omega_DTU_10MW_10ms_rpm*2*np.pi/60 * R_DTU_10MW / V0
-print(tsr_DTU_10MW)
+# omega_DTU_10MW_10ms_rpm = 8.029
+# V0 = 10
+# R_DTU_10MW = 89.16
+# tsr_DTU_10MW  = omega_DTU_10MW_10ms_rpm*2*np.pi/60 * R_DTU_10MW / V0
+
 
 tsr_rated = 7.05 # This is the max tsr with the max Cp according to single point design
 R_BB = 92.50348
-omega_rated_rpm = tsr_rated / tsr_DTU_10MW * omega_DTU_10MW_10ms_rpm * R_DTU_10MW / R_BB
+Cp_opt = 0.48
+# omega_rated_rpm = tsr_rated / tsr_DTU_10MW *  R_DTU_10MW / R_BB * omega_DTU_10MW_10ms_rpm
+
+# print(omega_rated_rpm)
+
+# Calculation of omega_rated from new value of V_rated
+V_rated = (2*10.64e6 /(Cp_opt * (R_BB**2 * np.pi) * 1.225))**(1/3)
+
+omega_rated = tsr_rated/R_BB * V_rated
+omega_rated_rpm = omega_rated * 60 / (2*np.pi)
 
 print(omega_rated_rpm)
 if __name__ == '__main__':
@@ -77,4 +86,4 @@ if __name__ == '__main__':
                     opt_lambda =7.05)
     # Should probably take the value that hawc calculates here and not 7.05
 
-    
+
