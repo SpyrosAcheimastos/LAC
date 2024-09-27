@@ -39,14 +39,14 @@ if __name__ == '__main__':
     # htc = MyHTC(ORIG_PATH)
     # # INSERT CODE HERE WHEN PROMPTED (A0)
 
-    
+
     # SPYROS
     # make rigid hawc2s file for multi-wsp opt file
     htc = MyHTC(ORIG_PATH)
     htc.make_hawc2s(SAVE_HAWC2S_DIR,
                     rigid=True,
                     append='_hawc2s_multitsr',
-                    opt_path='our_design/data/dtu_10mw_multitsr.opt',
+                    opt_path='./data/dtu_10mw_multitsr.opt',
                     compute_steady_states=True,
                     genspeed=(0, 50 * omega_rated_rpm),
                     save_power=True)
