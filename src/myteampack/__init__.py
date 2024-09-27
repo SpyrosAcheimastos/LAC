@@ -125,9 +125,9 @@ class MyHTC(HTCFile):
         # update the minimum generator speed
         self.hawcstab2.operational_data.genspeed = genspeed
 
-        # Our own added minpitch value here
+        # Our own added minpitch value here, defaults to DTU_10MW value from report
         self.hawcstab2.operational_data.minpitch = minpitch
-
+        # Our own added opt_lambda value here, defaults to DTU_10MW value from report
         self.hawcstab2.operational_data.opt_lambda = opt_lambda
 
         # add hawc2s commands
