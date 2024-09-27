@@ -62,11 +62,11 @@ chord_BB, tc_BB, twist_BB, cl, cd, aoa, a, CLT, CLP, CT, CP = single_point_desig
     r_with_hub, t_input, tsr_max_cp, R, cl_des, cd_des, aoa_des, chord_root, chord_max, B
         )
 
-
 # Define output file path for the updated .dat file
 output_file_path = Path.cwd() / 'updated_BB_RWT_design.dat'
 
 print(len(r))
+print(r[-1])
 print(len(chord_BB))
 print(len(tc_BB))
 
@@ -98,6 +98,8 @@ ae_new[:, 1] = np.array(chord_BB_list)  # Convert the list back to numpy array f
 ae_new[:, 2] = np.array(tc_BB_list)  # Convert the list back to numpy array for assignment
 
 # Print updated data for verification
+# print(ae_new)
+
 print(ae_new)
 
 # Save the updated aerodynamic design data to a new file
