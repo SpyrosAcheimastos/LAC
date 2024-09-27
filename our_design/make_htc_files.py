@@ -17,6 +17,7 @@ print(tsr_DTU_10MW)
 tsr_rated = 7.05 # This is the max tsr with the max Cp according to single point design
 R_BB = 92.50348
 omega_rated_rpm = tsr_rated / tsr_DTU_10MW * omega_DTU_10MW_10ms_rpm * R_DTU_10MW / R_BB
+
 print(omega_rated_rpm)
 if __name__ == '__main__':
     ORIG_PATH = '_master/BB_redesign.htc'
@@ -50,6 +51,17 @@ if __name__ == '__main__':
                     compute_steady_states=True,
                     genspeed=(0, 50 * omega_rated_rpm),
                     save_power=True)
+
+    htc.make_hawc2s(SAVE_HAWC2S_DIR,
+                    rigid=True,
+                    append='_compute_rigid_opt',
+                    opt_path='./data/dtu_10mw_rigid.opt',
+                    compute_steady_states=True,
+                    genspeed=(0, 50 * omega_rated_rpm),
+                    save_power=True,
+                    minpitch=0,
+                    opt_lambda=7.05)
+
 
     # make rigid hawc2s file for multi-tsr opt file
     htc = MyHTC(ORIG_PATH)

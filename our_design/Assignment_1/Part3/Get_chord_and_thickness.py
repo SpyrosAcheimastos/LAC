@@ -37,7 +37,7 @@ c_10mw *= scale_ratio_blade
 c_10mw[:4] = 5.38  # First 4 values of our design maintain identical chord
 c_10mw[4] = 5.386
 c_10mw[5] = 5.5
-t_10mw = tc_10mw[:-1] / 100 * c_10mw[:-1]
+t_input = tc_10mw[:-1] / 100 * c_10mw[:-1]
 r *= scale_ratio_blade
 
 r_hub = 2.8  # Hub radius [m]
@@ -59,7 +59,7 @@ cl_des, cd_des, aoa_des, tc_vals, cl_vals, cd_vals, aoa_vals = get_design_functi
 
 # Perform the design for the TSR_max_cp
 chord_BB, tc_BB, twist_BB, cl, cd, aoa, a, CLT, CLP, CT, CP = single_point_design(
-    r_with_hub, t_10mw, tsr_max_cp, R, cl_des, cd_des, aoa_des, chord_root, chord_max, B
+    r_with_hub, t_input, tsr_max_cp, R, cl_des, cd_des, aoa_des, chord_root, chord_max, B
         )
 
 
