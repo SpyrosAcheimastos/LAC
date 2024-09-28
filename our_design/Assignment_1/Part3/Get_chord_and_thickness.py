@@ -104,3 +104,7 @@ print(ae_new)
 
 # Save the updated aerodynamic design data to a new file
 save_ae(save_path, ae_new)
+
+print(tc_BB)
+print(r)
+np.savetxt('tc_BB',tc_BB)
