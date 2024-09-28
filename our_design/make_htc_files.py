@@ -27,6 +27,9 @@ V_rated = (2*10.64e6 /(Cp_opt * (R_BB**2 * np.pi) * 1.225))**(1/3)
 omega_rated = tsr_rated/R_BB * V_rated
 omega_rated_rpm = omega_rated * 60 / (2*np.pi)
 
+
+omega_8_ms = omega_rated * 8 / V_rated
+print(omega_8_ms* 60 / (2*np.pi))
 print(omega_rated_rpm)
 if __name__ == '__main__':
     ORIG_PATH = '_master/BB_redesign.htc'
