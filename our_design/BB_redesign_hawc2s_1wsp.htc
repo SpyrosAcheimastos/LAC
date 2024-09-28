@@ -312,7 +312,7 @@
 ; settings for compute_optimal_pitch_angle
     begin operational_data;
       windspeed	4 25 22;	cut-in [m/s], cut-out [m/s], points [-] -- used if operational_data_file_wind is 0
-      genspeed	0 363.89193643240077;	min, max generator speed [rpm]
+      genspeed	0 401.8048668404036;	min, max generator speed [rpm]
       gearratio	50;	gear ratio [-]
       minpitch	0;	min. pitch angle [deg]
       opt_lambda	7.5;	optimal TSR [-]
@@ -328,7 +328,7 @@
     ;compute_optimal_pitch_angle	use_operational_data;	re-calculate and save opt file (pitch/rotor speed curve)
     compute_steady_states	nobladedeform tipcorrect induction nogradients;	compute steady states -- needed for aeroelastic calculations
     save_power	;	save steady-state values to .pwr
-    ;save_induction	;	save steady-state spanwise values to .ind files, 3 for each wind speed
+    save_induction	;	save steady-state spanwise values to .ind files, 3 for each wind speed
     ;compute_stability_analysis	windturbine 12;	compute/save aeroelastic campbell diagram (.cmb), XX modes
     ;save_modal_amplitude	;	save modal amplitudes and phrases to .amb file
     ;compute_controller_input	;	calculate/save controller parameters (reqs. steady_states)
