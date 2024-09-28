@@ -40,15 +40,17 @@ c_10mw[5] = 5.5
 t_input = tc_10mw[:-1] / 100 * c_10mw[:-1]
 r *= scale_ratio_blade
 
+print(r[:6])
+
 r_hub = 2.8  # Hub radius [m]
 R = r_hub + r[-1]  # Rotor radius [m]
-print(R)
+# print(R)
 r_with_hub = r[:-1] + r_hub  # Adjust rotor span with hub radius
 
 
 
-print(r)
-print(r-r_hub)
+# print(r)
+# print(r-r_hub)
 # Max and root chord sizes
 chord_max = 6.20 * scale_ratio_blade
 chord_root = 5.38
@@ -65,10 +67,10 @@ chord_BB, tc_BB, twist_BB, cl, cd, aoa, a, CLT, CLP, CT, CP = single_point_desig
 # Define output file path for the updated .dat file
 output_file_path = Path.cwd() / 'updated_BB_RWT_design.dat'
 
-print(len(r))
-print(r[-1])
-print(len(chord_BB))
-print(len(tc_BB))
+# print(len(r))
+# print(r[-1])
+# print(len(chord_BB))
+# print(len(tc_BB))
 
 # Write the updated data into the new .dat file
 
@@ -100,12 +102,12 @@ ae_new[:, 2] = np.array(tc_BB_list)  # Convert the list back to numpy array for 
 # Print updated data for verification
 # print(ae_new)
 
-print(ae_new)
+# print(ae_new)
 
 # Save the updated aerodynamic design data to a new file
 save_ae(save_path, ae_new)
 
-print(tc_BB)
-print(r)
+# print(tc_BB)
+# print(r)
 np.savetxt('tc_BB',tc_BB)
 np.savetxt('Cl_single_point_design', cl)
