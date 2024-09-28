@@ -72,7 +72,7 @@ print(len(tc_BB))
 
 # Write the updated data into the new .dat file
 
-save_path = 'DTU_10MW_RWT_ae.dat'
+save_path = 'BB_RWT_Blade_ae.dat'
 
 # Convert numpy arrays to lists
 chord_BB_list = chord_BB.tolist()

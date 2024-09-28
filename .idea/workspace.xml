@@ -5,100 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9039ea3f-f1d9-490e-957d-bc2b1184c35d" name="Changes" comment="Spyros stinks of hairy wine">
-      <change afterPath="$PROJECT_DIR$/our_design/Assignment_1/Plots/Cl_r_hawc2s.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/our_design/Assignment_1/Plots/Cl_tc_hawc2s.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_26-Sep-24_3_37_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_26-Sep-24_3_37_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24-Sep-24_2_12_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24-Sep-24_2_12_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/our_design/Assignment_1/Part3/Get_chord_and_thickness.py" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/Assignment_1/Part3/Get_chord_and_thickness.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/our_design/Assignment_1/Part3/Part_3_plotting.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/Assignment_1/Part3/Part_3_plotting.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/BB_redesign_compute_flex_opt.log" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/BB_redesign_compute_flex_opt.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/BB_redesign_hawc2s_multitsr.htc" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/BB_redesign_hawc2s_multitsr.htc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/BB_redesign_hawc2s_multitsr.log" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/BB_redesign_hawc2s_multitsr.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/BB_redesign_hawc2s_multitsr_compute_rigid_opt.htc" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/BB_redesign_hawc2s_multitsr_compute_rigid_opt.htc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt.opt" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt.opt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt.pwr" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt.pwr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u11000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u11000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u11100.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u11100.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u11200.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u11200.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u11300.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u11300.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u11400.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u11400.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u11500.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u11500.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u11600.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u11600.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u11700.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u11700.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u11800.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u11800.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u11900.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u11900.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u12000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u12000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u13000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u13000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u14000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u14000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u15000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u15000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u16000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u16000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u17000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u17000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u18000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u18000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u19000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u19000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u20000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u20000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u21000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u21000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u22000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u22000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u23000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u23000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u24000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u24000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u25000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u25000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u4000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u4000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u5000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u5000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u6000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u6000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u7000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u7000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u8000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_defl_u8000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u11000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u11000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u11100.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u11100.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u11200.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u11200.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u11300.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u11300.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u11400.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u11400.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u11500.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u11500.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u11600.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u11600.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u11700.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u11700.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u11800.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u11800.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u11900.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u11900.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u12000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u12000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u13000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u13000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u14000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u14000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u15000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u15000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u16000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u16000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u17000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u17000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u18000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u18000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u19000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u19000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u20000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u20000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u21000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u21000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u22000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u22000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u23000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u23000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u24000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u24000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u25000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u25000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u4000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u4000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u5000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_fext_u5000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u11000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u11000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u11100.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u11100.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u11200.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u11200.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u11300.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u11300.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u11400.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u11400.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u11500.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u11500.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u11600.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u11600.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u11700.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u11700.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u11800.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u11800.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u11900.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u11900.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u12000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u12000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u13000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u13000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u14000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u14000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u15000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u15000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u16000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u16000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u17000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u17000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u18000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u18000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u19000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u19000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u20000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u20000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u21000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u21000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u22000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u22000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u23000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u23000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u24000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u24000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u25000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u25000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u4000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u4000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u5000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u5000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u6000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u6000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u7000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u7000.ind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u8000.ind" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/res_hawc2s/BB_redesign_compute_flex_opt_u8000.ind" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/our_design/Assignment_1/Plots/Cl_r_hawc2s.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/Assignment_1/Plots/Cl_r_hawc2s.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/our_design/Assignment_1/Plots/Cl_tc_hawc2s.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/Assignment_1/Plots/Cl_tc_hawc2s.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/our_design/data/BB_redesign_hawc2s_1wsp.htc" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +91,7 @@
       <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\our_design\Assignment_1\Part2" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.make_htc_files">
+  <component name="RunManager" selected="Python.Get_chord_and_thickness">
     <configuration name="Get_chord_and_thickness" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LAC" />
       <option name="ENV_FILES" value="" />
@@ -295,9 +209,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Get_chord_and_thickness" />
         <item itemvalue="Python.make_htc_files" />
         <item itemvalue="Python.scratch_15" />
-        <item itemvalue="Python.Get_chord_and_thickness" />
         <item itemvalue="Python.scratch_14" />
         <item itemvalue="Python.scratch_13" />
       </list>
@@ -635,8 +549,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
           <url>notebook://C:/Users/jimwi/PycharmProjects/LAC/LAC/our_design/Assignment_1/Part3/Part_3_plotting.ipynb</url>
-          <line>43</line>
+          <line>45</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>notebook://C:/Users/jimwi/PycharmProjects/LAC/LAC/our_design/Assignment_1/Part3/Part_3_plotting.ipynb</url>
+          <line>3</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -645,10 +564,10 @@
     <SUITE FILE_PATH="coverage/LAC$scratch_11.coverage" NAME="scratch_11 Coverage Results" MODIFIED="1726733836155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/LAC$testing.coverage" NAME="testing Coverage Results" MODIFIED="1726740079115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part2" />
     <SUITE FILE_PATH="coverage/LAC$scratch_14.coverage" NAME="scratch_14 Coverage Results" MODIFIED="1727440693454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
-    <SUITE FILE_PATH="coverage/LAC$Get_chord_and_thickness.coverage" NAME="Get_chord_and_thickness Coverage Results" MODIFIED="1727444017075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part3" />
+    <SUITE FILE_PATH="coverage/LAC$Get_chord_and_thickness.coverage" NAME="Get_chord_and_thickness Coverage Results" MODIFIED="1727531818631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part3" />
     <SUITE FILE_PATH="coverage/LAC$scratch_13.coverage" NAME="scratch_13 Coverage Results" MODIFIED="1727427945024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
-    <SUITE FILE_PATH="coverage/LAC$Cp_Ct_blade_design.coverage" NAME="Cp_Ct_blade_design Coverage Results" MODIFIED="1727338809173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part2" />
     <SUITE FILE_PATH="coverage/LAC$Get_chord_thickness_twist.coverage" NAME="Get_chord_thickness_twist Coverage Results" MODIFIED="1727342278051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part2" />
+    <SUITE FILE_PATH="coverage/LAC$Cp_Ct_blade_design.coverage" NAME="Cp_Ct_blade_design Coverage Results" MODIFIED="1727530015890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part2" />
     <SUITE FILE_PATH="coverage/LAC$Part2_Jim_10MW_design__1_.coverage" NAME="Part2_Jim_10MW_design (1) Coverage Results" MODIFIED="1727256146766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part2" />
     <SUITE FILE_PATH="coverage/LAC$make_htc_files.coverage" NAME="make_htc_files Coverage Results" MODIFIED="1727525915333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design" />
     <SUITE FILE_PATH="coverage/LAC$Cl_Cd_tc_curves.coverage" NAME="Cl_Cd_tc_curves Coverage Results" MODIFIED="1727248536023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part2" />
