@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9039ea3f-f1d9-490e-957d-bc2b1184c35d" name="Changes" comment="Spyros stinks of hairy wine">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/Assignment_1/Part3/Get_chord_and_thickness.py" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/Assignment_1/Part3/Get_chord_and_thickness.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/our_design/Assignment_1/Part3/Part_3_plotting.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/Assignment_1/Part3/Part_3_plotting.ipynb" afterDir="false" />
-    </list>
+    <list default="true" id="9039ea3f-f1d9-490e-957d-bc2b1184c35d" name="Changes" comment="Good luck mother" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -514,7 +510,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727537633821</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Good luck mother">
+      <option name="closed" value="true" />
+      <created>1727539291116</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1727539291116</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -545,7 +549,8 @@
     <MESSAGE value="rip github all these files, Alex stinks of monkey" />
     <MESSAGE value="Spyros stinks of monkey" />
     <MESSAGE value="Spyros stinks of hairy wine" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spyros stinks of hairy wine" />
+    <MESSAGE value="Good luck mother" />
+    <option name="LAST_COMMIT_MESSAGE" value="Good luck mother" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
