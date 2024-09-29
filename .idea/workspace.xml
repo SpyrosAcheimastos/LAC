@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9039ea3f-f1d9-490e-957d-bc2b1184c35d" name="Changes" comment="Good luck mother" />
+    <list default="true" id="9039ea3f-f1d9-490e-957d-bc2b1184c35d" name="Changes" comment="Good luck mother">
+      <change afterPath="$PROJECT_DIR$/dtu_10mw/make_htc_files_for_dtu_10mw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/LAC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LAC.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/our_design/BB_redesign_hawc2s_1wsp.log" beforeDir="false" afterPath="$PROJECT_DIR$/our_design/BB_redesign_hawc2s_1wsp.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,45 +38,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Python.10MW_code.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Cl_Cd_tc_curves.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Cp_Ct_blade_design.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Get_chord_and_thickness.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Get_chord_thickness_twist.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Part2_Jim_10MW_design (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.R_and_twist_for_htc.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Structural_scaling.executor&quot;: &quot;Run&quot;,
-    &quot;Python.make_htc_files (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.make_htc_files.executor&quot;: &quot;Run&quot;,
-    &quot;Python.scratch_11.executor&quot;: &quot;Run&quot;,
-    &quot;Python.scratch_12.executor&quot;: &quot;Run&quot;,
-    &quot;Python.scratch_13.executor&quot;: &quot;Run&quot;,
-    &quot;Python.scratch_14.executor&quot;: &quot;Run&quot;,
-    &quot;Python.scratch_15.executor&quot;: &quot;Run&quot;,
-    &quot;Python.testing.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Part3&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jimwi/PycharmProjects/LAC/LAC/our_design/Assignment_1/Part3&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.10MW_code.executor": "Run",
+    "Python.Cl_Cd_tc_curves.executor": "Run",
+    "Python.Cp_Ct_blade_design.executor": "Run",
+    "Python.Get_chord_and_thickness.executor": "Run",
+    "Python.Get_chord_thickness_twist.executor": "Run",
+    "Python.Part2_Jim_10MW_design (1).executor": "Run",
+    "Python.R_and_twist_for_htc.executor": "Run",
+    "Python.Structural_scaling.executor": "Run",
+    "Python.make_htc_files (1).executor": "Run",
+    "Python.make_htc_files.executor": "Run",
+    "Python.make_htc_files_for_dtu_10mw.executor": "Run",
+    "Python.scratch_11.executor": "Run",
+    "Python.scratch_12.executor": "Run",
+    "Python.scratch_13.executor": "Run",
+    "Python.scratch_14.executor": "Run",
+    "Python.scratch_15.executor": "Run",
+    "Python.testing.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "Part3",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/jimwi/PycharmProjects/LAC/LAC/dtu_10mw",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.fileTypes",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;Python&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Python"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\dtu_10mw" />
       <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\our_design\Assignment_1\Part3" />
       <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\our_design\data" />
       <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\our_design" />
@@ -82,7 +90,7 @@
       <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\our_design\Assignment_1\Part2" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Get_chord_and_thickness">
+  <component name="RunManager" selected="Python.make_htc_files_for_dtu_10mw">
     <configuration name="Get_chord_and_thickness" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LAC" />
       <option name="ENV_FILES" value="" />
@@ -129,6 +137,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="make_htc_files_for_dtu_10mw" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LAC" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dtu_10mw" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dtu_10mw/make_htc_files_for_dtu_10mw.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="scratch_13" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LAC" />
       <option name="ENV_FILES" value="" />
@@ -144,29 +175,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_13.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="scratch_14" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LAC" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_14.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -200,11 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.make_htc_files_for_dtu_10mw" />
         <item itemvalue="Python.Get_chord_and_thickness" />
         <item itemvalue="Python.make_htc_files" />
         <item itemvalue="Python.scratch_13" />
         <item itemvalue="Python.scratch_15" />
-        <item itemvalue="Python.scratch_14" />
       </list>
     </recent_temporary>
   </component>
@@ -237,6 +245,7 @@
       <workItem from="1727426243912" duration="6280000" />
       <workItem from="1727436550963" duration="12876000" />
       <workItem from="1727524164608" duration="5455000" />
+      <workItem from="1727586115074" duration="372000" />
     </task>
     <task id="LOCAL-00001" summary="Part2 10Mw">
       <option name="closed" value="true" />
@@ -518,7 +527,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727539291116</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Good luck mother">
+      <option name="closed" value="true" />
+      <created>1727539395796</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1727539395796</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
