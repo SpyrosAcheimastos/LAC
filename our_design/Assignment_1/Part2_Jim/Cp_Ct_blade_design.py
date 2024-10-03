@@ -4,9 +4,9 @@ from pathlib import Path
 from scipy.interpolate import interp1d
 from aero_design_functions_10MW import get_design_functions_10MW, single_point_design, get_design_functions
 import pprint
-
-import scienceplots
 import matplotlib
+import scienceplots
+
 
 # matplotlib.rcParams.update(matplotlib.rcParamsDefault) # TO RESET  PLOTS
 plt.style.use('science')
@@ -185,37 +185,37 @@ def compare_designs(tsr_values, design_function_int=1.0):
     cp_max_index = np.argmax(cp_new)
     cp_max_tsr = tsr_values[cp_max_index]
     cp_max_value = cp_new[cp_max_index]
+    print(cp_max_tsr, cp_max_value)
 
     # Plot CP comparison
-    figure = plt.figure(figsize=(4, 3))
+    figure = plt.figure(figsize=(5, 3))
+    plt.subplots_adjust(left=0.1, right=0.9, top=0.9, bottom=0.1)
     plt.plot(cp_max_tsr, cp_max_value, 'rx', label=r'Max $C_p$')
     plt.plot(tsr_values, cp_new)
     plt.ylabel("$C_P$ [-]")
     plt.xlabel("$\lambda$ [-]")
     legend = plt.legend(fancybox=False, edgecolor="black")
     legend.get_frame().set_linewidth(0.5)
-    plt.grid(True, linewidth=0.5, linestyle='--')
+    plt.grid(linewidth=0.5, linestyle='--')
 
     # Save and show the figure
-    plt.tight_layout()
+    # plt.tight_layout()
     figure.savefig('Cp_TSR.pdf', dpi=300, bbox_inches='tight')
     plt.show()
 
     # Create a new figure for CT comparison
-    figure = plt.figure(figsize=(4, 3))
-
+    figure = plt.figure(figsize=(5, 3))
+    plt.subplots_adjust(left=0.1, right=0.9, top=0.9, bottom=0.1)
     # Plot CT comparison
     plt.plot(tsr_values, ct_new)
     plt.ylabel("$C_T$ [-]")
     plt.xlabel("$\lambda$ [-]")
-    plt.grid(True, linewidth=0.5, linestyle='--')
+    plt.grid(linewidth=0.5, linestyle='--')
 
     # Save and show the figure
-    plt.tight_layout()
-    plt.savefig('ct_comparison_plot.pdf', dpi=300, bbox_inches='tight')
-    plt.show()
+    # plt.tight_layout()
     figure.savefig('Ct_TSR.pdf', dpi=300, bbox_inches='tight')  # Save the figure for Cl
-
+    plt.show()
 
 # Define a range of TSR values to test
 tsr_values = np.linspace(6, 10, 20)  # Example range of TSR values
