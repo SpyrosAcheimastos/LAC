@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from pathlib import Path
-from our_design.Assignment_1.Part_2_aero_design_functions import single_point_design, get_design_functions
+from Assignment_1.Assignment_1.Part_2_aero_design_functions import single_point_design, get_design_functions
 from lacbox.io import load_ae, save_ae
 from lacbox.test import test_data_path
 import matplotlib.pyplot as plt
@@ -22,7 +22,7 @@ tsr_max_cp = 7.05
 
 
 # File path and scaling factor for new design
-file_path = Path.cwd() / 'DTU_10MW_RWT_our_design_ae.dat'
+file_path = Path.cwd() / 'DTU_10MW_RWT_Assignment_1_ae.dat'
 scale_ratio_blade = 1.0388359746215876
 
 ae_path = test_data_path + '/dtu_10_mw/data/DTU_10MW_RWT_ae.dat'
