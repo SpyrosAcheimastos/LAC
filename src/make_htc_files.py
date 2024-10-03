@@ -7,7 +7,7 @@ from myteampack import MyHTC
 
 
 if __name__ == '__main__':
-    ORIG_PATH = 'our_design/_master/dtu_10mw.htc'
+    ORIG_PATH = 'Assignment_1/_master/dtu_10mw.htc'
     SAVE_HAWC2S_DIR = '.'
 
     # ORIGINAL
@@ -31,7 +31,7 @@ if __name__ == '__main__':
     htc.make_hawc2s(SAVE_HAWC2S_DIR,
                     rigid=True,
                     append='_hawc2s_multitsr',
-                    opt_path='our_design/data/dtu_10mw_multitsr.opt',
+                    opt_path='Assignment_1/data/dtu_10mw_multitsr.opt',
                     compute_steady_states=True,
                     save_power=True)
 

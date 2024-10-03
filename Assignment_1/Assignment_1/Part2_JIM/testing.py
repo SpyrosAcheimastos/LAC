@@ -52,7 +52,7 @@ from pathlib import Path
 
 current_dir = Path.cwd()
 
-DTU_10MW_RWT_ae = current_dir/ "DTU_10MW_RWT_our_design_ae.dat"
+DTU_10MW_RWT_ae = current_dir/ "DTU_10MW_RWT_Assignment_1_ae.dat"
 
 data = np.loadtxt(DTU_10MW_RWT_ae, skiprows=2, usecols=(0, 1, 2))
 
