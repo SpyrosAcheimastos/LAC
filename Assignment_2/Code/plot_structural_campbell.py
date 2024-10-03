@@ -28,7 +28,7 @@ plt.rcParams['font.weight'] = 'normal'
 
 
 TURBINE_NAME = 'Breeze Boss'
-CMB_PATH = './structural_Campbell_BB.cmb'
+CMB_PATH = 'Assignment_2\campbell\part_1_rigid_tower' + '.cbm'
 MODE_NAMES = ['Tower for-aft', 'Tower side-side', '1st flapwise BW', '1st flapwise FW', '1st flapwise sym',
               '1st edgewise BW', '1st edgewise FW', '2nd flapwise BW', '2nd flapwise FW', '1st flapwise sym', '1st edgewise sym']
 DT_MODENUM = 12  # what mode number in HAWCStab2 is the drivetrain mode?
@@ -95,6 +95,6 @@ ax.legend(loc='upper center', bbox_to_anchor=(0.5, -0.15), ncol=3)  # Legend ben
 
 # Adjust layout to make space for the legend
 plt.tight_layout(rect=[0, 0, 1, 0.95])  # Adjust the figure to fit everything nicely
-plt.savefig('structural_campbell.pdf', dpi=300)
+plt.savefig('part_1_rigid_tower.pdf', dpi=300)
 
-plt.show()
+# plt.show()
