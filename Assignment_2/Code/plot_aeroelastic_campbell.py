@@ -16,12 +16,12 @@ plt.rcParams['legend.frameon'] = True  # Enable the legend frame
 plt.rcParams['legend.fancybox'] = False  # No fancybox, just a regular box
 plt.rcParams['legend.edgecolor'] = 'black'  # Black edge color
 plt.rcParams['legend.framealpha'] = 1  # No transparency
-plt.rcParams['font.size'] = 12
+plt.rcParams['font.size'] = 14
 plt.rcParams['font.weight'] = 'normal'
 
 
 TURBINE_NAME = 'Breeze Boss 10 MW'
-CMB_PATH = './aeroelastic_Campbell_BB.cmb'
+CMB_PATH = 'Assignment_2/Code/aeroelastic_Campbell_BB.cmb'
 
 NMODES = 8  # number of modes to plot
 MODE_NAMES = ['Tower for-aft', 'Tower side-side', '1st flap BW', '1st flap FW', '1st flap sym',
@@ -50,7 +50,7 @@ flapwise_2nd_modes = [7, 8, 9]  # Indexes for 2nd flapwise modes
 edgewise_modes = [5, 6, 10]  # Indexes for edgewise modes
 
 # initialize plot
-fig, axs = plt.subplots(1, 2, figsize=(7, 2))
+fig, axs = plt.subplots(1, 2, figsize=(10, 4.5))
 
 # loop through modes
 NMODES = len(MODE_NAMES)
@@ -70,23 +70,23 @@ for i in range(NMODES):
         marker = edgewise_markers[edgewise_modes.index(i)]  # Get the marker for edgewise modes
 
     # left plot: damped nat freqs in ground-fixed frame
-    axs[0].plot(wsp, dfreqs[:, i], marker=marker, c=color)
+    axs[0].plot(wsp, dfreqs[:, i], marker=marker, markersize=4, c=color)
 
     # right plot: percent criticl damping
-    axs[1].plot(wsp, zetas[:, i], marker=marker, c=color, label=MODE_NAMES[i])
+    axs[1].plot(wsp, zetas[:, i], marker=marker, markersize=4, c=color, label=MODE_NAMES[i])
 
 # load opt file, add P-harmonics?
 
 # prettify
 axs[0].set(xlabel='Wind speed [m/s]', ylabel='Damped nat. frequencies [Hz]')
 axs[0].grid()
-axs[1].set(xlabel='Wind speed [m/s]', ylabel='Modal damping [% critical]')
+axs[1].set(xlabel='Wind speed [m/s]', ylabel='Modal damping [$\%$ critical]')
 axs[1].grid()
-axs[1].legend(loc='upper center', bbox_to_anchor=(-0.15, -0.2), ncol=4) 
-plt.savefig('aeroelastic_campbell.pdf', dpi=300)
+axs[1].legend(loc='upper center', bbox_to_anchor=(-0.15, -0.2), ncol=4)
+# axs[1].legend(loc='upper center', bbox_to_anchor=(1, -0.2), ncol=4) 
+ 
 
-# add figure title and scale nicely
-# fig.suptitle(f'Aeroelastic Campbell diagram for {TURBINE_NAME}')
-fig.tight_layout()
+# fig.tight_layout()
+plt.savefig('Assignment_2/Code/aeroelastic_campbell.pdf', dpi=300)
 
-plt.show()
+# plt.show()
