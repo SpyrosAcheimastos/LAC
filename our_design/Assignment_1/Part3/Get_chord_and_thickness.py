@@ -31,8 +31,8 @@ ae = load_ae(ae_path)
 
 # Read new design data
 r, c_10mw, tc_10mw, pcset = load_ae(ae_path, unpack=True)
-print(len(r))
-print(r)
+# print(len(r))
+# print(r)
 c_10mw *= scale_ratio_blade
 c_10mw[:4] = 5.38  # First 4 values of our design maintain identical chord
 c_10mw[4] = 5.386
@@ -40,7 +40,7 @@ c_10mw[5] = 5.5
 t_input = tc_10mw[:-1] / 100 * c_10mw[:-1]
 r *= scale_ratio_blade
 
-print(r[:6])
+# print(r[:6])
 
 r_hub = 2.8  # Hub radius [m]
 R = r_hub + r[-1]  # Rotor radius [m]
@@ -63,6 +63,9 @@ cl_des, cd_des, aoa_des, tc_vals, cl_vals, cd_vals, aoa_vals = get_design_functi
 chord_BB, tc_BB, twist_BB, cl, cd, aoa, a, CLT, CLP, CT, CP = single_point_design(
     r_with_hub, t_input, tsr_max_cp, R, cl_des, cd_des, aoa_des, chord_root, chord_max, B
         )
+
+
+print(tc_BB)
 
 # Define output file path for the updated .dat file
 output_file_path = Path.cwd() / 'updated_BB_RWT_design.dat'
