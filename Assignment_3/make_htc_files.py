@@ -89,4 +89,22 @@ if __name__ == '__main__':
                     opt_lambda =7.05)
     # Should probably take the value that hawc calculates here and not 7.05
 
+    ctrltune_params = {
+        'partial_load': (0.1, 0.8),
+        'full_load': (0.15, 0.6),
+        'gain_scheduling': 1,
+        'constant_power': 0,
+        'regions': (6, 11, 13, 32)
+    }
+
+    htc.make_hawc2s_ctrltune(SAVE_HAWC2S_DIR,
+                    rigid=False,
+                    append='_compute_flex_opt',
+                    opt_path='./data/dtu_10mw_rigid.opt',
+                    compute_steady_states=True,
+                    genspeed=(0, 50 * omega_rated_rpm),
+                    ctrltune_params=ctrltune_params,
+                    save_power=True,
+                    minpitch = 0,
+                    opt_lambda =7.05)
 
