@@ -27,13 +27,15 @@ class MyHTC(HTCFile):
         ctrltune.add_line(name='partial_load', values=partial_load, comments='fn [hz], zeta [-]')
         ctrltune.add_line(name='full_load', values=full_load, comments='fn [hz], zeta [-]')
         ctrltune.add_line(name='gain_scheduling', values=[gain_scheduling], comments='1 linear, 2 quadratic')
-        ctrltune.add_line(name='constant_power', values=[constant_power], comments='0 constant torque, 1 constant power at full load')
-        ctrltune.add_line(name='regions', values=regions, comments='Index of opt point (starting from 1) where new ctrl region starts')
+        ctrltune.add_line(name='constant_power', values=[constant_power],
+                          comments='0 constant torque, 1 constant power at full load')
+        ctrltune.add_line(name='regions', values=regions,
+                          comments='Index of opt point (starting from 1) where new ctrl region starts')
 
     def _add_hawc2s_commands(self, rigid, tipcorr=True, induction=True,
                              num_modes=12, **kwargs):
         """Add commands for HAWC2S to end of hawcstab2 block.
-        
+
         Comment/uncomment a HAWC2S command by passing the command as a
         keyword argument equal to True. E.g.:
             >> htc._add_hawc2s_commands(rigid=True, compute_steady_states=True, save_power=True)
@@ -43,7 +45,8 @@ class MyHTC(HTCFile):
         ind_key = ['no', ''][induction]  # induction or no?
         # add the pre-amble and output folder
         self.hawcstab2.add_line(name='', values=[''], comments='\n; HAWC2S commands (uncomment as needed)')
-        self.hawcstab2.add_line(name='output_folder', values=['res_hawc2s'], comments='define the folder where generated files should be saved')
+        self.hawcstab2.add_line(name='output_folder', values=['res_hawc2s'],
+                                comments='define the folder where generated files should be saved')
         # commands, options, and comments for hawc2s commands
         hawc2s_commands = {'compute_optimal_pitch_angle': [['use_operational_data'],
                                                            're-calculate and save opt file (pitch/rotor speed curve)'],
@@ -51,11 +54,13 @@ class MyHTC(HTCFile):
                                                       f'{ind_key}induction', 'nogradients'],
                                                      'compute steady states -- needed for aeroelastic calculations'],
                            'save_power': [[''], 'save steady-state values to .pwr'],
-                           'save_induction': [[''], 'save steady-state spanwise values to .ind files, 3 for each wind speed'],
+                           'save_induction': [[''],
+                                              'save steady-state spanwise values to .ind files, 3 for each wind speed'],
                            'compute_stability_analysis': [[f'windturbine {num_modes}'],
                                                           'compute/save aeroelastic campbell diagram (.cmb), XX modes'],
                            'save_modal_amplitude': [[''], 'save modal amplitudes and phrases to .amb file'],
-                           'compute_controller_input': [[''], 'calculate/save controller parameters (reqs. steady_states)'],
+                           'compute_controller_input': [[''],
+                                                        'calculate/save controller parameters (reqs. steady_states)'],
                            }
         # iterate over possible hawc2s commands
         for command, (values_, comments_) in hawc2s_commands.items():
@@ -129,3 +134,37 @@ class MyHTC(HTCFile):
         # update filename and save the file
         self._update_name_and_save(save_dir, append)
         print(f'File "{append}" saved.')
+
+    def make_hawc2s_ctrltune(self, save_dir, rigid, append, opt_path,
+                             genspeed=(0, 480), ctrltune_params=None, **kwargs):
+        """Make a HAWC2S file with specific settings.
+
+        Args:
+            save_dir (str/pathlib.Path): Path to folder where the htc file
+                should be saved.
+            rigid (boolean): Whether HAWC2S analysis should be a rigid or flexible
+                structure.
+            append (str): Text to append to the name of the master file.
+            opt_path (str): Relative path from the saved htc file to the opt_file.
+            genspeed (tuple, optional): 2-element tuple of minimum and maximum generator
+                speed. Defaults to (0, 480).
+        """
+        # verify the file has hawcstab2 block
+        self._check_hawcstab2()
+        # delete blocks in master htc file that HAWC2S doesn't use
+        self._del_not_h2s_blocks()
+        # update the flexibility parameter in operational_data subblock
+        defl_flag = [1, 0][rigid]  # 0 if rigid=True, else 1
+        self.hawcstab2.operational_data.include_torsiondeform = defl_flag
+        # correct the path to the opt file
+        self.hawcstab2.operational_data_filename = opt_path
+        # update the minimum generator speed
+        self.hawcstab2.operational_data.genspeed = genspeed
+        # add hawc2s commands
+        self._add_hawc2s_commands(rigid=rigid, **kwargs)
+        # Our new line for question1
+        self._add_ctrltune_block(**ctrltune_params)
+        # update filename and save the file
+        self._update_name_and_save(save_dir, append)
+        print(f'File "{append}" saved.')
+
