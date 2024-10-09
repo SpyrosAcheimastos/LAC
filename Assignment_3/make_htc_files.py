@@ -99,12 +99,12 @@ if __name__ == '__main__':
 
     htc.make_hawc2s_ctrltune(SAVE_HAWC2S_DIR,
                     rigid=False,
-                    append='_compute_flex_opt',
+                    append='_contrl_test_opt',
                     opt_path='./data/dtu_10mw_rigid.opt',
                     compute_steady_states=True,
                     genspeed=(0, 50 * omega_rated_rpm),
                     ctrltune_params=ctrltune_params,
                     save_power=True,
                     minpitch = 0,
-                    opt_lambda =7.05)
+                    opt_lambda =7.56)
 
