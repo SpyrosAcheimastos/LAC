@@ -14,7 +14,7 @@ from src.myteampack import MyHTC
 # tsr_DTU_10MW  = omega_DTU_10MW_10ms_rpm*2*np.pi/60 * R_DTU_10MW / V0
 
 
-tsr_rated = 7.05 # This is the max tsr with the max Cp according to single point design
+tsr_rated = 7.56 # This is the max tsr with the max Cp according to single point design
 R_BB = 92.50348
 Cp_opt = 0.48
 # omega_rated_rpm = tsr_rated / tsr_DTU_10MW *  R_DTU_10MW / R_BB * omega_DTU_10MW_10ms_rpm
@@ -32,7 +32,7 @@ omega_8_ms = omega_rated * 8 / V_rated
 print(omega_8_ms* 60 / (2*np.pi))
 print(omega_rated_rpm)
 if __name__ == '__main__':
-    ORIG_PATH = '_master/BB_redesign.htc'
+    ORIG_PATH = 'Assignment_3/_master/BB_redesign.htc'
     SAVE_HAWC2S_DIR = '.'
 
     # ORIGINAL
@@ -53,7 +53,7 @@ if __name__ == '__main__':
     # # INSERT CODE HERE WHEN PROMPTED (A0)
 
 
-    # SPYROS
+    # Capitan Spyridon
     # make rigid hawc2s file for multi-wsp opt file
     htc = MyHTC(ORIG_PATH)
     htc.make_hawc2s(SAVE_HAWC2S_DIR,
@@ -100,7 +100,7 @@ if __name__ == '__main__':
     htc.make_hawc2s_ctrltune(SAVE_HAWC2S_DIR,
                     rigid=False,
                     append='_contrl_test_opt',
-                    opt_path='./data/dtu_10mw_rigid.opt',
+                    opt_path='./data/BB_redesign_compute_flex_opt.opt',
                     compute_steady_states=True,
                     genspeed=(0, 50 * omega_rated_rpm),
                     ctrltune_params=ctrltune_params,
