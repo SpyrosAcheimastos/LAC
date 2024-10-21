@@ -30,3 +30,20 @@ print(Kpg)
 Kig = eta * (I_rotor + ng**2 * Ig ) * natural_freq**2
 
 print(Kig)
+
+# calculation of Kp
+# dQ_dOMEGA = 2.5e3 * 10e3
+dQ_dTheta = -9.5e2 * 10e3
+natural_freq_for_kp = 0.05 * 2 * np.pi
+p_r = 10.4e6 # rated power in Watts
+omega_r = 8 / 60 * 2 *  np.pi
+
+Kp = (2 * damping * natural_freq_for_kp * (I_rotor + ng**2 * Ig ) - 1/eta * (-p_r/omega_r**2)) / -dQ_dTheta
+
+print(f'Kp = {Kp}')
+
+# Calculation of KI
+
+KI = natural_freq_for_kp**2 * (I_rotor + ng**2 * Ig ) /- dQ_dTheta
+
+print(f'KI = {KI}')
