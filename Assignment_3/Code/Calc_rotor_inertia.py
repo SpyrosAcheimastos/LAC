@@ -18,18 +18,18 @@ for i in range(len(s)):
 # calculation of Kpg
 eta = 1
 natural_freq = 0.05 * 2 * np.pi
-damping = 70
+damping = 0.70
 ng = 1
 Ig = 0.192530E+09 # from hawc reading, do not know what else it could be
 
 
 Kpg = eta * (2 * (I_rotor + ng**2 * Ig ) * natural_freq * damping)
 
-print(Kpg)
+print(f'Kpg = {Kpg}')
 
 Kig = eta * (I_rotor + ng**2 * Ig ) * natural_freq**2
 
-print(Kig)
+print(f'Kig = {Kig}')
 
 # calculation of Kp
 # dQ_dOMEGA = 2.5e3 * 10e3
