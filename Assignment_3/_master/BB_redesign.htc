@@ -693,15 +693,15 @@ begin hawcstab2;  commands for hawc2s/hawcstab2
   end rotating_threebladed_substructure;
   ;
   ; path to opt file, used for all commands EXCEPT compute_optimal_pitch_angle
-  operational_data_filename	./data/dtu_10mw_flex.opt;
+  operational_data_filename	./data/BB_redesign_compute_flex_opt.opt;
   ;
   ; settings for compute_optimal_pitch_angle
   begin operational_data ;  
     windspeed 4 25 22 ; cut-in [m/s], cut-out [m/s], points [-] -- used if operational_data_file_wind is 0
-    genspeed 300 480 ; min, max generator speed [rpm]
+    genspeed 0 430.87160188843274 ; min, max generator speed [rpm]
     gearratio 50.0 ; gear ratio [-]
     minpitch 0.0 ; min. pitch angle [deg]
-    opt_lambda 8.0 ; optimal TSR [-]
+    opt_lambda 6.92 ; optimal TSR [-]
     maxpow 10638.3 ; rated aerodynamic power [kW]
     prvs_turbine 1 ; 1=pitch-regulated, variable-speed turbine
 	operational_data_file_wind 1;  0=use wind defined in windspeed, 1=use wind defined in operational_data_filename above
