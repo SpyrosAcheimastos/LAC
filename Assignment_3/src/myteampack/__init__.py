@@ -168,3 +168,59 @@ class MyHTC(HTCFile):
         self._update_name_and_save(save_dir, append)
         print(f'File "{append}" saved.')
 
+
+    def make_step(self, save_dir, append, wsp_start, wsp_stop, t_start, t_stop, t_step, ctrltune_dict, scale_time_start=100, **kwargs):
+        """
+        Our method for Assignment_3_Part_3
+
+        """
+        # Update controller parameters
+        min_rotor_speed = 0                         # rad/s
+        rated_rotor_speed = 8.036/60*2*np.pi        # rpm -> rad/s
+        maximum_allowable_rotor_torque = 15.6e6     # Nm, maybe change this later
+        minimum_pitch = 0
+
+        self.dll.type2_dll.init.constant__2 = 2, min_rotor_speed
+        self.dll.type2_dll.init.constant__3 = 3, rated_rotor_speed
+        self.dll.type2_dll.init.constant__4 = 4, maximum_allowable_rotor_torque
+        self.dll.type2_dll.init.constant__5 = 5, minimum_pitch
+
+
+        # These are changed each run I believe
+        self.dll.type2_dll.init.constant__11 = 11, ctrltune_dict['K_Nm/(rad/s)^2']
+        self.dll.type2_dll.init.constant__12 = 12, ctrltune_dict['KpTrq_Nm/(rad/s)']
+        self.dll.type2_dll.init.constant__13 = 13, ctrltune_dict['KiTrq_Nm/rad']
+        self.dll.type2_dll.init.constant__16 = 16, ctrltune_dict['KpPit_rad/(rad/s)']
+        self.dll.type2_dll.init.constant__17 = 17, ctrltune_dict['KiPit_rad/rad']
+        self.dll.type2_dll.init.constant__21 = 21, ctrltune_dict['K1_deg']
+        self.dll.type2_dll.init.constant__22 = 22, ctrltune_dict['K2_deg^2']
+
+
+        # Update Simulation & Wind blocks
+        del self.hawcstab2
+        self.simulation.time_stop = t_stop
+        self.simulation.solvertype = 2
+        self.wind.wsp = wsp_start
+        self.wind.tint = 0
+        self.wind.shear_format = (3, 0.0)
+        self.wind.turb_format = 0
+        self.wind.tower_shadow_method = 0
+        # self.wind.scale_time_start = scale_time_start    # Start turbulence after 100 s
+
+        # Retrieval
+        self.set_time(t_start, t_stop, t_step)
+
+        # Add Wind Ramp
+        # wind_ramp = self.wind.add_section(pre_comments='\n; step-wind for testing controller tuning')
+        wsp_tmp = wsp_start
+        V_0, V_1 = (0, 1)
+        t_0, t_1 = scale_time_start, scale_time_start
+        for i in range(wsp_start, wsp_stop):
+            t_0 = t_1 + 40
+            t_1 = t_0 + 1
+            wsp_tmp = wsp_tmp + 1
+            self.wind.add_line(name='wind_ramp_abs', values=[t_0, t_1, V_0, V_1], comments=f'wsp after the step: {wsp_tmp}')
+        
+        # update filename and save the file
+        self._update_name_and_save(save_dir, append)
+        print(f'File "{append}" saved.')
