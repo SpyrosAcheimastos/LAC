@@ -41,13 +41,11 @@ if __name__ == '__main__':
 
 
 
-
+    # For Assignment 3 - Part 3
     from lacbox.io import load_ctrl_txt
-    from pathlib import Path
-
 
     # Location of tuning TXT
-    fname = 'Assignment_3/Part_2/res_hawc2s/BB_redesign_hawc2s_ctrltune_C1_ctrl_tuning.txt'
+    fname = 'Assignment_3/Part_2/res_hawc2s/BB_redesign_hawc2s_ctrltune_C6_ctrl_tuning.txt'
     ctrltune_dict = load_ctrl_txt(fname)
 
     # Master & Save locations
@@ -57,7 +55,7 @@ if __name__ == '__main__':
     # SPYROS
     htc = MyHTC(ORIG_PATH)
     htc.make_step(SAVE_HAWC2S_DIR,
-                  append = '_C1',
+                  append = '_C6',
                   wsp_start = 4,
                   wsp_stop = 25,
                   t_start = 0,
