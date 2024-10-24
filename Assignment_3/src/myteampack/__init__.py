@@ -168,3 +168,37 @@ class MyHTC(HTCFile):
         self._update_name_and_save(save_dir, append)
         print(f'File "{append}" saved.')
 
+    def make_step(self, save_dir, rigid, append, opt_path,
+                             genspeed=(0, 480), ctrltune_params=None, **kwargs):
+        """Make a HAWC2S file with specific settings.
+
+        Args:
+            save_dir (str/pathlib.Path): Path to folder where the htc file
+                should be saved.
+            rigid (boolean): Whether HAWC2S analysis should be a rigid or flexible
+                structure.
+            append (str): Text to append to the name of the master file.
+            opt_path (str): Relative path from the saved htc file to the opt_file.
+            genspeed (tuple, optional): 2-element tuple of minimum and maximum generator
+                speed. Defaults to (0, 480).
+        """
+        # verify the file has hawcstab2 block
+        self._check_hawcstab2()
+        # delete blocks in master htc file that HAWC2S doesn't use
+        self._del_not_h2s_blocks()
+        # update the flexibility parameter in operational_data subblock
+        defl_flag = [1, 0][rigid]  # 0 if rigid=True, else 1
+        self.hawcstab2.operational_data.include_torsiondeform = defl_flag
+        # correct the path to the opt file
+        self.hawcstab2.operational_data_filename = opt_path
+        # update the minimum generator speed
+        self.hawcstab2.operational_data.genspeed = genspeed
+        # add hawc2s commands
+        self._add_hawc2s_commands(rigid=rigid, **kwargs)
+        # Our new line for question1
+        self._add_ctrltune_block(**ctrltune_params)
+        # update filename and save the file
+        self._update_name_and_save(save_dir, append)
+        print(f'File "{append}" saved.')
+
+
