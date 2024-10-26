@@ -14,9 +14,9 @@ if __name__ == '__main__':
     from lacbox.io import load_ctrl_txt
 
     # Location of tuning TXT
-    ctrl = 'C6'
-    # ctrl_type = 'Constant Power'
-    ctrl_type = 'Constant Torque'
+    ctrl = 'C7_0.06_0.8'
+    ctrl_type = 'Constant Power'
+    # ctrl_type = 'Constant Torque'
     fname = f'Assignment_3/Part_2/res_hawc2s/BB_redesign_hawc2s_ctrltune_{ctrl}_ctrl_tuning.txt'
     ctrltune_dict = load_ctrl_txt(fname)
 
