@@ -169,32 +169,41 @@ class MyHTC(HTCFile):
         print(f'File "{append}" saved.')
 
 
-    def make_step(self, save_dir, append, wsp_start, wsp_stop, t_start, t_stop, t_step, ctrltune_dict, scale_time_start=100, **kwargs):
+    def make_step(self, save_dir, append, ctrl_type, wsp_start, wsp_stop,
+                  t_start, t_stop, t_step, ctrltune_dict, scale_time_start=100, **kwargs):
         """
         Our method for Assignment_3_Part_3
 
         """
+        # Check controller
+        if ctrl_type == 'Constant Power':
+            ctrl_type = 1
+        elif ctrl_type == 'Constant Torque':
+            ctrl_type = 0
+        else:
+            raise ValueError('Wrong "ctrl_type" given')
+        
         # Update controller parameters
         min_rotor_speed = 0                         # rad/s
         rated_rotor_speed = 8.036/60*2*np.pi        # rpm -> rad/s
         maximum_allowable_rotor_torque = 15.6e6     # Nm, maybe change this later
         minimum_pitch = 0
 
+        # Constant Parameters
         self.dll.type2_dll.init.constant__2 = 2, min_rotor_speed
         self.dll.type2_dll.init.constant__3 = 3, rated_rotor_speed
         self.dll.type2_dll.init.constant__4 = 4, maximum_allowable_rotor_torque
         self.dll.type2_dll.init.constant__5 = 5, minimum_pitch
 
-
         # These are changed each run I believe
         self.dll.type2_dll.init.constant__11 = 11, ctrltune_dict['K_Nm/(rad/s)^2']
         self.dll.type2_dll.init.constant__12 = 12, ctrltune_dict['KpTrq_Nm/(rad/s)']
         self.dll.type2_dll.init.constant__13 = 13, ctrltune_dict['KiTrq_Nm/rad']
+        self.dll.type2_dll.init.constant__15 = 15, ctrl_type
         self.dll.type2_dll.init.constant__16 = 16, ctrltune_dict['KpPit_rad/(rad/s)']
         self.dll.type2_dll.init.constant__17 = 17, ctrltune_dict['KiPit_rad/rad']
         self.dll.type2_dll.init.constant__21 = 21, ctrltune_dict['K1_deg']
         self.dll.type2_dll.init.constant__22 = 22, ctrltune_dict['K2_deg^2']
-
 
         # Update Simulation & Wind blocks
         del self.hawcstab2
