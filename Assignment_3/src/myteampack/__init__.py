@@ -170,7 +170,7 @@ class MyHTC(HTCFile):
 
 
     def make_step(self, save_dir, append, ctrl_type, wsp_start, wsp_stop,
-                  t_start, t_stop, t_step, ctrltune_dict, scale_time_start=100, **kwargs):
+                  t_start, t_stop, t_step, ctrltune_dict, maximum_allowable_rotor_torque, scale_time_start=100, **kwargs):
         """
         Our method for Assignment_3_Part_3
 
@@ -186,7 +186,7 @@ class MyHTC(HTCFile):
         # Update controller parameters
         min_rotor_speed = 0                         # rad/s
         rated_rotor_speed = 8.036/60*2*np.pi        # rpm -> rad/s
-        maximum_allowable_rotor_torque = 15.6e6     # Nm, maybe change this later
+        # maximum_allowable_rotor_torque = maximum_allowable_rotor_torque     # Nm, maybe change this later
         minimum_pitch = 0
 
         # Constant Parameters
