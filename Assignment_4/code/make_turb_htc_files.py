@@ -11,7 +11,7 @@ import random
 
 from lacbox.htc import _clean_directory
 from lacbox.io import load_oper
-from myteampack import MyHTC
+from src.myteampack import MyHTC
 import numpy as np
 
 def get_initial_rotor_speed(wsp, opt_path):
@@ -60,11 +60,11 @@ def make_single_turb(htc, wsp, turbclass, htc_dir='./htc_turb/', res_dir='./res_
     # TODO: add code
     match turbclass:
         case 'A':
-            tint = 0.18 # Guessing that the turbulence intensity is in fractions and not percentage based on the example htc file
+            tint = 0.16 # Guessing that the turbulence intensity is in fractions and not percentage based on the example htc file
         case 'B':
-            tint = 0.16
+            tint = 0.14
         case 'Goat':
-            tint = 0.36
+            tint = 0.38
         case _:
             raise ValueError(f"Invalid turbulence class '{turbclass}'. Expected 'A', 'B', or 'Goat'.")
     # set parameters in wind block
@@ -105,8 +105,10 @@ def main():
     # TODO: and (b) generates multiple random seeds at each wind speed
     # constants for this script
     del_htc_dir = True  # delete htc directory if it already exists?
-    master_htc = './_master/dtu_10mw.htc'
-    opt_path = './data/dtu_10mw_flex_minrotspd.opt'
+
+    cwd = Path.cwd()
+    master_htc = cwd.parent / 'our_design/_master/BB_redesign.htc'
+    opt_path = cwd.parent / 'data/BB_redesign_compute_flex_opt'
     wsps = range(5, 25)  # wind speed range
     htc_dir = './htc_turb/'  # top-level folder to save htc files (can be path to gbar!)
     res_dir = './res_turb/'  # where HAWC2 should save res files, relative to its working directory
@@ -127,3 +129,8 @@ def main():
 # the "script" part of this file
 if __name__ == '__main__':
     main()
+
+    from pathlib import Path
+
+    current_working_dir = Path.cwd()
+
