@@ -11,8 +11,26 @@ import random
 
 from lacbox.htc import _clean_directory
 from lacbox.io import load_oper
-from myteampack import MyHTC
+from src.myteampack import MyHTC
 import numpy as np
+
+
+def get_initial_rotor_speed(wsp, opt_path):
+    """Given a wind speed and path to opt file, find initial rotor speed.
+
+    Args:
+        wsp (int, float): Wind speed [m/s].
+        opt_path (str, pathlib.Path): Path to opt file.
+
+    Returns:
+        int, float: Initial rotor speed interpolated from opt file [rad/s].
+    """
+    opt_dict = load_oper(opt_path)
+    opt_wsps = opt_dict['ws_ms']
+    opt_rpm = opt_dict['rotor_speed_rpm']
+    omega_rpm = np.interp(wsp, opt_wsps, opt_rpm)
+    omega0 = omega_rpm * np.pi / 30  # rpm to rad/s
+    return omega0
 
 
 def make_single_turb(htc, wsp, turbclass, htc_dir='./htc_turb/', res_dir='./res_turb/',
@@ -30,19 +48,41 @@ def make_single_turb(htc, wsp, turbclass, htc_dir='./htc_turb/', res_dir='./res_
     # get new filename (excl extension) from HTCFile attribute "filename"
     fname = Path(htc.filename).name.replace('.htc', append)
     # delete hawcstab2 block
-    # TODO: add code
+    del htc.hawcstab2  # Not sure about this wtf Jenny
     # correct initial rotor speed if opt file is given
     # TODO: add code
+    if opt_path:
+        omega0 = get_initial_rotor_speed(wsp, opt_path)
+        htc._set_initial_rotor_speed(omega0)
     # set the start and stop time
     # TODO: add code
+    htc.set_time(start=time_start, stop=time_stop)  # simulation times
     # calculate turbulence intensity for this turbulence class and wind speed
     # TODO: add code
+    match turbclass:
+        case 'A':
+            i_ref = 0.16
+            tint = i_ref * (
+                        0.75 * wsp + 5.6) / wsp  # Guessing that the turbulence intensity is in fractions and not percentage based on the example htc file
+        case 'B':
+            i_ref = 0.14
+            tint = i_ref * (0.75 * wsp + 5.6) / wsp
+        case 'Goat':
+            i_ref = 0.38
+            tint = i_ref * (0.75 * wsp + 5.6) / wsp
+        case _:
+            raise ValueError(f"Invalid turbulence class '{turbclass}'. Expected 'A', 'B', or 'Goat'.")
     # set parameters in wind block
     # TODO: set turbulence intensity
+    htc.wind.tint = tint
     # TODO: set turbulence
+    htc.wind.turb_format = 1  # Mann Turbulence, 0 = No turbulence, 1 =Mann, 2 = Flex See HAWC2 manual page 57,
     # TODO: set tower shadow
+    htc.wind.tower_shadow_method = 3  # from DTU reference file
     # TODO: set mean wind speed
+    htc.wind.wsp = wsp  # mean wind speed
     # TODO: set power-law shear profile
+    htc.wind.shear_format = [3, 0.2]  # 3=power law from manual page 57, 0.2 from example DTU file
     # set parameters in mann block
     turb_filesname = [f'./turb/{fname}_turb_{c}.bin' for c in 'uvw']
     no_grid_points = (nx, ny, nz)
@@ -68,27 +108,33 @@ def main():
     """
     # TODO: Update this function so it (a) generates htc files for both turbulence class A and B
     # TODO: and (b) generates multiple random seeds at each wind speed
+
     # constants for this script
     del_htc_dir = True  # delete htc directory if it already exists?
-    master_htc = './_master/dtu_10mw.htc'
-    opt_path = './data/dtu_10mw_flex_minrotspd.opt'
+    cwd = Path.cwd()
+    master_htc = cwd.parent / 'our_design/_master/BB_redesign.htc'
+    opt_path = cwd.parent / 'our_design/data/BB_redesign_compute_flex_opt.opt'
     wsps = range(5, 25)  # wind speed range
-    htc_dir = './htc_turb/'  # top-level folder to save htc files (can be path to gbar!)
-    res_dir = './res_turb/'  # where HAWC2 should save res files, relative to its working directory
+    htc_dir = cwd.parent / 'our_design/htc_turb/'  # top-level folder to save htc files (can be path to gbar!)
+    res_dir = cwd.parent / 'our_design/res_turb/'  # where HAWC2 should save res files, relative to its working directory
     start_seed = 42  # initialize the random-number generator for reproducability
     turbclass = 'A'  # turbulence class
     # delete the top-level directory if requested
     _clean_directory(htc_dir, del_htc_dir)
     # make the files
     random.seed(start_seed)
-    subfolder = 'tc' + turbclass.lower()
-    for wsp in wsps:
-        sim_seed = random.randrange(int(2**16))
-        htc = MyHTC(master_htc)
-        make_single_turb(htc, wsp, turbclass, htc_dir=htc_dir, res_dir=res_dir,
-                        subfolder=subfolder, opt_path=opt_path, seed=sim_seed)
+    for turbclass in ['A', 'B']:
+        subfolder = 'tc' + turbclass.lower()
+        for wsp in wsps:
+            for dummy in range(0,6):
+                sim_seed = random.randrange(int(2 ** 16))
+                htc = MyHTC(master_htc)
+                make_single_turb(htc, wsp, turbclass, htc_dir=htc_dir, res_dir=res_dir,
+                                 subfolder=subfolder, opt_path=opt_path, seed=sim_seed)
 
 
 # the "script" part of this file
 if __name__ == '__main__':
     main()
+    from pathlib import Path
+    current_working_dir = Path.cwd()
