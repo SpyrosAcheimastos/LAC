@@ -10,7 +10,7 @@ from pathlib import Path
 
 from lacbox.htc import _clean_directory
 from lacbox.io import load_oper
-from myteampack import MyHTC
+from src.myteampack import MyHTC
 import numpy as np
 
 
@@ -104,7 +104,7 @@ def make_single_steady(htc, wsp, htc_dir='./htc_steady/', res_dir='./res_steady/
     return
 
 
-def main():
+def main(turbine_type):
     """Create the htc files for the different cases, adjusting settings.
     Save the htc files in subfolders corresponding to the different cases.
     This code would be better placed at the end of your make_htc_files.py script...
@@ -116,8 +116,21 @@ def main():
     opt_path = cwd.parent / 'our_design/data/BB_redesign_compute_flex_opt.opt'
     cases = ['tilt', 'notilt', 'notiltrigid', 'notiltnodragrigid']
     wsps = range(5, 25)  # wind speed range
-    htc_dir = cwd.parent / 'our_design/htc_steady/'  # top-level folder to save htc files (can be path to gbar!)
-    res_dir = cwd.parent / 'our_design/res_steady/'  # where HAWC2 should save res files, relative to its working directory
+    cwd = Path.cwd()
+
+    # Change Wind Turbine folders
+    if turbine_type == 'DTU_10MW':
+        master_htc = cwd.parent / 'dtu_10MW/_master/dtu_10mw.htc'
+        opt_path = cwd.parent / 'dtu_10MW/data/dtu_10mw_flex_minrotspd.opt'
+        htc_dir = cwd.parent / 'dtu_10MW/htc_steady/'  # top-level folder to save htc files (can be path to gbar!)
+        res_dir = cwd.parent / 'dtu_10MW/res_steady/'  # where HAWC2 should save res files, relative to its working directory
+    else:
+        master_htc = cwd.parent / 'our_design/_master/BB_redesign.htc'
+        opt_path = cwd.parent / 'our_design/data/BB_redesign_compute_flex_opt.opt'
+        htc_dir = cwd.parent / 'our_design/htc_steady/'  # top-level folder to save htc files (can be path to gbar!)
+        res_dir = cwd.parent / 'our_design/res_steady/'  # where HAWC2 should save res files, relative to its working directory
+    
+    
     # delete the top-level directory if requested
     _clean_directory(htc_dir, del_htc_dir)
     # make the files
@@ -143,4 +156,11 @@ def main():
 
 # the "script" part of this file
 if __name__ == '__main__':
-    main()
+    
+# Yoy have to "cd Assignment_4\code" to run this!!!
+    # main(turbine_type='OUR_DESIGN')
+    main(turbine_type='DTU_10MW')
+
+    
+
+

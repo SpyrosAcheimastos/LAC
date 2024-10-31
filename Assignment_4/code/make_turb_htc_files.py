@@ -62,8 +62,7 @@ def make_single_turb(htc, wsp, turbclass, htc_dir='./htc_turb/', res_dir='./res_
     match turbclass:
         case 'A':
             i_ref = 0.16
-            tint = i_ref * (
-                        0.75 * wsp + 5.6) / wsp  # Guessing that the turbulence intensity is in fractions and not percentage based on the example htc file
+            tint = i_ref * ( 0.75 * wsp + 5.6) / wsp  
         case 'B':
             i_ref = 0.14
             tint = i_ref * (0.75 * wsp + 5.6) / wsp
@@ -101,7 +100,7 @@ def make_single_turb(htc, wsp, turbclass, htc_dir='./htc_turb/', res_dir='./res_
     return
 
 
-def main():
+def main(turbine_type='OUR_DESIGN'):
     """Create the htc files for the different cases, adjusting settings.
     Save the htc files in subfolders corresponding to the different cases.
     This code would be better placed at the end of your make_htc_files.py script...
@@ -112,13 +111,20 @@ def main():
     # constants for this script
     del_htc_dir = True  # delete htc directory if it already exists?
     cwd = Path.cwd()
-    master_htc = cwd.parent / 'our_design/_master/BB_redesign.htc'
-    opt_path = cwd.parent / 'our_design/data/BB_redesign_compute_flex_opt.opt'
     wsps = range(5, 25)  # wind speed range
-    htc_dir = cwd.parent / 'our_design/htc_turb/'  # top-level folder to save htc files (can be path to gbar!)
-    res_dir = cwd.parent / 'our_design/res_turb/'  # where HAWC2 should save res files, relative to its working directory
     start_seed = 42  # initialize the random-number generator for reproducability
-    turbclass = 'A'  # turbulence class
+
+    # Change Wind Turbine folders
+    if turbine_type == 'DTU_10MW':
+        master_htc = cwd.parent / 'dtu_10MW/_master/dtu_10mw.htc'
+        opt_path = cwd.parent / 'dtu_10MW/data/dtu_10mw_flex_minrotspd.opt'
+        htc_dir = cwd.parent / 'dtu_10MW/htc_turb/'  # top-level folder to save htc files (can be path to gbar!)
+        res_dir = cwd.parent / 'dtu_10MW/res_turb/'  # where HAWC2 should save res files, relative to its working directory
+    else:
+        master_htc = cwd.parent / 'our_design/_master/BB_redesign.htc'
+        opt_path = cwd.parent / 'our_design/data/BB_redesign_compute_flex_opt.opt'
+        htc_dir = cwd.parent / 'our_design/htc_turb/'  # top-level folder to save htc files (can be path to gbar!)
+        res_dir = cwd.parent / 'our_design/res_turb/'  # where HAWC2 should save res files, relative to its working directory
     # delete the top-level directory if requested
     _clean_directory(htc_dir, del_htc_dir)
     # make the files
@@ -126,7 +132,7 @@ def main():
     for turbclass in ['A', 'B']:
         subfolder = 'tc' + turbclass.lower()
         for wsp in wsps:
-            for dummy in range(0,6):
+            for _ in range(0,6):
                 sim_seed = random.randrange(int(2 ** 16))
                 htc = MyHTC(master_htc)
                 make_single_turb(htc, wsp, turbclass, htc_dir=htc_dir, res_dir=res_dir,
@@ -135,6 +141,8 @@ def main():
 
 # the "script" part of this file
 if __name__ == '__main__':
-    main()
-    from pathlib import Path
-    current_working_dir = Path.cwd()
+
+    # Yoy have to "cd Assignment_4\code" to run this!!!
+    main(turbine_type='OUR_DESIGN')
+    main(turbine_type='DTU_10MW')
+
