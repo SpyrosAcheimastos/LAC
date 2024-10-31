@@ -1,0 +1,17 @@
+ERROR: Unable to locate a modulefile for 'OpenFoam/v1912/gcc-9.2.0-openmpi-3.1.5'
+Loaded module: hawc2/13.0.8
+Could not verify license using license server.
+Status-code: 111 Local config file does not exist.
+Verifying using HAWCLicense...
+DLL loaded with success HAWC2License.so
+Using HAWC2License.so, version: 3.17-12-ga4a2d07-dirty
+License verified - OK
+License verified using local dll
+ Opening main command file: htc_steady/notilt/BB_redesign_steady_notilt_21.0.htc
+ Current directory is /zhome/c4/b/204415/Documents/hawc2sims
+ Continue on no convergence = true
+ Creating file folder log/
+Creating file folder notilt
+Folder creation: "notilt" finished with with status:  1
+Created folder: './log/notilt/bb_redesign_steady_notilt_21.0.log'
+ Logfile: ./log/notilt/bb_redesign_steady_notilt_21.0.log
