@@ -111,12 +111,13 @@ def main():
     """
     # constants for this script
     del_htc_dir = True  # delete htc directory if it already exists?
-    master_htc = './_master/dtu_10mw.htc'
-    opt_path = './data/dtu_10mw_flex_minrotspd.opt'
+    cwd = Path.cwd()
+    master_htc = cwd.parent / 'our_design/_master/BB_redesign.htc'
+    opt_path = cwd.parent / 'our_design/data/BB_redesign_compute_flex_opt.opt'
     cases = ['tilt', 'notilt', 'notiltrigid', 'notiltnodragrigid']
     wsps = range(5, 25)  # wind speed range
-    htc_dir = './htc_steady/'  # top-level folder to save htc files (can be path to gbar!)
-    res_dir = './res_steady/'  # where HAWC2 should save res files, relative to its working directory
+    htc_dir = cwd.parent / 'our_design/htc_steady/'  # top-level folder to save htc files (can be path to gbar!)
+    res_dir = cwd.parent / 'our_design/res_steady/'  # where HAWC2 should save res files, relative to its working directory
     # delete the top-level directory if requested
     _clean_directory(htc_dir, del_htc_dir)
     # make the files
