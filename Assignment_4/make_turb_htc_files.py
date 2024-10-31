@@ -14,6 +14,23 @@ from lacbox.io import load_oper
 from myteampack import MyHTC
 import numpy as np
 
+def get_initial_rotor_speed(wsp, opt_path):
+    """Given a wind speed and path to opt file, find initial rotor speed.
+
+    Args:
+        wsp (int, float): Wind speed [m/s].
+        opt_path (str, pathlib.Path): Path to opt file.
+
+    Returns:
+        int, float: Initial rotor speed interpolated from opt file [rad/s].
+    """
+    opt_dict = load_oper(opt_path)
+    opt_wsps = opt_dict['ws_ms']
+    opt_rpm = opt_dict['rotor_speed_rpm']
+    omega_rpm = np.interp(wsp, opt_wsps, opt_rpm)
+    omega0 = omega_rpm * np.pi / 30  # rpm to rad/s
+    return omega0
+
 
 def make_single_turb(htc, wsp, turbclass, htc_dir='./htc_turb/', res_dir='./res_turb/',
                      subfolder='', opt_path=None, seed=1337, time_start=100, time_stop=700,
@@ -30,19 +47,37 @@ def make_single_turb(htc, wsp, turbclass, htc_dir='./htc_turb/', res_dir='./res_
     # get new filename (excl extension) from HTCFile attribute "filename"
     fname = Path(htc.filename).name.replace('.htc', append)
     # delete hawcstab2 block
-    # TODO: add code
+    del htc.hawcstab2  # Not sure about this wtf Jenny
     # correct initial rotor speed if opt file is given
     # TODO: add code
+    if opt_path:
+        omega0 = get_initial_rotor_speed(wsp, opt_path)
+        htc._set_initial_rotor_speed(omega0)
     # set the start and stop time
     # TODO: add code
+    htc.set_time(start=time_start, stop=time_stop)  # simulation times
     # calculate turbulence intensity for this turbulence class and wind speed
     # TODO: add code
+    match turbclass:
+        case 'A':
+            tint = 0.18 # Guessing that the turbulence intensity is in fractions and not percentage based on the example htc file
+        case 'B':
+            tint = 0.16
+        case 'Goat':
+            tint = 0.36
+        case _:
+            raise ValueError(f"Invalid turbulence class '{turbclass}'. Expected 'A', 'B', or 'Goat'.")
     # set parameters in wind block
     # TODO: set turbulence intensity
+    htc.wind.tint = tint
     # TODO: set turbulence
+    htc.wind.turb_format = 1  # Mann Turbulence, 0 = No turbulence, 1 =Mann, 2 = Flex See HAWC2 manual page 57,
     # TODO: set tower shadow
+    htc.wind.tower_shadow_method = 0  # no tower shadow
     # TODO: set mean wind speed
+    htc.wind.wsp = wsp  # mean wind speed
     # TODO: set power-law shear profile
+    htc.wind.shear_format = [3, wsp]  # 3=power law from manual page 57
     # set parameters in mann block
     turb_filesname = [f'./turb/{fname}_turb_{c}.bin' for c in 'uvw']
     no_grid_points = (nx, ny, nz)
