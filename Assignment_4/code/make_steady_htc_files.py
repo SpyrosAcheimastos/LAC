@@ -155,7 +155,7 @@ def main(turbine_type):
 if __name__ == '__main__':
     
 # Yoy have to "cd Assignment_4\code" to run this!!!
-    # main(turbine_type='OUR_DESIGN')
+    main(turbine_type='OUR_DESIGN')
     main(turbine_type='DTU_10MW')
 
     
