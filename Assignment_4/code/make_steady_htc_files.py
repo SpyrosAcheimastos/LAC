@@ -111,7 +111,10 @@ def main(turbine_type):
     """
     # constants for this script
     del_htc_dir = True  # delete htc directory if it already exists?
-    cases = ['tilt', 'notilt']
+    cwd = Path.cwd()
+    master_htc = cwd.parent / 'our_design/_master/BB_redesign.htc'
+    opt_path = cwd.parent / 'our_design/data/BB_redesign_compute_flex_opt.opt'
+    cases = ['tilt', 'notilt', 'notiltrigid', 'notiltnodragrigid']
     wsps = range(5, 25)  # wind speed range
     cwd = Path.cwd()
 
