@@ -36,9 +36,9 @@ def extract_and_order_statistics(wsps, chan_df, seeds):
     return points, lines
 
 
-def extract_and_DEL(wsps, chan_df, seeds, m):
+def extract_and_combine_DEL(wsps, chan_df, seeds, m):
     """
-    Extract and order DEL values (del4, del4, del5, del8, del10, del12) from chan_df.
+    Extract and combine DEL values (del4, del4, del5, del8, del10, del12) from chan_df.
     
     Parameters:
         wsps (array-like): Wind speed values for each simulation.
