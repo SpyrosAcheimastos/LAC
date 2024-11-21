@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9da7bfa5-fcda-4f07-a089-efd1bf8566f1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment_2/Code/Plots_Aeroelastic.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_2/Code/Plots_Aeroelastic.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment_2/Code/Plots_Structural_Comparison.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_2/Code/Plots_Structural_Comparison.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment_4/code/make_steady_htc_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_4/code/make_steady_htc_files.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,24 +26,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.Cp_Ct_blade_design.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aero_design_functions_10MW.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Assignment__2__Alex&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/lenovo nbk/OneDrive - Danmarks Tekniske Universitet/LAC/Assignments/LAC/our_design/Assignment_1/Part2_Jim&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Cp_Ct_blade_design.executor": "Run",
+    "Python.aero_design_functions_10MW.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Assignment__4",
+    "last_opened_file_path": "C:/Users/lenovo nbk/OneDrive - Danmarks Tekniske Universitet/LAC/Assignments/LAC/our_design/Assignment_1/Part2_Jim",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\lenovo nbk\OneDrive - Danmarks Tekniske Universitet\LAC\Assignments\LAC\our_design\Assignment_1\Part2_Jim" />
@@ -72,6 +70,7 @@
       <workItem from="1727715572995" duration="128000" />
       <workItem from="1728381131606" duration="644000" />
       <workItem from="1729609485278" duration="20000" />
+      <workItem from="1730552732643" duration="395000" />
     </task>
     <servers />
   </component>
