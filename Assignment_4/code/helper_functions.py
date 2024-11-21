@@ -103,7 +103,7 @@ def propability_wsp(wsp, wind_class, step=1):
 
 def lifetime_eq_load(R_eq_list, P_wsp_list, m, n_seeds=1, n_eq_L=1E7, n_T=(20*365*24*60*60)):
     """
-    Calculate lifetime equivalant loads (Taesong slides p. 41)
+    Calculate lifetime equivalent loads (Taesong slides p. 41)
 
     Supposedly "n_seeds=1" for things to work?!
     """
