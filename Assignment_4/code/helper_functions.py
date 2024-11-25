@@ -68,9 +68,11 @@ def extract_and_combine_DEL(wsps, chan_df, seeds, m):
     # Extract and order the DEL data for this column
     
     del_data = np.array(chan_df[del_col])[i_val]
-    
+
     # Using Miner's Rule
     del_values = del_data.reshape(-1, seeds)
+
+    # combined_del = (np.sum(del_values ** m, axis=1) / 1) ** (1 / m)  # m is the WOhler Exponent
     combined_del = (np.sum(del_values ** m , axis=1)  / seeds) ** (1 / m) # m is the WOhler Exponent
     # TODO: CHECK THAT VALUES MATCH TXT!!!!!
    

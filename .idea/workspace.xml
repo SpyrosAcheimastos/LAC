@@ -5,7 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9da7bfa5-fcda-4f07-a089-efd1bf8566f1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assignment_4/code/make_steady_htc_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_4/code/make_steady_htc_files.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Individual_part1/_master/dtu_10mw.htc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Individual_part1/data/DTU_10MW_RWT_Blade_st.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Individual_part1/data/DTU_10MW_RWT_Hub_st.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Individual_part1/data/DTU_10MW_RWT_Shaft_st.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Individual_part1/data/DTU_10MW_RWT_Tower_st.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Individual_part1/data/DTU_10MW_RWT_Towertop_st.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Individual_part1/data/DTU_10MW_RWT_ae.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Individual_part1/data/DTU_10MW_RWT_pc.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Individual_part1/data/dtu_10mw_1wsp.opt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Individual_part1/data/dtu_10mw_flex.opt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Individual_part1/data/dtu_10mw_flex_minrotspd.opt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Individual_part1/data/dtu_10mw_multitsr.opt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Individual_part1/data/dtu_10mw_rigid.opt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Individual_part1/data/updated_BB_RWT_design.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Individual_part1/data/updated_DTU_10MW_RWT_design.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment_1/Assignment_1/Part_1_.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_1/Assignment_1/Part_1_.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment_1/Assignment_1/Part_2_Step_2_Radius.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_1/Assignment_1/Part_2_Step_2_Radius.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment_1/Assignment_1/Part_2_Step_6_Polars.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_1/Assignment_1/Part_2_Step_6_Polars.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment_1/Assignment_1/Part_4_mass_and_inertia.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_1/Assignment_1/Part_4_mass_and_inertia.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment_4/code/helper_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_4/code/helper_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment_4/code/plot_turb_Spyros.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_4/code/plot_turb_Spyros.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +34,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -30,11 +56,14 @@
   "keyToString": {
     "Python.Cp_Ct_blade_design.executor": "Run",
     "Python.aero_design_functions_10MW.executor": "Run",
+    "Python.scratch_20.executor": "Run",
+    "Python.scratch_21.executor": "Run",
+    "Python.testing.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Assignment__4",
-    "last_opened_file_path": "C:/Users/lenovo nbk/OneDrive - Danmarks Tekniske Universitet/LAC/Assignments/LAC/our_design/Assignment_1/Part2_Jim",
+    "git-widget-placeholder": "Jim__Personal",
+    "last_opened_file_path": "C:/Users/jimwi/PycharmProjects/LAC/LAC/Individual_part1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -42,18 +71,102 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Python"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\Individual_part1" />
       <recent name="C:\Users\lenovo nbk\OneDrive - Danmarks Tekniske Universitet\LAC\Assignments\LAC\our_design\Assignment_1\Part2_Jim" />
     </key>
+  </component>
+  <component name="RunManager" selected="Python.testing">
+    <configuration name="scratch_20" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LAC" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_20.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch_21" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LAC" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_21.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="testing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LAC" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment_1/Assignment_1/Part2_JIM" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment_1/Assignment_1/Part2_JIM/testing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.testing" />
+        <item itemvalue="Python.scratch_21" />
+        <item itemvalue="Python.scratch_20" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-PY-242.20224.347" />
-        <option value="bundled-python-sdk-c2d6afa66fbe-39cff9de6eef-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.20224.347" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-PY-241.14494.241" />
+        <option value="bundled-python-sdk-0509580d9d50-28c9f5db9ffe-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.14494.241" />
       </set>
     </attachedChunks>
   </component>
@@ -71,15 +184,43 @@
       <workItem from="1728381131606" duration="644000" />
       <workItem from="1729609485278" duration="20000" />
       <workItem from="1730552732643" duration="395000" />
+      <workItem from="1731663926306" duration="718000" />
+      <workItem from="1731681785425" duration="1331000" />
+      <workItem from="1732013485339" duration="2307000" />
+      <workItem from="1732525811977" duration="6865000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Assignment_4/code/helper_functions.py</url>
+          <line>72</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Assignment_4/code/helper_functions.py</url>
+          <line>75</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Assignment_4/code/helper_functions.py</url>
+          <line>79</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/LAC$Cp_Ct_blade_design.coverage" NAME="Cp_Ct_blade_design Coverage Results" MODIFIED="1726780501525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part2_Jim" />
-    <SUITE FILE_PATH="coverage/Cp_Ct_blade_design_py$Cp_Ct_blade_design.coverage" NAME="Cp_Ct_blade_design Coverage Results" MODIFIED="1727715660733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part2_Jim" />
+    <SUITE FILE_PATH="coverage/LAC$testing.coverage" NAME="testing Coverage Results" MODIFIED="1732527337761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignment_1/Assignment_1/Part2_JIM" />
+    <SUITE FILE_PATH="coverage/LAC$scratch_21.coverage" NAME="scratch_21 Coverage Results" MODIFIED="1732013908323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/LAC$aero_design_functions_10MW.coverage" NAME="aero_design_functions_10MW Coverage Results" MODIFIED="1726780642009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part2_Jim" />
+    <SUITE FILE_PATH="coverage/LAC$scratch_20.coverage" NAME="scratch_20 Coverage Results" MODIFIED="1731664476830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/Cp_Ct_blade_design_py$Cp_Ct_blade_design.coverage" NAME="Cp_Ct_blade_design Coverage Results" MODIFIED="1727715660733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part2_Jim" />
+    <SUITE FILE_PATH="coverage/LAC$Cp_Ct_blade_design.coverage" NAME="Cp_Ct_blade_design Coverage Results" MODIFIED="1726780501525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part2_Jim" />
   </component>
 </project>
