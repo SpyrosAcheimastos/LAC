@@ -36,7 +36,7 @@ omega_rated_rpm = omega_rated * 60 / (2*np.pi)
 # print(omega_8_ms* 60 / (2*np.pi))
 # print(omega_rated_rpm)
 if __name__ == '__main__':
-    ORIG_PATH = '_master/BB_redesign.htc'
+    ORIG_PATH = '_master/Jim_Design.htc'
     SAVE_HAWC2S_DIR = '.'
 
     # ORIGINAL
@@ -75,6 +75,18 @@ if __name__ == '__main__':
                     rigid=True,
                     append='_compute_rigid_opt',
                     opt_path='./data/dtu_10mw_rigid.opt',
+                    compute_steady_states=True,
+                    genspeed=(0, 50 * omega_rated_rpm),
+                    save_power=True,
+                    minpitch=0,
+                    opt_lambda=tsr_rated)
+
+    """Run snippet bellow to generate opt file for flexible blade"""
+
+    htc.make_hawc2s(SAVE_HAWC2S_DIR,
+                    rigid=False,
+                    append='_compute_flex_opt',
+                    opt_path='./data/dtu_10mw_flex.opt',
                     compute_steady_states=True,
                     genspeed=(0, 50 * omega_rated_rpm),
                     save_power=True,
