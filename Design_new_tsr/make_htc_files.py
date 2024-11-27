@@ -15,20 +15,20 @@ from src.myteampack import MyHTC
 # R_DTU_10MW = 89.16
 # tsr_DTU_10MW  = omega_DTU_10MW_10ms_rpm*2*np.pi/60 * R_DTU_10MW / V0
 
-ratio_omega_increase = 1.13
 
-# Input variables for our redesign BB 10MW
-tsr_rated = 7 *ratio_omega_increase      # [-] This comes from the hawc2s results
-R_BB = 92.50348     # [m]
+""" Input variables for JIM DESIGN """
+tsr_rated = 7.13      # [-]
+R_JIM = 88.04+2.8     # [m]
+# TODO update Cp_opt value using HAWC2S
 Cp_opt = 0.474      # [-] from hawc2s results
 rho = 1.225         # [kg/m**3]
 P_rated = 10.64e6   # [W] same rated power as DTU 10MW
-A = R_BB**2 * np.pi # [m**2] rotor area
+A = R_JIM**2 * np.pi # [m**2] rotor area
 
 # Calculation of omega_rated from new value of V_rated
 V_rated = ((2*P_rated*rho)/(Cp_opt * A ))**(1/3)
 
-omega_rated = tsr_rated/R_BB * V_rated
+omega_rated = tsr_rated/R_JIM * V_rated
 omega_rated_rpm = omega_rated * 60 / (2*np.pi)
 
 
@@ -60,13 +60,15 @@ if __name__ == '__main__':
     # Capitan Spyridon
     # make rigid hawc2s file for multi-wsp opt file
     htc = MyHTC(ORIG_PATH)
-    # htc.make_hawc2s(SAVE_HAWC2S_DIR,
-    #                 rigid=True,
-    #                 append='_hawc2s_multitsr',
-    #                 opt_path='./data/dtu_10mw_multitsr.opt',
-    #                 compute_steady_states=True,
-    #                 genspeed=(0, 50 * omega_rated_rpm),
-    #                 save_power=True)
+    htc.make_hawc2s(SAVE_HAWC2S_DIR,
+                    rigid=True,
+                    append='_hawc2s_multitsr',
+                    opt_path='./data/JIM_multitsr.opt',
+                    compute_steady_states=True,
+                    genspeed=(0, 50 * omega_rated_rpm),
+                    minpitch=0,
+                    opt_lambda=tsr_rated,
+                    save_power=True)
 
 
     """Run snippet bellow to generate opt file for rigid blade"""

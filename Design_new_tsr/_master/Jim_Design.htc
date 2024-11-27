@@ -6,7 +6,7 @@ begin simulation;
   solvertype   1 ;  1=dense newmark, 2=sparse newmark (12.7+)
   on_no_convergence continue ;
   convergence_limits 1E3 1.0 1E-7 ;
-  logfile ./log/DTU_10MW_RWT.log ;
+  logfile ./log/JIM_RWT.log ;
   begin newmark;
     deltat    0.01;  time step
   end newmark;
@@ -24,7 +24,7 @@ begin new_htc_structure;  material properties, orientations and constraints of b
     node_distribution     c2_def ;
     damping_posdef   0.0 0.0 0.0 4.12E-03 4.12E-03 4.5E-04 ;  tuned by Larh
      begin timoschenko_input;
-      filename ./data/DTU_10MW_RWT_Tower_st.dat;
+      filename ./data/JIM_RWT_Tower_st.dat;
       set 1 1 ;  1 1=flexibe, 1 2=stiff
     end timoschenko_input;
     begin c2_def;  definition of centerline in main_body coordinates
@@ -51,7 +51,7 @@ begin new_htc_structure;  material properties, orientations and constraints of b
     damping_posdef  0.0  0.0  0.0  0.0 0.0 0.0 ;
 	concentrated_mass	2.0	0.0	2.6870E+00	3.0061E-01	4.4604E+05	4.1060E+06	4.1060E+05	4.1060E+06	;  nacelle mass and inertia corrected by Anyd 25/4/13
 	begin timoschenko_input;
-      filename ./data/DTU_10MW_RWT_Towertop_st.dat ;
+      filename ./data/JIM_RWT_Towertop_st.dat ;
       set 1 1 ;  1 1=flexibe, 1 2=stiff
     end timoschenko_input;
     begin c2_def;              Definition of centerline (main_body coordinates)
@@ -70,7 +70,7 @@ begin new_htc_structure;  material properties, orientations and constraints of b
     concentrated_mass	1.0	0.0	0.0	0.0	0.0	0.0	0.0	3.751E+06 ;	generator equivalent slow shaft re-tuned by Anyd 20/2/13
     concentrated_mass	5.0	0.0	0.0	0.0	1.0552E+05	0.0	0.0	3.257E+05 ;	hub mass and inertia re-tuned by Anyd 20/2/13
 	begin timoschenko_input;
-      filename ./data/DTU_10MW_RWT_Shaft_st.dat ;
+      filename ./data/JIM_RWT_Shaft_st.dat ;
       set 1 1 ;  1 1=flexibe, 1 2=stiff
     end timoschenko_input;
     begin c2_def;  definition of centerline in main_body coordinates
@@ -90,7 +90,7 @@ begin new_htc_structure;  material properties, orientations and constraints of b
     node_distribution     c2_def ;
     damping_posdef  0.0  0.0  0.0  0.0 0.0 0.0 ;
 	begin timoschenko_input;
-      filename ./data/DTU_10MW_RWT_Hub_st.dat ;
+      filename ./data/JIM_RWT_Hub_st.dat ;
       set 1 1 ;  1 1=flexibe, 1 2=stiff
     end timoschenko_input;
     begin c2_def;  definition of centerline in main_body coordinates
@@ -117,38 +117,38 @@ begin new_htc_structure;  material properties, orientations and constraints of b
     node_distribution    c2_def;
 	damping_posdef   0.0 0.0 0.0 1.53e-3 2.55e-3 3.3e-4 ;  3% damping tuned by tkim 23/03/13, unable to fit 3rd and higher mode
     begin timoschenko_input ;
-      filename ./data/DTU_10MW_RWT_Blade_st.dat;
+      filename ./data/JIM_RWT_Blade_st.dat;
       set 1 1 ;  1 1=flexibe, 1 2=stiff
     end timoschenko_input;
-      begin c2_def;
+        begin c2_def;
     nsec 27;
-    sec  1    0.00000e+00    7.00600e-05    4.61336e-16   -2.00000e+01 ;
-    sec  2   -2.06477e-05   -1.22119e-02    3.11651e+00   -2.00000e+01 ;
-    sec  3   -7.28810e-03   -2.49251e-02    6.23302e+00   -2.00000e+01 ;
-    sec  4   -1.89235e-02   -2.73351e-02    7.27189e+00   -2.00000e+01 ;
-    sec  5   -5.41282e-02   -2.82163e-02    9.03840e+00   -2.00000e+01 ;
-    sec  6   -1.26633e-01   -2.13210e-02    1.08060e+01   -2.00000e+01 ;
-    sec  7   -2.25666e-01   -1.28378e-02    1.26786e+01   -2.00000e+01 ;
-    sec  8   -2.88563e-01   -7.70659e-03    1.37194e+01   -2.00000e+01 ;
-    sec  9   -3.99194e-01   -4.88317e-03    1.55929e+01   -1.99766e+01 ;
-    sec 10   -5.76634e-01   -1.80296e-02    1.89225e+01   -1.80468e+01 ;
-    sec 11   -7.07136e-01   -5.01772e-02    2.22496e+01   -1.45414e+01 ;
-    sec 12   -7.91081e-01   -9.41228e-02    2.55750e+01   -1.13109e+01 ;
-    sec 13   -8.37195e-01   -1.48880e-01    2.88997e+01   -8.25878e+00 ;
-    sec 14   -8.53948e-01   -2.14514e-01    3.22241e+01   -5.75693e+00 ;
-    sec 15   -8.49367e-01   -2.90618e-01    3.55487e+01   -4.23134e+00 ;
-    sec 16   -7.93920e-01   -4.62574e-01    4.17824e+01   -2.38631e+00 ;
-    sec 17   -7.16284e-01   -6.88437e-01    4.84323e+01   -8.57136e-01 ;
-    sec 18   -6.34358e-01   -9.60017e-01    5.50824e+01    3.60052e-01 ;
-    sec 19   -5.53179e-01   -1.28424e+00    6.17323e+01    1.33392e+00 ;
-    sec 20   -4.75422e-01   -1.66402e+00    6.83819e+01    2.12493e+00 ;
-    sec 21   -4.03180e-01   -2.10743e+00    7.50311e+01    2.75804e+00 ;
-    sec 22   -3.30085e-01   -2.65630e+00    8.20957e+01    3.28346e+00 ;
-    sec 23   -3.10140e-01   -2.78882e+00    8.36540e+01    3.38743e+00 ;
-    sec 24   -2.86719e-01   -2.92517e+00    8.52127e+01    3.48773e+00 ;
-    sec 25   -2.55823e-01   -3.06577e+00    8.67713e+01    3.58454e+00 ;
-    sec 26   -2.07891e-01   -3.20952e+00    8.83298e+01    3.67826e+00 ;
-    sec 27   -8.98940e-02   -3.33685e+00    8.97196e+01    3.72197e+00 ;
+    sec  1    0.00000e+00    7.00600e-05    4.52704e-16   -2.00000e+01 ;
+    sec  2   -2.06477e-05   -1.22119e-02    3.05820e+00   -2.00000e+01 ;
+    sec  3   -7.28810e-03   -2.49251e-02    6.11640e+00   -2.00000e+01 ;
+    sec  4   -1.89235e-02   -2.73351e-02    7.13584e+00   -2.00000e+01 ;
+    sec  5   -5.41282e-02   -2.82163e-02    8.86930e+00   -2.00000e+01 ;
+    sec  6   -1.26633e-01   -2.13210e-02    1.06038e+01   -2.00000e+01 ;
+    sec  7   -2.25666e-01   -1.28378e-02    1.24414e+01   -2.00000e+01 ;
+    sec  8   -2.88563e-01   -7.70659e-03    1.34627e+01   -2.00000e+01 ;
+    sec  9   -3.99194e-01   -4.88317e-03    1.53012e+01   -1.98822e+01 ;
+    sec 10   -5.76634e-01   -1.80296e-02    1.85685e+01   -1.77793e+01 ;
+    sec 11   -7.07136e-01   -5.01772e-02    2.18333e+01   -1.43055e+01 ;
+    sec 12   -7.91081e-01   -9.41228e-02    2.50965e+01   -1.11403e+01 ;
+    sec 13   -8.37195e-01   -1.48880e-01    2.83590e+01   -8.15314e+00 ;
+    sec 14   -8.53948e-01   -2.14514e-01    3.16212e+01   -5.66218e+00 ;
+    sec 15   -8.49367e-01   -2.90618e-01    3.48836e+01   -4.11607e+00 ;
+    sec 16   -7.93920e-01   -4.62574e-01    4.10007e+01   -2.27416e+00 ;
+    sec 17   -7.16284e-01   -6.88437e-01    4.75262e+01   -7.58565e-01 ;
+    sec 18   -6.34358e-01   -9.60017e-01    5.40519e+01    4.48258e-01 ;
+    sec 19   -5.53179e-01   -1.28424e+00    6.05773e+01    1.41421e+00 ;
+    sec 20   -4.75422e-01   -1.66402e+00    6.71025e+01    2.19937e+00 ;
+    sec 21   -4.03180e-01   -2.10743e+00    7.36273e+01    2.82797e+00 ;
+    sec 22   -3.30085e-01   -2.65630e+00    8.05597e+01    3.34786e+00 ;
+    sec 23   -3.10140e-01   -2.78882e+00    8.20889e+01    3.45065e+00 ;
+    sec 24   -2.86719e-01   -2.92517e+00    8.36184e+01    3.54981e+00 ;
+    sec 25   -2.55823e-01   -3.06577e+00    8.51478e+01    3.64552e+00 ;
+    sec 26   -2.07891e-01   -3.20952e+00    8.66772e+01    3.73819e+00 ;
+    sec 27   -8.98940e-02   -3.33685e+00    8.80410e+01    3.78140e+00 ;
   end c2_def;
    end main_body;
 ;
@@ -332,8 +332,8 @@ begin aero ;  aerodynamic forces
   link 1 mbdy_c2_def blade1;
   link 2 mbdy_c2_def blade2;
   link 3 mbdy_c2_def blade3;
-  ae_filename        ./data/DTU_10MW_RWT_ae.dat ;
-  pc_filename        ./data/DTU_10MW_RWT_pc.dat ;
+  ae_filename        ./data/JIM_RWT_ae.dat ;
+  pc_filename        ./data/JIM_RWT_pc.dat ;
   induction_method   1 ;     0=none, 1=normal
   aerocalc_method    1 ;     0=no aero calculations, 1=with aero calculations
   aerosections       50 ;
@@ -584,7 +584,7 @@ end dll;
 ;---------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 ;
 begin output;  how/which values to save during the simulation
-  filename ./res/DTU_10MW_RWT ;  name of output file (excluding extension)
+  filename ./res/JIM_RWT ;  name of output file (excluding extension)
   data_format  gtsdf;  file format
   buffer 9999 ; leave a lot in memory before writing to file
   time 0 100 ;  time to record data
