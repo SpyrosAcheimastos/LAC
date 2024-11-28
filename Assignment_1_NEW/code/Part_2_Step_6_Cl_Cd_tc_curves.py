@@ -27,62 +27,6 @@ def plot_design_functions_for_different_inputs(df_polar):
 
     # # Define the range of tc for plotting
     tc_plot = np.linspace(0, 100, 100)
-
-    # # Plot Cl
-    # figure = plt.figure(figsize=(9, 3))
-    # for i, input_val in enumerate(inputs):
-    #     # Get design functions for the given input
-    #     cl_des, cd_des, aoa_des, tc_vals, cl_vals, cd_vals, aoa_vals = get_design_functions(input_val)
-
-    #     # Plot Cl
-    # plt.plot(tc_plot, cl_des(tc_plot))
-    # # plt.plot(tc_vals, cl_vals, 'o')  # Discrete points
-        
-    # plt.plot(df_polar['t/c'], df_polar['cl_des'], 'x', color='red', label='Polar Data')  # Additional data
-    # plt.ylabel('$C_l$ [-]')
-    # # plt.xlabel(r'$t/c$ [\%]')
-    # plt.xlabel('')  # This ensures space is allocated for the xlabel without displaying it
-    # plt.xticks(ticks=np.linspace(0, 100, 6), labels=[])
-    # plt.xlim(0, 100)
-    # plt.grid(True, axis='both', linewidth=0.5, linestyle='--')  # Keeps x-axis gridlines visible
-    # legend = plt.legend(fancybox=False, edgecolor="black")
-    # legend.get_frame().set_linewidth(0.5)
-    # plt.tight_layout()
-    # figure.savefig('cl_plot.pdf', dpi=300, bbox_inches='tight')  # Save the figure for Cl
-
-    #  # Plot Cd
-    # figure = plt.figure(figsize=(9, 3))
-
-    # plt.plot(tc_plot, cd_des(tc_plot))
-    # # plt.plot(tc_vals, cd_vals, 'o')  # Discrete points
-    # plt.plot(df_polar['t/c'], df_polar['cd_for_des'], 'x', color='red', label="Polar Data")  # Additional data
-    # plt.ylabel('$C_d$ [-]')
-    # # plt.xlabel(r'$t/c$ [\%]')
-    # plt.xticks(ticks=np.linspace(0, 100, 6), labels=[])
-    # plt.xlim(0, 100)
-    # plt.grid(True, axis='both', linewidth=0.5, linestyle='--')  # Keeps x-axis gridlines visible
-    # # legend = plt.legend(fancybox=False, edgecolor="black")
-    # # legend.get_frame().set_linewidth(0.5)
-    # plt.tight_layout()
-    # figure.savefig('cd_plot.pdf', dpi=300, bbox_inches='tight')  # Save the figure for Cd
-
-
-    # # Plot AoA
-    # figure = plt.figure(figsize=(9, 3))
-    # plt.plot(tc_plot, aoa_des(tc_plot))
-    # # plt.plot(tc_vals, aoa_vals, 'o')  # Discrete points
-    # plt.plot(df_polar['t/c'], df_polar['aoa_for_des'], 'x', color='red', label="Polar Data")  # Additional data
-    # plt.ylabel(r'$\alpha$ [deg]')
-    # plt.xlabel(r'$t/c$ [\%]')
-    # plt.xlim(0, 100)
-    # plt.grid(linewidth=0.5, linestyle='--')
-    # # legend = plt.legend(fancybox=False, edgecolor="black")
-    # # legend.get_frame().set_linewidth(0.5)
-    # plt.tight_layout()
-    # figure.savefig('aoa_plot.pdf', dpi=300, bbox_inches='tight')  # Save the figure for AoA 
-    # plt.show()
-    
-    
     
     # Create a figure with 3 subplots (one for each design function)
     fig, axes = plt.subplots(3, 1, figsize=(9, 9), sharex=True)
@@ -90,8 +34,6 @@ def plot_design_functions_for_different_inputs(df_polar):
     for i, input_val in enumerate(inputs):
         # Get design functions for the given input
         cl_des, cd_des, aoa_des, tc_vals, cl_vals, cd_vals, aoa_vals = get_design_functions(input_val)
-
-        
 
         # Plot Cl (1st subplot)
         # axes[0].plot(tc_vals, cl_vals, 'o')  # Discrete points

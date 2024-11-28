@@ -19,6 +19,12 @@ plt.rcParams['legend.framealpha'] = 1  # No transparency
 plt.rcParams['font.size'] = 12
 plt.rcParams['font.weight'] = 'normal'
 
+
+
+# SCALE_RATIO_BLADE = 1.0388359746215876  # GROUP DESIGN
+SCALE_RATIO_BLADE = 1.0291269809661907  # MY DESIGN
+
+
 def read_data(file_path):
     """Reads a data file and extracts three columns of float data."""
     column_1, column_2, column_3 = [], [], []
@@ -58,23 +64,25 @@ def run_design(tsr_values, design_function_int=1.0, plot_comparison=False):
 
     # File path and scaling factor for new design
     file_path = 'dtu_10mw/data/DTU_10MW_RWT_ae.dat'
-    scale_ratio_blade = 1.0388359746215876
 
     # Read new design data
     r, c_10mw, tc_10mw = read_data(file_path)
-    c_10mw *= scale_ratio_blade
+    c_10mw *= SCALE_RATIO_BLADE
     c_10mw[:4] = 5.38  # First 4 values of our design maintain identical chord
     c_10mw[4] = 5.386
-    c_10mw[5] = 5.5
+    c_10mw[5] = 5.45 # SPYROS: I changed this as in Step_2_Radius
+    c_10mw[6] = 5.52 # SPYROS: I changed this as in Step_2_Radius
+    c_10mw[7] = 5.65 # SPYROS: I changed this as in Step_2_Radius
+    c_10mw[8] = 5.85 # SPYROS: I changed this as in Step_2_Radius
     t_10mw = tc_10mw[:-1] / 100 * c_10mw[:-1]
-    r *= scale_ratio_blade
+    r *= SCALE_RATIO_BLADE
 
     r_hub = 2.8  # Hub radius [m]
     R = r_hub + r[-1]  # Rotor radius [m]
     r = r[:-1] + r_hub  # Adjust rotor span with hub radius
 
     # Max and root chord sizes
-    chord_max = 6.20 * scale_ratio_blade
+    chord_max = 6.20 * SCALE_RATIO_BLADE
     chord_root = 5.38
     B = 3  # Number of blades
 
@@ -185,36 +193,42 @@ def compare_designs(tsr_values, design_function_int=1.0):
     cp_max_index = np.argmax(cp_new)
     cp_max_tsr = tsr_values[cp_max_index]
     cp_max_value = cp_new[cp_max_index]
+    ct_value = ct_new[cp_max_index]
     print(f'cp_max_value={cp_max_value} at cp_max_tsr={cp_max_tsr}')
+    print(f'ct_value={ct_value} at cp_max_tsr={cp_max_tsr}')
 
     # Plot CP comparison
     figure = plt.figure(figsize=(5, 3))
     plt.subplots_adjust(left=0.1, right=0.9, top=0.9, bottom=0.1)
-    plt.plot(cp_max_tsr, cp_max_value, 'rx', label=r'Max $C_p$')
     plt.plot(tsr_values, cp_new)
+    plt.plot(cp_max_tsr, cp_max_value, 'ro', label=rf'$C_{{P,max}}(\lambda={cp_max_tsr:.2f})={cp_max_value:.3f}$')
     plt.ylabel("$C_P$ [-]")
     plt.xlabel("$\lambda$ [-]")
-    legend = plt.legend(fancybox=False, edgecolor="black")
+    legend = plt.legend(fancybox=False, edgecolor="black", loc='lower left')
     legend.get_frame().set_linewidth(0.5)
-    plt.grid(linewidth=0.5, linestyle='--')
-
+    plt.tick_params(axis='both', bottom=True, top=True, left=True, right=True, direction='in', which='major')
+    plt.grid(linestyle='--', linewidth=0.5, alpha=0.7)
     # Save and show the figure
     # plt.tight_layout()
-    figure.savefig('code/plots/Cp_TSR.pdf', dpi=300, bbox_inches='tight')
-    plt.show()
+    figure.savefig('code/plots/design_Cp_TSR.pdf', dpi=300, bbox_inches='tight')
+    plt.show()  
 
     # Create a new figure for CT comparison
     figure = plt.figure(figsize=(5, 3))
     plt.subplots_adjust(left=0.1, right=0.9, top=0.9, bottom=0.1)
     # Plot CT comparison
     plt.plot(tsr_values, ct_new)
+    plt.plot(cp_max_tsr, ct_value, 'ro', label=rf'$C_{{T}}(\lambda={cp_max_tsr:.2f})={ct_value:.3f}$')
     plt.ylabel("$C_T$ [-]")
     plt.xlabel("$\lambda$ [-]")
-    plt.grid(linewidth=0.5, linestyle='--')
+    legend = plt.legend(fancybox=False, edgecolor="black", loc='lower right')
+    legend.get_frame().set_linewidth(0.5)
+    plt.tick_params(axis='both', bottom=True, top=True, left=True, right=True, direction='in', which='major')
+    plt.grid(linestyle='--', linewidth=0.5, alpha=0.7)
 
     # Save and show the figure
     # plt.tight_layout()
-    figure.savefig('code/plots/Ct_TSR.pdf', dpi=300, bbox_inches='tight')  # Save the figure for Cl
+    figure.savefig('code/plots/design_Ct_TSR.pdf', dpi=300, bbox_inches='tight')  # Save the figure for Cl
     plt.show()
 
 # Define a range of TSR values to test
