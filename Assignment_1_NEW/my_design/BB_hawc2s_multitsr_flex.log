@@ -13,7 +13,7 @@
  ***********************************************************************
 ________________________________________________________________________
   Log file output
-                                                       Time : 10:44:34
+                                                       Time : 12:40:37
                                                        Date : 30:11.2024
 ________________________________________________________________________
  Opening main command file: .\BB_hawc2s_multitsr_flex.htc
@@ -134,19 +134,30 @@ Warning: Zero lift aoa not between -15 and 15 deg at sect 14. Treated as fully s
  Incl. tip correction  :  T
  Incl. induction       :  T
  Comp. gradients       :  F
-Processing computation no.  1 of 14
-Processing computation no.  2 of 14
-Processing computation no.  3 of 14
-Processing computation no.  4 of 14
-Processing computation no.  5 of 14
-Processing computation no.  6 of 14
-Processing computation no.  7 of 14
-Processing computation no.  8 of 14
-Processing computation no.  9 of 14
-Processing computation no. 10 of 14
-Processing computation no. 11 of 14
-Processing computation no. 12 of 14
-Processing computation no. 13 of 14
-Processing computation no. 14 of 14
+Processing computation no.  1 of 25
+Processing computation no.  2 of 25
+Processing computation no.  3 of 25
+Processing computation no.  4 of 25
+Processing computation no.  5 of 25
+Processing computation no.  6 of 25
+Processing computation no.  7 of 25
+Processing computation no.  8 of 25
+Processing computation no.  9 of 25
+Processing computation no. 10 of 25
+Processing computation no. 11 of 25
+Processing computation no. 12 of 25
+Processing computation no. 13 of 25
+Processing computation no. 14 of 25
+Processing computation no. 15 of 25
+Processing computation no. 16 of 25
+Processing computation no. 17 of 25
+Processing computation no. 18 of 25
+Processing computation no. 19 of 25
+Processing computation no. 20 of 25
+Processing computation no. 21 of 25
+Processing computation no. 22 of 25
+Processing computation no. 23 of 25
+Processing computation no. 24 of 25
+Processing computation no. 25 of 25
  ...done
  Continue log
