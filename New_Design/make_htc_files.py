@@ -153,30 +153,42 @@ if __name__ == '__main__':
     #                 opt_lambda=tsr_rated)
 
     """Run snippet bellow to generate pwr from opt file for rigid blade"""
+    # htc = MyHTC(ORIG_PATH)
+    # htc.make_hawc2s(SAVE_HAWC2S_DIR,
+    #                 rigid=True,
+    #                 append='_get_pwr_no_shaving',
+    #                 opt_path='./data/Jim_Design_NO_SHAVING.opt',
+    #                 compute_steady_states=True,
+    #                 genspeed=(min_omega_rpm, 50 * omega_rated_rpm),
+    #                 save_power=True,
+    #                 minpitch=0,
+    #                 opt_lambda=tsr_rated)
+
+    """Retardations which are not inside main"""
+
+    # Location of tuning TXT
+    # fname = 'Assignment_3/Part_2/res_hawc2s/BB_redesign_hawc2s_ctrltune_C1_ctrl_tuning.txt'
+    # ctrltune_dict = load_ctrl_txt(fname)
+    #
+    # htc.make_step(SAVE_HAWC2S_DIR,
+    #               append='_C1',
+    #               wsp_start=4,
+    #               wsp_stop=25,
+    #               t_start=0,
+    #               t_stop=1000,
+    #               t_step=0.01,
+    #               ctrltune_dict=ctrltune_dict)
+
+
+    """Run snippet bellow to generate pwr from opt file for flexible blade"""
     htc = MyHTC(ORIG_PATH)
     htc.make_hawc2s(SAVE_HAWC2S_DIR,
-                    rigid=True,
-                    append='_get_pwr_no_shaving',
-                    opt_path='./data/Jim_Design_NO_SHAVING.opt',
+                    rigid=False,
+                    append='_get_pwr_flex_with_shaving',
+                    opt_path='./data/Jim_Design_flex_blade_with_shaving.opt',
                     compute_steady_states=True,
                     genspeed=(min_omega_rpm, 50 * omega_rated_rpm),
                     save_power=True,
                     minpitch=0,
                     opt_lambda=tsr_rated)
-
-    """Retardations which are not inside main"""
-
-    # Location of tuning TXT
-    fname = 'Assignment_3/Part_2/res_hawc2s/BB_redesign_hawc2s_ctrltune_C1_ctrl_tuning.txt'
-    ctrltune_dict = load_ctrl_txt(fname)
-
-    htc.make_step(SAVE_HAWC2S_DIR,
-                  append='_C1',
-                  wsp_start=4,
-                  wsp_stop=25,
-                  t_start=0,
-                  t_stop=1000,
-                  t_step=0.01,
-                  ctrltune_dict=ctrltune_dict)
-
 

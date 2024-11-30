@@ -24,10 +24,12 @@ if __name__ == '__main__':
     htc = MyHTC(ORIG_PATH)
     # INSERT CODE HERE WHEN PROMPTED (A0)
     htc.make_hawc2s(SAVE_HAWC2S_DIR,
-                    rigid=False,
-                    append='_compute_flex_opt',
+                    rigid=True,
+                    append='_compute_rigid_opt',
                     opt_path='./data/dtu_10mw_rigid.opt',
                     compute_steady_states=True,
-                    save_power=True)
+                    save_power=True,
+                    opt_lambda=8,
+                    minpitch=0)
 
 
