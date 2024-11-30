@@ -18,8 +18,8 @@ tsr_max_cp = 7.05
 
 
 # File path and scaling factor for new design
-ae_path = 'dtu_10mw/data/DTU_10MW_RWT_ae.dat'
-scale_ratio_blade = 1.0388359746215876
+ae_path = '../dtu_10mw/data/DTU_10MW_RWT_ae.dat'
+scale_ratio_blade = 1.02624
 
 ae = load_ae(ae_path)
 
@@ -63,7 +63,7 @@ print(tc_BB)
 
 
 # Write the updated data into the new .dat file
-save_path = 'our_design/data/DTU_10MW_RWT_ae.dat'
+save_path = '../my_design/data/DTU_10MW_RWT_ae.dat'
 
 # Convert numpy arrays to lists
 chord_BB_list = chord_BB.tolist()
@@ -98,7 +98,7 @@ save_ae(save_path, ae_new)
 
 # print(tc_BB)
 # print(r)
-np.savetxt('code/single_point_design_tc.txt' ,tc_BB)
+np.savetxt('single_point_design_tc.txt' ,tc_BB)
 # np.savetxt('code/single_point_design_Cl.txt', cl)
-np.savetxt('code/single_point_design_twist.txt', twist_BB)
-np.savetxt('code/single_point_design_radius.txt', r)
+np.savetxt('single_point_design_twist.txt', twist_BB)
+np.savetxt('single_point_design_radius.txt', r)

@@ -57,8 +57,8 @@ def run_design(tsr_values, design_function_int=1.0, plot_comparison=False):
     """Runs the single-point design for a range of TSR values and plots CP and CT (new design)."""
 
     # File path and scaling factor for new design
-    file_path = 'dtu_10mw/data/DTU_10MW_RWT_ae.dat'
-    scale_ratio_blade = 1.0388359746215876
+    file_path = "../dtu_10mw/data/DTU_10MW_RWT_ae.dat"
+    scale_ratio_blade = 1.02624
 
     # Read new design data
     r, c_10mw, tc_10mw = read_data(file_path)
@@ -106,7 +106,7 @@ def run_old_design(tsr_values, design_function_int=1.0, plot_comparison=False):
     """Runs the single-point design for a range of TSR values and plots CP and CT (old design)."""
 
     # File path for old design (without scaling)
-    file_path = 'dtu_10mw/data/DTU_10MW_RWT_ae.dat'
+    file_path = "../dtu_10mw/data/DTU_10MW_RWT_ae.dat"
 
     # Read old design data
     r, c_10mw, tc_10mw = read_data(file_path)
@@ -200,7 +200,7 @@ def compare_designs(tsr_values, design_function_int=1.0):
 
     # Save and show the figure
     # plt.tight_layout()
-    figure.savefig('code/plots/Cp_TSR.pdf', dpi=300, bbox_inches='tight')
+    figure.savefig('plots/Cp_TSR.pdf', dpi=300, bbox_inches='tight')
     plt.show()
 
     # Create a new figure for CT comparison
@@ -214,7 +214,7 @@ def compare_designs(tsr_values, design_function_int=1.0):
 
     # Save and show the figure
     # plt.tight_layout()
-    figure.savefig('code/plots/Ct_TSR.pdf', dpi=300, bbox_inches='tight')  # Save the figure for Cl
+    figure.savefig('plots/Ct_TSR.pdf', dpi=300, bbox_inches='tight')  # Save the figure for Cl
     plt.show()
 
 # Define a range of TSR values to test
