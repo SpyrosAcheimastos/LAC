@@ -9,44 +9,41 @@ import matplotlib.pyplot as plt
 """This file generates the list of chords and twists for the blade
 It uses the tsr_max_Cp value which is the tsr that gets the maximum Cp
 This was calculated in Cp_Ct_blade_design.py
-tsr_max_cp = 7.05 for design function 2"""
+TSR_MAX_CP = 7.05 for design function 2"""
 
 """Cannot run r = R, this is a point that is included inside the DTU_10MW_RWT file, 
 not sure what to do about this"""
 
-tsr_max_cp = 7.05
-
+# SPYROS: MY DESIGN
+SCALE_RATIO_BLADE = 1.0291269809661907
+TSR_MAX_CP = 7.05
 
 # File path and scaling factor for new design
 ae_path = 'dtu_10mw/data/DTU_10MW_RWT_ae.dat'
-scale_ratio_blade = 1.0388359746215876
-
 ae = load_ae(ae_path)
 
 # Read new design data
 r, c_10mw, tc_10mw, pcset = load_ae(ae_path, unpack=True)
 # print(len(r))
 # print(r)
-c_10mw *= scale_ratio_blade
+c_10mw *= SCALE_RATIO_BLADE
 c_10mw[:4] = 5.38  # First 4 values of our design maintain identical chord
 c_10mw[4] = 5.386
-c_10mw[5] = 5.5
+c_10mw[5] = 5.45 # SPYROS: I changed this as in Step_2_Radius
+c_10mw[6] = 5.52 # SPYROS: I changed this as in Step_2_Radius
+c_10mw[7] = 5.65 # SPYROS: I changed this as in Step_2_Radius
+c_10mw[8] = 5.85 # SPYROS: I changed this as in Step_2_Radius
 t_input = tc_10mw[:-1] / 100 * c_10mw[:-1]
-r *= scale_ratio_blade
+r *= SCALE_RATIO_BLADE
 
-# print(r[:6])
 
 r_hub = 2.8  # Hub radius [m]
 R = r_hub + r[-1]  # Rotor radius [m]
-# print(R)
 r_with_hub = r[:-1] + r_hub  # Adjust rotor span with hub radius
 
 
-
-# print(r)
-# print(r-r_hub)
 # Max and root chord sizes
-chord_max = 6.20 * scale_ratio_blade
+chord_max = 6.20 * SCALE_RATIO_BLADE
 chord_root = 5.38
 B = 3  # Number of blades
 
@@ -55,7 +52,7 @@ cl_des, cd_des, aoa_des, tc_vals, cl_vals, cd_vals, aoa_vals = get_design_functi
 
 # Perform the design for the TSR_max_cp
 chord_BB, tc_BB, twist_BB, cl, cd, aoa, a, CLT, CLP, CT, CP = single_point_design(
-    r_with_hub, t_input, tsr_max_cp, R, cl_des, cd_des, aoa_des, chord_root, chord_max, B
+    r_with_hub, t_input, TSR_MAX_CP, R, cl_des, cd_des, aoa_des, chord_root, chord_max, B
         )
 
 

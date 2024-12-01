@@ -15,10 +15,10 @@ c2_def = load_c2def(htc_path)
 
 # This is used for OUR_DESIGN?
 DTU_10MW_file_original = 'dtu_10mw/data/DTU_10MW_RWT_ae.dat' #TODO
-# SCALE_RATIO_BLADE = 1.0388359746215876    # GROUP DESIGN
-# tsr = 7.05                                # GROUP DESIGN
-SCALE_RATIO_BLADE = 1.0291269809661907  # MY DESIGN
-tsr = 7.05                              # MY DESIGN
+GROUP_SCALE_RATIO_BLADE = 1.0388359746215876    # GROUP DESIGN
+GROUP_TSR = 7.05                                # GROUP DESIGN
+MINE_SCALE_RATIO_BLADE = 1.0291269809661907  # MY DESIGN
+MINE_TSR = 7.05                              # MY DESIGN
 
 
 import scienceplots
@@ -95,72 +95,80 @@ def interpolate_data(x, y, x_new):
     interpolator = interp1d(x, y, kind='linear', fill_value="extrapolate")
     return interpolator(x_new)
 
+def calculate_new_design(r_10mw, c_10mw, tc_10mw, scale_ratio_blade, tsr):
+    """SPYROS: Function to gather up the mess"""
+
+    r = r_10mw * scale_ratio_blade
+    c_new = c_10mw * scale_ratio_blade
+    c_new[:4] = 5.38 # first 4 values of our design maintain identical chord
+    c_new[4] = 5.386
+    c_new[5] = 5.45 # SPYROS: I changed this as in Step_2_Radius
+    c_new[6] = 5.52 # SPYROS: I changed this as in Step_2_Radius
+    c_new[7] = 5.65 # SPYROS: I changed this as in Step_2_Radius
+    c_new[8] = 5.85 # SPYROS: I changed this as in Step_2_Radius
+    t_new = tc_10mw[:-1] / 100  * c_new[:-1] # thickness is in percentage in the DTU_10MW_RWT_ae.dat file
+
+    # Inputs
+    B = 3  # Number of blades [#]
+    r_hub = 2.8  # Hub radius [m]
+    R = r_hub + r[-1]  # Rotor radius [m]
+    r = r[:-1] + r_hub  # Rotor span (hub is added to the blade length)
+    chord_max = 6.20 * scale_ratio_blade # Maximum chord size [m] (SPYROS: not exactly correct, but ok)
+    chord_root = 5.38  # Chord size at the root [m]
+
+    # Aero dynamic polar design functions and the values (t/c vs. cl, cd, aoa)
+    cl_des, cd_des, aoa_des, tc_vals, cl_vals, cd_vals, aoa_vals = get_design_functions(2)
+
+    # Solving for the a single design
+    chord, tc, twist, cl, cd, aoa, a, CLT, CLP, CT, CP = single_point_design(
+        r, t_new, tsr, R, cl_des, cd_des, aoa_des, chord_root, chord_max, B
+    )
+
+    # Make rotor span back to blade length
+    r = r - r_hub
+
+    return {'r': r, 'chord': chord, 'twist': twist, 'tc': tc}
+
 
 # Read the data
 r_10mw, c_10mw, tc_10mw = read_data(DTU_10MW_file_original) # This is the origianal actually
-twist_10mw = - c2_def[:,3] # 
 r_10mw_twist = c2_def[:,2]
+twist_10mw = - c2_def[:,3]
 
-c_new = c_10mw * SCALE_RATIO_BLADE
-c_new[:4] = 5.38 # first 4 values of our design maintain identical chord
-c_new[4] = 5.386
-c_new[5] = 5.45 # SPYROS: I changed this as in Step_2_Radius
-c_new[6] = 5.52 # SPYROS: I changed this as in Step_2_Radius
-c_new[7] = 5.65 # SPYROS: I changed this as in Step_2_Radius
-c_new[8] = 5.85 # SPYROS: I changed this as in Step_2_Radius
-t_new = tc_10mw[:-1] / 100  * c_new[:-1] # thickness is in percentage in the DTU_10MW_RWT_ae.dat file
-
-r = r_10mw * SCALE_RATIO_BLADE
-
-# %% Inputs
-B = 3  # Number of blades [#]
-r_hub = 2.8  # Hub radius [m]
-R = r_hub + r[-1]  # Rotor radius [m]
-r = r[:-1] + r_hub  # Rotor span (hub is added to the blade length)
-chord_max = 6.20 * SCALE_RATIO_BLADE # Maximum chord size [m] (SPYROS: not exactly correct, but ok)
-chord_root = 5.38  # Chord size at the root [m]
-
-# Aero dynamic polar design functions and the values (t/c vs. cl, cd, aoa)
-cl_des, cd_des, aoa_des, tc_vals, cl_vals, cd_vals, aoa_vals = get_design_functions(2)
-
-# Solving for the a single design
-chord, tc, twist, cl, cd, aoa, a, CLT, CLP, CT, CP = single_point_design(
-    r, t_new, tsr, R, cl_des, cd_des, aoa_des, chord_root, chord_max, B
-)
-
-# print(tc)
-# print(np.shape(tc))
-
-# Make rotor span back to blade length
-r = r - r_hub
+GROUP = calculate_new_design(r_10mw, c_10mw, tc_10mw, GROUP_SCALE_RATIO_BLADE, GROUP_TSR)
+MINE = calculate_new_design(r_10mw, c_10mw, tc_10mw, MINE_SCALE_RATIO_BLADE, MINE_TSR)
 
 # Plot the chord, twist and relative-thickness
 fig2, axs2 = plt.subplots(3, 1, num=2, clear=True, sharex=True, figsize=(9, 9))
  
 # Chord
-axs2[0].plot(r, chord, '-', label="New Design", c='tab:blue')
-axs2[0].plot(r_10mw[:-1], c_10mw[:-1], '-.', label="DTU 10MW", c='tab:red')   
+axs2[0].plot(r_10mw[:-1], c_10mw[:-1], '-.', label="DTU 10MW", c='tab:red') 
+axs2[0].plot(MINE['r'], MINE['chord'], '-', label="New Design", c='tab:blue')
+axs2[0].plot(GROUP['r'], GROUP['chord'], '--', label="Group Design", c='tab:green')
 axs2[0].set_ylabel("Chord [m]")
-axs2[0].set_xlim(0, R)
+# axs2[0].set_xlim(0, R)
 axs2[0].grid(alpha=0.7, linewidth=0.5, linestyle='--')
 axs2[0].legend(fancybox=False, edgecolor="black", loc='lower left').get_frame().set_linewidth(0.5)
 
 # Twist
-axs2[1].plot(r, twist, '-', label="New Design", c='tab:blue')
 axs2[1].plot(r_10mw_twist, twist_10mw, '-.', label="DTU 10MW", c='tab:red')
+axs2[1].plot(MINE['r'], MINE['twist'], '-', label="New Design", c='tab:blue')
+axs2[1].plot(GROUP['r'], GROUP['twist'], '--', label="Group Design", c='tab:green')
 axs2[1].set_ylabel("Twist [deg]")
-axs2[1].set_xlim(0, R)
+# axs2[1].set_xlim(0, R)
 axs2[1].grid(alpha=0.7, linewidth=0.5, linestyle='--')
 
 # t/c
-axs2[2].plot(r, tc, '-', label="New Design", c='tab:blue')
 axs2[2].plot(r_10mw[:-1], tc_10mw[:-1], '-.', label="DTU 10MW", c='tab:red')
+axs2[2].plot(MINE['r'], MINE['tc'], '-', label="New Design", c='tab:blue')
+axs2[2].plot(GROUP['r'], GROUP['tc'], '--', label="Group Design", c='tab:green')
 axs2[2].set_ylabel("Rel. thickness [\%]")
 axs2[2].set_xlabel("Blade length [m]")
-axs2[2].set_xlim(0, R)
+# axs2[2].set_xlim(0, R)
 axs2[2].grid(alpha=0.7, linewidth=0.5, linestyle='--')
 
 fig2.tight_layout()
 fig2.savefig('code/plots/distribution_blade.pdf', dpi=300, bbox_inches='tight')
 
 plt.show()
+# %%

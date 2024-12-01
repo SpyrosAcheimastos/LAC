@@ -105,7 +105,7 @@ class MyHTC(HTCFile):
         self.save((save_dir / (name + '.htc')).as_posix())
 
     def make_hawc2s(self, save_dir, rigid, append, opt_path,
-                    genspeed=(0, 480), minpitch=0, opt_lambda=8, **kwargs):
+                    genspeed=(0, 480), minpitch=0.001070, opt_lambda=8, **kwargs):
         """Make a HAWC2S file with specific settings.
 
         Args:
