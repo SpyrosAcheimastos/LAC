@@ -367,20 +367,20 @@ begin dll;  dlls used in model
       constant   9   0.7    	; Damping ratio of speed filter [-]
       constant  10   1.80   	; Frequency of free-free DT torsion mode [Hz], if zero no notch filter used
       ; Partial load control parameters
-      constant  11   0.100946E+08 ; Optimal Cp tracking K factor [Nm/(rad/s)^2], ;
+      constant  11   0.121921E+08 ; Optimal Cp tracking K factor [Nm/(rad/s)^2], ;
                                 ; Qg=K*Omega^2, K=eta*0.5*rho*A*Cp_opt*R^3/lambda_opt^3                     
-      constant  12   0.708231E+08 ; Proportional gain of torque controller [Nm/(rad/s)]
-      constant  13   0.158927E+08 ; Integral gain of torque controller [Nm/rad]
+      constant  12   0.776041E+08 ; Proportional gain of torque controller [Nm/(rad/s)]
+      constant  13   0.174143E+08 ; Integral gain of torque controller [Nm/rad]
       constant  14   0.0    	; Differential gain of torque controller [Nm/(rad/s^2)]
 ;     Full load control parameters
-      constant  15   1      	; Generator control switch [1=constant power, 0=constant torque]
-      constant  16   0.139489E+01    ; Proportional gain of pitch controller [rad/(rad/s)]
-      constant  17   0.334225E+00   ; Integral gain of pitch controller [rad/rad]
+      constant  15   0     	; Generator control switch [1=constant power, 0=constant torque]
+      constant  16   0.154874E+01    ; Proportional gain of pitch controller [rad/(rad/s)]
+      constant  17   0.417043E+00   ; Integral gain of pitch controller [rad/rad]
       constant  18   0.0    	; Differential gain of pitch controller [rad/(rad/s^2)]
       constant  19   0.4e-8 	; Proportional power error gain [rad/W]
       constant  20   0.4e-8 	; Integral power error gain [rad/(Ws)]
-      constant  21 	 11.61083       ; Coefficient of linear term in aerodynamic gain scheduling, KK1 [deg]
-      constant  22 	 458.60541      ; Coefficient of quadratic term in aerodynamic gain scheduling, KK2 [deg^2] &
+      constant  21 	 13.59266       ; Coefficient of linear term in aerodynamic gain scheduling, KK1 [deg]
+      constant  22 	 395.72388      ; Coefficient of quadratic term in aerodynamic gain scheduling, KK2 [deg^2] &
 								; (if zero, KK1 = pitch angle at double gain)
       constant  23   1.3    	; Relative speed for double nonlinear gain [-]
 ;     Cut-in simulation parameters
@@ -693,19 +693,19 @@ begin hawcstab2;  commands for hawc2s/hawcstab2
   end rotating_threebladed_substructure;
   ;
   ; path to opt file, used for all commands EXCEPT compute_optimal_pitch_angle
-  operational_data_filename	./data/BB_redesign_compute_flex_opt.opt;
+  operational_data_filename	./data/Jim_Design_flex_blade_with_shaving.opt;
   ;
   ; settings for compute_optimal_pitch_angle
   begin operational_data ;  
     windspeed 4 25 22 ; cut-in [m/s], cut-out [m/s], points [-] -- used if operational_data_file_wind is 0
-    genspeed 0 430.87160188843274 ; min, max generator speed [rpm]
+    genspeed 300 441.6134 ; min, max generator speed [rpm]
     gearratio 50.0 ; gear ratio [-]
     minpitch 0.0 ; min. pitch angle [deg]
-    opt_lambda 6.92 ; optimal TSR [-]
+    opt_lambda 7.52 ; optimal TSR [-]
     maxpow 10638.3 ; rated aerodynamic power [kW]
     prvs_turbine 1 ; 1=pitch-regulated, variable-speed turbine
 	operational_data_file_wind 1;  0=use wind defined in windspeed, 1=use wind defined in operational_data_filename above
-    include_torsiondeform 0 ; 0=rigid blade, 1=flexible blade
+    include_torsiondeform 1 ; 0=rigid blade, 1=flexible blade
     set_torque_limit 1 ;  no torque limits if set to 1
   end operational_data ;
 end hawcstab2;

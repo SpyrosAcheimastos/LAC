@@ -3,10 +3,13 @@ Make all the htc files for the LAC course from a single base file.
 
 Requires myteampack (which requires lacbox).
 """
+
+
 import numpy as np
 
 from src.myteampack import MyHTC
 from lacbox.io import load_ctrl_txt
+from pathlib import Path
 
 #   Input variables
 # DTU 10MW
@@ -41,6 +44,7 @@ omega_rated_rpm = omega_rated * 60 / (2*np.pi)
 
 
 print(omega_rated_rpm)
+print(f'omega_rated generator = {omega_rated_rpm * 50}')
 
 
 
@@ -181,14 +185,75 @@ if __name__ == '__main__':
 
 
     """Run snippet bellow to generate pwr from opt file for flexible blade"""
-    htc = MyHTC(ORIG_PATH)
-    htc.make_hawc2s(SAVE_HAWC2S_DIR,
-                    rigid=False,
-                    append='_get_pwr_flex_with_shaving',
-                    opt_path='./data/Jim_Design_flex_blade_with_shaving.opt',
-                    compute_steady_states=True,
-                    genspeed=(min_omega_rpm, 50 * omega_rated_rpm),
-                    save_power=True,
-                    minpitch=0,
-                    opt_lambda=tsr_rated)
+    # htc = MyHTC(ORIG_PATH)
+    # htc.make_hawc2s(SAVE_HAWC2S_DIR,
+    #                 rigid=False,
+    #                 append='_get_pwr_flex_with_shaving',
+    #                 opt_path='./data/Jim_Design_flex_blade_with_shaving.opt',
+    #                 compute_steady_states=True,
+    #                 genspeed=(min_omega_rpm, 50 * omega_rated_rpm),
+    #                 save_power=True,
+    #                 minpitch=0,
+    #                 opt_lambda=tsr_rated)
 
+    """CONTROL SECTION HERE"""
+
+    ctrltune_params = {
+        'partial_load': (0.05, 0.7),
+        'full_load': (0.06, 0.7),
+        'gain_scheduling': 2,
+        'constant_power': 0,
+    }
+    # htc = MyHTC(ORIG_PATH)
+    # htc.make_hawc2s_ctrltune(SAVE_HAWC2S_DIR,
+    #                 rigid=False,
+    #                 append='_contrl_test_opt',
+    #                 opt_path='./data/Jim_Design_flex_blade_with_shaving.opt',
+    #                 compute_steady_states=True,
+    #                 genspeed=(min_omega_rpm, 50 * omega_rated_rpm),
+    #                 ctrltune_params=ctrltune_params,
+    #                 save_power=False,
+    #                 minpitch = 0,
+    #                 opt_lambda =tsr_rated)
+
+
+    """Make step function here"""
+
+    fname =  Path.cwd() / 'res_hawc2s/Jim_Design_contrl_test_opt_ctrl_tuning.txt'
+    ctrltune_dict = load_ctrl_txt(fname)
+
+    htc = MyHTC(ORIG_PATH)
+    htc.make_step('htc' + SAVE_HAWC2S_DIR,
+                  append='_C1',
+                  wsp_start=4,
+                  wsp_stop=25,
+                  t_start=0,
+                  t_stop=1000,
+                  t_step=0.01,
+                  ctrltune_dict=ctrltune_dict)
+    #
+    # # Location of tuning TXT
+    # ctrl = 'C7_0.05_0.9'
+    # ctrl_type = 'Constant Power'  # C1,C2,C3
+    # # ctrl_type = 'Constant Torque'   # C4,C5,C6
+    # # maximum_allowable_rotor_torque = 15.6e6 # [Nm]
+    # maximum_allowable_rotor_torque = 18.966e6  # [Nm]
+    # fname = f'Assignment_3/Part_2/res_hawc2s/BB_redesign_hawc2s_ctrltune_{ctrl}_ctrl_tuning.txt'
+    # ctrltune_dict = load_ctrl_txt(fname)
+    #
+    # # Master & Save locations
+    # ORIG_PATH = 'Assignment_3/Part_3/_master/BB_redesign.htc'
+    # SAVE_HAWC2S_DIR = 'Assignment_3/Part_3/htc'
+    #
+    # # SPYROS
+    # htc = MyHTC(ORIG_PATH)
+    # htc.make_step(SAVE_HAWC2S_DIR,
+    #               append=f'_step_wind_{ctrl}_Max_Torque',
+    #               ctrl_type=ctrl_type,
+    #               wsp_start=4,
+    #               wsp_stop=25,
+    #               t_start=0,
+    #               t_stop=1000,
+    #               t_step=0.01,
+    #               ctrltune_dict=ctrltune_dict,
+    #               maximum_allowable_rotor_torque=maximum_allowable_rotor_torque)

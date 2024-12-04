@@ -4,29 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9da7bfa5-fcda-4f07-a089-efd1bf8566f1" name="Changes" comment="Starting To make plots now">
-      <change afterPath="$PROJECT_DIR$/New_Design/Plotting_Code/Plotting_Code_pwr.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/New_Design/data/Jim_Design_NO_SHAVING.opt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/New_Design/data/Jim_Design_WITH_SHAVING.opt" afterDir="false" />
+    <list default="true" id="9da7bfa5-fcda-4f07-a089-efd1bf8566f1" name="Changes" comment="Campell Diagram has been made">
+      <change afterPath="$PROJECT_DIR$/New_Design/Code/make_turb_htc_files.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Design_new_tsr/Blade_parameters/Blade_params.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/Blade_parameters/Blade_params.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Design_new_tsr/Blade_parameters/JIM_DESIGN_RWT_Blade_ae.dat" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/Blade_parameters/JIM_DESIGN_RWT_Blade_ae.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Design_new_tsr/Plotting_Code/Plotting_Code_pwr.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Design_new_tsr/Plotting_Code/Plotting_Forces.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/Plotting_Code/Plotting_Forces.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Design_new_tsr/_master/Jim_Design.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/_master/Jim_Design.htc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Design_new_tsr/data/JIM_RWT_Blade_st.dat" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/data/JIM_RWT_Blade_st.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Design_new_tsr/data/JIM_RWT_Hub_st.dat" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/data/JIM_RWT_Hub_st.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Design_new_tsr/data/JIM_RWT_Shaft_st.dat" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/data/JIM_RWT_Shaft_st.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Design_new_tsr/data/JIM_RWT_Tower_st.dat" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/data/JIM_RWT_Tower_st.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Design_new_tsr/data/JIM_RWT_Towertop_st.dat" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/data/JIM_RWT_Towertop_st.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Design_new_tsr/data/JIM_RWT_ae.dat" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/data/JIM_RWT_ae.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Design_new_tsr/data/JIM_RWT_pc.dat" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/data/JIM_RWT_pc.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Design_new_tsr/data/JIM_multitsr.opt" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/data/JIM_multitsr.opt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Design_new_tsr/data/dtu_10mw_1wsp.opt" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/data/dtu_10mw_1wsp.opt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Design_new_tsr/data/dtu_10mw_flex.opt" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/data/dtu_10mw_flex.opt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Design_new_tsr/data/dtu_10mw_flex_minrotspd.opt" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/data/dtu_10mw_flex_minrotspd.opt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Design_new_tsr/data/dtu_10mw_rigid.opt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Design_new_tsr/make_htc_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/make_htc_files.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment_3/Part_3/Code/plot_NEW.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_3/Part_3/Code/plot_NEW.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment_4/code/postprocess_hawc2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_4/code/postprocess_hawc2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/Jim_Design_get_pwr_flex_with_shaving.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/Jim_Design_get_pwr_flex_with_shaving.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/_master/Jim_Design.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/_master/Jim_Design.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/control/wpdata.100" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/control/wpdata.100" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/make_htc_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/make_htc_files.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,45 +45,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Cp_Ct_blade_design.executor": "Run",
-    "Python.Get_chord_and_thickness.executor": "Run",
-    "Python.aero_design_functions_10MW.executor": "Run",
-    "Python.make_htc_files (1).executor": "Run",
-    "Python.make_htc_files.executor": "Run",
-    "Python.scratch_20.executor": "Run",
-    "Python.scratch_21.executor": "Run",
-    "Python.testing.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Jim__Personal",
-    "last_opened_file_path": "C:/Users/jimwi/PycharmProjects/LAC/LAC/Design_new_tsr/data",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Cp_Ct_blade_design.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Get_chord_and_thickness.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aero_design_functions_10MW.executor&quot;: &quot;Run&quot;,
+    &quot;Python.make_htc_files (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.make_htc_files.executor&quot;: &quot;Run&quot;,
+    &quot;Python.make_htc_files_for_dtu_10mw.executor&quot;: &quot;Run&quot;,
+    &quot;Python.make_turb_htc_files.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scratch_20.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scratch_21.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testing.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Jim__Personal&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jimwi/PycharmProjects/LAC/LAC/New_Design/Code&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "Python"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;Python&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\New_Design\Code" />
+      <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\New_Design\Plotting_Code" />
+      <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\New_Design\data" />
+      <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\New_Design\control" />
       <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\Design_new_tsr\data" />
-      <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\Design_new_tsr\res_hawc2s" />
-      <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\Assignment_1\Assignment_1\MISSING_CODE" />
-      <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\dtu_10mw" />
-      <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\Design_new_tsr" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.make_htc_files (1)">
+  <component name="RunManager" selected="Python.make_turb_htc_files">
     <configuration name="Get_chord_and_thickness" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LAC" />
       <option name="ENV_FILES" value="" />
@@ -144,7 +132,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="scratch_20" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="make_htc_files" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LAC" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -153,58 +141,58 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_20.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="scratch_21" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LAC" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_21.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="testing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LAC" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment_1/Assignment_1/Part2_JIM" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/New_Design" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment_1/Assignment_1/Part2_JIM/testing.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/New_Design/make_htc_files.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="make_htc_files_for_dtu_10mw" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LAC" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dtu_10mw" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dtu_10mw/make_htc_files_for_dtu_10mw.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="make_turb_htc_files" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LAC" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/New_Design/Code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/New_Design/Code/make_turb_htc_files.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -215,11 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.make_turb_htc_files" />
+        <item itemvalue="Python.make_htc_files" />
+        <item itemvalue="Python.make_htc_files_for_dtu_10mw" />
         <item itemvalue="Python.make_htc_files (1)" />
         <item itemvalue="Python.Get_chord_and_thickness" />
-        <item itemvalue="Python.testing" />
-        <item itemvalue="Python.scratch_21" />
-        <item itemvalue="Python.scratch_20" />
       </list>
     </recent_temporary>
   </component>
@@ -255,7 +243,14 @@
       <workItem from="1732694961297" duration="2087000" />
       <workItem from="1732710470842" duration="13731000" />
       <workItem from="1732786104338" duration="736000" />
-      <workItem from="1732870908481" duration="7416000" />
+      <workItem from="1732870908481" duration="10639000" />
+      <workItem from="1732885078018" duration="938000" />
+      <workItem from="1732959927556" duration="8680000" />
+      <workItem from="1732973409442" duration="614000" />
+      <workItem from="1733141190745" duration="731000" />
+      <workItem from="1733299695181" duration="10224000" />
+      <workItem from="1733315046219" duration="119000" />
+      <workItem from="1733319544703" duration="3170000" />
     </task>
     <task id="LOCAL-00001" summary="baboy">
       <option name="closed" value="true" />
@@ -273,7 +268,39 @@
       <option name="project" value="LOCAL" />
       <updated>1732717409472</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added stuff for wind ramp simulations, have new thrust curve from manually adding pitch angles, new plots for thrust and power curves">
+      <option name="closed" value="true" />
+      <created>1732878972099</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732878972099</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added stuff for wind ramp simulations, have new thrust curve from manually adding pitch angles, new plots for thrust and power curves">
+      <option name="closed" value="true" />
+      <created>1732878998427</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732878998427</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Peak shaving implemented inside controller">
+      <option name="closed" value="true" />
+      <created>1732879775511</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732879775511</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Campell Diagram has been made">
+      <option name="closed" value="true" />
+      <created>1732965745715</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1732965745715</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +309,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="baboy" />
     <MESSAGE value="Starting To make plots now" />
-    <option name="LAST_COMMIT_MESSAGE" value="Starting To make plots now" />
+    <MESSAGE value="Added stuff for wind ramp simulations, have new thrust curve from manually adding pitch angles, new plots for thrust and power curves" />
+    <MESSAGE value="Peak shaving implemented inside controller" />
+    <MESSAGE value="Campell Diagram has been made" />
+    <option name="LAST_COMMIT_MESSAGE" value="Campell Diagram has been made" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -302,18 +332,25 @@
           <line>79</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Assignment_4/code/postprocess_hawc2.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LAC$testing.coverage" NAME="testing Coverage Results" MODIFIED="1732527337761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignment_1/Assignment_1/Part2_JIM" />
     <SUITE FILE_PATH="coverage/LAC$scratch_21.coverage" NAME="scratch_21 Coverage Results" MODIFIED="1732013908323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/LAC$make_htc_files_for_dtu_10mw.coverage" NAME="make_htc_files_for_dtu_10mw Coverage Results" MODIFIED="1732880691391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dtu_10mw" />
     <SUITE FILE_PATH="coverage/LAC$aero_design_functions_10MW.coverage" NAME="aero_design_functions_10MW Coverage Results" MODIFIED="1726780642009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part2_Jim" />
     <SUITE FILE_PATH="coverage/LAC$make_htc_files__1_.coverage" NAME="make_htc_files (1) Coverage Results" MODIFIED="1732876215887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Design_new_tsr" />
     <SUITE FILE_PATH="coverage/LAC$Get_chord_and_thickness.coverage" NAME="Get_chord_and_thickness Coverage Results" MODIFIED="1732617898843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Design_new_tsr/Blade_parameters" />
     <SUITE FILE_PATH="coverage/LAC$scratch_20.coverage" NAME="scratch_20 Coverage Results" MODIFIED="1731664476830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/Cp_Ct_blade_design_py$Cp_Ct_blade_design.coverage" NAME="Cp_Ct_blade_design Coverage Results" MODIFIED="1727715660733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part2_Jim" />
     <SUITE FILE_PATH="coverage/LAC$Cp_Ct_blade_design.coverage" NAME="Cp_Ct_blade_design Coverage Results" MODIFIED="1726780501525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part2_Jim" />
-    <SUITE FILE_PATH="coverage/LAC$make_htc_files.coverage" NAME="make_htc_files Coverage Results" MODIFIED="1732541443336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignment_2" />
+    <SUITE FILE_PATH="coverage/LAC$make_htc_files.coverage" NAME="make_htc_files Coverage Results" MODIFIED="1733302790156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/New_Design" />
+    <SUITE FILE_PATH="coverage/LAC$make_turb_htc_files.coverage" NAME="make_turb_htc_files Coverage Results" MODIFIED="1733307977681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/New_Design/Code" />
   </component>
 </project>
