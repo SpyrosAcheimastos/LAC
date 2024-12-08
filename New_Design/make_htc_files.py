@@ -216,22 +216,70 @@ if __name__ == '__main__':
     #                 minpitch = 0,
     #                 opt_lambda =tsr_rated)
 
+    """Make a loop of different ctrltune params"""
+
+    # Define the list of full_load values to iterate over
+    full_load_values = [(0.06, 0.7),
+                        (0.05, 0.7),
+                        (0.07, 0.7),
+                        (0.08,0.7),
+                        (0.06,0.6),
+                        (0.06,0.8),
+                        (0.05,0.8),
+                        (0.05,0.6)]  # Example values; replace with your list
+
+    # # Loop through each full_load value
+    # for full_load in full_load_values:
+    #     # Update the ctrltune_params with the current full_load value
+    #     ctrltune_params['full_load'] = full_load
+    #     htc = MyHTC(ORIG_PATH)
+    #     # Call the make_hawc2s_ctrltune method with the updated parameters
+    #     htc.make_hawc2s_ctrltune(
+    #         SAVE_HAWC2S_DIR,
+    #         rigid=False,
+    #         append=f'_contrl_tunning_{full_load[0]}_{full_load[1]}',  # Dynamic append name for clarity
+    #         opt_path='./data/Jim_Design_flex_blade_with_shaving.opt',
+    #         compute_steady_states=True,
+    #         genspeed=(min_omega_rpm, 50 * omega_rated_rpm),
+    #         ctrltune_params=ctrltune_params,
+    #         save_power=False,
+    #         minpitch=0,
+    #         opt_lambda=tsr_rated
+    #     )
+
 
     """Make step function here"""
 
-    fname =  Path.cwd() / 'res_hawc2s/Jim_Design_contrl_test_opt_ctrl_tuning.txt'
-    ctrltune_dict = load_ctrl_txt(fname)
-
-    htc = MyHTC(ORIG_PATH)
-    htc.make_step('htc' + SAVE_HAWC2S_DIR,
-                  append='_C1',
-                  wsp_start=4,
-                  wsp_stop=25,
-                  t_start=0,
-                  t_stop=1000,
-                  t_step=0.01,
-                  ctrltune_dict=ctrltune_dict)
+    # fname =  Path.cwd() / 'res_hawc2s/Jim_Design_contrl_test_opt_ctrl_tuning.txt'
+    # ctrltune_dict = load_ctrl_txt(fname)
     #
+    # htc = MyHTC(ORIG_PATH)
+    # htc.make_step('htc' + SAVE_HAWC2S_DIR,
+    #               append='_C1',
+    #               wsp_start=4,
+    #               wsp_stop=25,
+    #               t_start=0,
+    #               t_stop=1000,
+    #               t_step=0.01,
+    #               ctrltune_dict=ctrltune_dict)
+
+    for full_load in full_load_values:
+        # f'_contrl_tunning_{full_load[0]}_{full_load[1]}'
+        htc = MyHTC(ORIG_PATH)
+
+        fname = Path.cwd() / f'res_hawc2s/Jim_Design_contrl_tunning_{full_load[0]}_{full_load[1]}_ctrl_tuning.txt'
+        ctrltune_dict = load_ctrl_txt(fname)
+
+        htc = MyHTC(ORIG_PATH)
+        htc.make_step('htc' + SAVE_HAWC2S_DIR,
+                      append=f'_step_{full_load[0]}_{full_load[1]}',
+                      wsp_start=4,
+                      wsp_stop=25,
+                      t_start=0,
+                      t_stop=1000,
+                      t_step=0.01,
+                      ctrltune_dict=ctrltune_dict)
+
     # # Location of tuning TXT
     # ctrl = 'C7_0.05_0.9'
     # ctrl_type = 'Constant Power'  # C1,C2,C3
