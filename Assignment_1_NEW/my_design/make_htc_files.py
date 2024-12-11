@@ -68,7 +68,7 @@ if __name__ == '__main__':
     # INSERT CODE HERE WHEN PROMPTED (A0)
     htc.make_hawc2s(SAVE_HAWC2S_DIR,
                     rigid=False,
-                    append='_compute_flex_opt_neo',
+                    append='MALAKIA',
                     opt_path='/data/dtu_10mw_rigid.opt',
                     compute_steady_states=True,
                     genspeed=(300, 50 * omega_rated_rpm),
