@@ -15,8 +15,8 @@ c2_def = load_c2def(htc_path)
 
 # This is used for OUR_DESIGN?
 DTU_10MW_file_original = 'dtu_10mw/data/DTU_10MW_RWT_ae.dat' #TODO
-scale_ratio_blade = 1.0388359746215876 # from Alex calculations
-tsr = 7.05  # Optimal TSR?
+scale_ratio_blade = 1.0263600673022995 # for BB neo
+tsr = 7.05  # Optimal TSR from single point design
 
 import scienceplots
 import matplotlib

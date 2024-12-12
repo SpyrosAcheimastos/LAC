@@ -66,9 +66,9 @@ def make_single_turb(htc, wsp, turbclass, htc_dir='./htc_turb/', res_dir='./res_
         case 'B':
             i_ref = 0.14
             tint = i_ref * (0.75 * wsp + 5.6) / wsp
-        case 'Goat':
-            i_ref = 0.38
-            tint = i_ref * (0.75 * wsp + 5.6) / wsp
+        # case 'Goat':
+        #     i_ref = 0.38
+        #     tint = i_ref * (0.75 * wsp + 5.6) / wsp
         case _:
             raise ValueError(f"Invalid turbulence class '{turbclass}'. Expected 'A', 'B', or 'Goat'.")
     # set parameters in wind block
@@ -100,7 +100,7 @@ def make_single_turb(htc, wsp, turbclass, htc_dir='./htc_turb/', res_dir='./res_
     return
 
 
-def main(turbine_type='OUR_DESIGN'):
+def main(turbine_type='MY_DESIGN'):
     """Create the htc files for the different cases, adjusting settings.
     Save the htc files in subfolders corresponding to the different cases.
     This code would be better placed at the end of your make_htc_files.py script...
@@ -121,10 +121,10 @@ def main(turbine_type='OUR_DESIGN'):
         htc_dir = cwd.parent / 'dtu_10MW/htc_turb/'  # top-level folder to save htc files (can be path to gbar!)
         res_dir = cwd.parent / 'dtu_10MW/res_turb/'  # where HAWC2 should save res files, relative to its working directory
     else:
-        master_htc = cwd.parent / 'our_design/_master/BB_redesign.htc'
-        opt_path = cwd.parent / 'our_design/data/BB_redesign_compute_flex_opt.opt'
-        htc_dir = cwd.parent / 'our_design/htc_turb/'  # top-level folder to save htc files (can be path to gbar!)
-        res_dir = cwd.parent / 'our_design/res_turb/'  # where HAWC2 should save res files, relative to its working directory
+        master_htc = cwd.parent / 'my_design/_master/BB_neo.htc'
+        opt_path = cwd.parent / 'my_design/data/BB_compute_flex_opt_neo.opt'
+        htc_dir = cwd.parent / 'my_design/htc_turb/'  # top-level folder to save htc files (can be path to gbar!)
+        res_dir = cwd.parent / 'my_design/res_turb/'  # where HAWC2 should save res files, relative to its working directory
     # delete the top-level directory if requested
     _clean_directory(htc_dir, del_htc_dir)
     # make the files
@@ -143,6 +143,6 @@ def main(turbine_type='OUR_DESIGN'):
 if __name__ == '__main__':
 
     # Yoy have to "cd Assignment_4\code" to run this!!!
-    main(turbine_type='OUR_DESIGN')
+    main(turbine_type='MY_DESIGN')
     main(turbine_type='DTU_10MW')
 

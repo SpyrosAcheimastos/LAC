@@ -3,7 +3,7 @@
 ;
   begin simulation;
     time_stop	700;	total time to simulate
-    solvertype	1;	1=dense newmark, 2=sparse newmark (12.7+)
+    solvertype	2;	1=dense newmark, 2=sparse newmark (12.7+)
     on_no_convergence	continue;
     convergence_limits	1000 1 1e-07;
     logfile	./log/tca/dtu_10mw_turb_tca_07.0_28893.log;
@@ -52,7 +52,7 @@
       concentrated_mass	2 0 2.687 0.30061 446040 4106000 410600 4106000;	nacelle mass and inertia corrected by Anyd 25/4/13
       begin timoschenko_input;
         filename	./data/DTU_10MW_RWT_Towertop_st.dat;
-        set	1 2;	1 1=flexibe, 1 2=stiff
+        set	1 1;	1 1=flexibe, 1 2=stiff
       end timoschenko_input;
       begin c2_def;	Definition of centerline (main_body coordinates)
         nsec	2;
@@ -91,7 +91,7 @@
       damping_posdef	0 0 0 0 0 0;
       begin timoschenko_input;
         filename	./data/DTU_10MW_RWT_Hub_st.dat;
-        set	1 2;	1 1=flexibe, 1 2=stiff
+        set	1 1;	1 1=flexibe, 1 2=stiff
       end timoschenko_input;
       begin c2_def;	definition of centerline in main_body coordinates
         nsec	2;
