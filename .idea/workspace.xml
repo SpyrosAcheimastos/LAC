@@ -5,14 +5,318 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9da7bfa5-fcda-4f07-a089-efd1bf8566f1" name="Changes" comment="Campell Diagram has been made">
-      <change afterPath="$PROJECT_DIR$/New_Design/Code/make_turb_htc_files.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/Plotting/AEP_Calculation.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/Plotting/plot_turb_stats_and_del.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/_master/Jim_Design.htc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/control/dtu_we_controller.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/control/dtu_we_controller_64.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/control/generator_servo.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/control/generator_servo_64.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/control/mech_brake.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/control/mech_brake_64.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/control/servo_with_limits.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/control/servo_with_limits_64.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/control/towerclearance_mblade.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/control/towerclearance_mblade_64.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/control/wpdata.100" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/data/JIM_RWT_Blade_st.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/data/JIM_RWT_Hub_st.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/data/JIM_RWT_Shaft_st.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/data/JIM_RWT_Tower_st.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/data/JIM_RWT_Towertop_st.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/data/JIM_RWT_ae.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/data/JIM_RWT_pc.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/data/JIM_multitsr.opt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/data/Jim_Design_NO_SHAVING.opt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/data/Jim_Design_WITH_SHAVING.opt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/data/Jim_Design_flex_blade_with_shaving.opt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/data/dtu_10mw_1wsp.opt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/data/dtu_10mw_flex.opt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/data/dtu_10mw_flex_minrotspd.opt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/make_htc_files.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Last_try/make_turb_htc_files.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New_Design/Plotting_Code/Plotting_blade_shape.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New_Design/Plotting_Code/plot_aep_tower_clearance.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New_Design/Plotting_Code/plot_control.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New_Design/Plotting_Code/plot_turb_stats_and_del_together.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment_3/Part_3/Code/plot_NEW.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_3/Part_3/Code/plot_NEW.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment_4/code/postprocess_hawc2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_4/code/postprocess_hawc2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/New_Design/Jim_Design_get_pwr_flex_with_shaving.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/Jim_Design_get_pwr_flex_with_shaving.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment_1/BB_redesign_compute_flex_opt.log" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_1/BB_redesign_compute_flex_opt.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment_1/make_htc_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_1/make_htc_files.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment_4/code/plot_aep_tower_clearance.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_4/code/plot_aep_tower_clearance.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/Blade_parameters/Blade_params.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/Blade_parameters/Blade_params.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/Jim_Design_contrl_tunning_0.05_0.6.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/Jim_Design_contrl_tunning_0.05_0.7.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/Jim_Design_contrl_tunning_0.05_0.8.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/Jim_Design_contrl_tunning_0.06_0.6.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/Jim_Design_contrl_tunning_0.06_0.6.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/Jim_Design_contrl_tunning_0.06_0.6.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/Jim_Design_contrl_tunning_0.06_0.7.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/Jim_Design_contrl_tunning_0.06_0.8.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/Jim_Design_contrl_tunning_0.07_0.7.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/Jim_Design_contrl_tunning_0.08_0.7.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/Plotting_Code/AEP_Calculation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/Plotting_Code/AEP_Calculation.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/Plotting_Code/Jim_Turb_stats.csv" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/Plotting_Code/Jim_Turb_stats.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/Plotting_Code/Plotting_Code_pwr.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/Plotting_Code/Plotting_Code_pwr.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/Plotting_Code/plot_turb_stats_and_del.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/Plotting_Code/plot_turb_stats_and_del.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/Running_Control_tune.py" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/Running_Control_tune.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/New_Design/_master/Jim_Design.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/_master/Jim_Design.htc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/New_Design/control/wpdata.100" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/control/wpdata.100" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc/Jim_Design_step_0.05_0.6.htc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc/Jim_Design_step_0.05_0.7.htc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc/Jim_Design_step_0.05_0.8.htc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc/Jim_Design_step_0.06_0.6.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc/Jim_Design_step_0.06_0.6.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc/Jim_Design_step_0.06_0.7.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc/Jim_Design_step_0.06_0.7.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc/Jim_Design_step_0.06_0.8.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc/Jim_Design_step_0.06_0.8.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc/Jim_Design_step_0.07_0.7.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc/Jim_Design_step_0.07_0.7.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc/Jim_Design_step_0.08_0.7.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc/Jim_Design_step_0.08_0.7.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_05.0_14592.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_05.0_14592.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_05.0_18289.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_05.0_18289.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_05.0_29256.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_05.0_29256.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_05.0_32098.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_05.0_32098.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_05.0_3278.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_05.0_3278.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_05.0_36048.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_05.0_36048.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_06.0_11395.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_06.0_11395.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_06.0_12280.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_06.0_12280.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_06.0_13434.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_06.0_13434.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_06.0_3905.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_06.0_3905.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_06.0_4165.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_06.0_4165.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_06.0_55302.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_06.0_55302.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_07.0_26062.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_07.0_26062.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_07.0_28657.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_07.0_28657.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_07.0_28893.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_07.0_28893.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_07.0_30495.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_07.0_30495.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_07.0_3478.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_07.0_3478.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_07.0_54987.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_07.0_54987.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_08.0_20926.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_08.0_20926.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_08.0_36463.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_08.0_36463.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_08.0_44597.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_08.0_44597.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_08.0_55392.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_08.0_55392.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_08.0_58878.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_08.0_58878.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_08.0_851.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_08.0_851.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_09.0_12156.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_09.0_12156.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_09.0_13396.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_09.0_13396.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_09.0_20379.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_09.0_20379.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_09.0_28221.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_09.0_28221.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_09.0_36421.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_09.0_36421.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_09.0_44118.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_09.0_44118.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_10.0_12676.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_10.0_12676.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_10.0_34671.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_10.0_34671.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_10.0_45082.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_10.0_45082.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_10.0_47052.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_10.0_47052.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_10.0_49797.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_10.0_49797.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_10.0_5695.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_10.0_5695.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_11.0_10328.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_11.0_10328.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_11.0_16361.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_11.0_16361.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_11.0_38427.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_11.0_38427.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_11.0_47400.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_11.0_47400.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_11.0_49615.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_11.0_49615.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_11.0_60217.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_11.0_60217.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_12.0_10458.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_12.0_10458.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_12.0_25203.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_12.0_25203.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_12.0_29871.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_12.0_29871.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_12.0_37930.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_12.0_37930.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_12.0_6006.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_12.0_6006.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_12.0_9116.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_12.0_9116.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_13.0_13238.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_13.0_13238.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_13.0_30512.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_13.0_30512.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_13.0_36434.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_13.0_36434.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_13.0_47819.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_13.0_47819.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_13.0_49823.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_13.0_49823.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_13.0_59429.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_13.0_59429.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_14.0_21319.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_14.0_21319.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_14.0_27460.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_14.0_27460.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_14.0_34993.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_14.0_34993.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_14.0_46566.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_14.0_46566.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_14.0_48520.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_14.0_48520.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_14.0_9358.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_14.0_9358.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_15.0_21417.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_15.0_21417.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_15.0_22431.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_15.0_22431.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_15.0_32087.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_15.0_32087.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_15.0_35382.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_15.0_35382.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_15.0_49735.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_15.0_49735.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_15.0_60589.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_15.0_60589.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_16.0_28785.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_16.0_28785.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_16.0_30021.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_16.0_30021.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_16.0_41347.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_16.0_41347.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_16.0_4207.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_16.0_4207.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_16.0_42504.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_16.0_42504.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_16.0_7331.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_16.0_7331.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_17.0_27653.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_17.0_27653.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_17.0_27869.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_17.0_27869.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_17.0_35093.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_17.0_35093.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_17.0_41245.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_17.0_41245.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_17.0_52581.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_17.0_52581.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_17.0_8675.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_17.0_8675.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_18.0_18301.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_18.0_18301.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_18.0_18726.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_18.0_18726.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_18.0_34718.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_18.0_34718.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_18.0_51856.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_18.0_51856.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_18.0_60142.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_18.0_60142.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_18.0_65435.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_18.0_65435.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_19.0_28746.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_19.0_28746.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_19.0_32325.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_19.0_32325.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_19.0_34438.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_19.0_34438.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_19.0_47447.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_19.0_47447.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_19.0_52350.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_19.0_52350.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_19.0_56155.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_19.0_56155.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_20.0_11915.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_20.0_11915.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_20.0_14371.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_20.0_14371.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_20.0_18131.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_20.0_18131.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_20.0_20033.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_20.0_20033.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_20.0_6175.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_20.0_6175.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_20.0_64686.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_20.0_64686.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_21.0_20969.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_21.0_20969.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_21.0_50019.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_21.0_50019.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_21.0_50432.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_21.0_50432.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_21.0_55333.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_21.0_55333.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_21.0_61348.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_21.0_61348.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_21.0_8326.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_21.0_8326.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_22.0_14621.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_22.0_14621.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_22.0_15014.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_22.0_15014.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_22.0_1504.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_22.0_1504.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_22.0_32953.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_22.0_32953.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_22.0_34973.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_22.0_34973.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_22.0_44587.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_22.0_44587.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_23.0_20730.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_23.0_20730.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_23.0_34522.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_23.0_34522.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_23.0_38469.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_23.0_38469.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_23.0_425.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_23.0_425.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_23.0_56985.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_23.0_56985.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_23.0_59470.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_23.0_59470.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_24.0_13947.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_24.0_13947.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_24.0_20032.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_24.0_20032.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_24.0_23416.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_24.0_23416.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_24.0_26071.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_24.0_26071.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_24.0_39117.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_24.0_39117.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_24.0_49009.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tca/Jim_Design_turb_tca_24.0_49009.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_05.0_14662.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_05.0_14662.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_05.0_21174.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_05.0_21174.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_05.0_2552.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_05.0_2552.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_05.0_42487.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_05.0_42487.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_05.0_64042.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_05.0_64042.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_05.0_74.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_05.0_74.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_06.0_10322.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_06.0_10322.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_06.0_31385.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_06.0_31385.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_06.0_31571.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_06.0_31571.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_06.0_40306.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_06.0_40306.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_06.0_47576.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_06.0_47576.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_06.0_7592.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_06.0_7592.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_07.0_11226.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_07.0_11226.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_07.0_16483.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_07.0_16483.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_07.0_16828.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_07.0_16828.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_07.0_62296.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_07.0_62296.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_07.0_63699.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_07.0_63699.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_07.0_9071.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_07.0_9071.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_08.0_21643.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_08.0_21643.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_08.0_26365.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_08.0_26365.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_08.0_27760.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_08.0_27760.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_08.0_34741.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_08.0_34741.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_08.0_40857.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_08.0_40857.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_08.0_55461.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_08.0_55461.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_09.0_15860.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_09.0_15860.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_09.0_32493.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_09.0_32493.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_09.0_48944.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_09.0_48944.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_09.0_52296.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_09.0_52296.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_09.0_57422.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_09.0_57422.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_09.0_59177.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_09.0_59177.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_10.0_2757.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_10.0_2757.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_10.0_28864.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_10.0_28864.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_10.0_29451.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_10.0_29451.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_10.0_30161.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_10.0_30161.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_10.0_44313.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_10.0_44313.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_10.0_8392.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_10.0_8392.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_11.0_30007.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_11.0_30007.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_11.0_4117.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_11.0_4117.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_11.0_7716.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_11.0_7716.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_11.0_8834.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_11.0_8834.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_11.0_9305.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_11.0_9305.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_11.0_942.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_11.0_942.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_12.0_28080.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_12.0_28080.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_12.0_31195.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_12.0_31195.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_12.0_36500.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_12.0_36500.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_12.0_43309.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_12.0_43309.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_12.0_63624.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_12.0_63624.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_12.0_9287.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_12.0_9287.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_13.0_17342.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_13.0_17342.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_13.0_24957.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_13.0_24957.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_13.0_31850.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_13.0_31850.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_13.0_53354.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_13.0_53354.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_13.0_61953.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_13.0_61953.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_13.0_61993.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_13.0_61993.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_14.0_12363.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_14.0_12363.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_14.0_12704.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_14.0_12704.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_14.0_46438.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_14.0_46438.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_14.0_53883.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_14.0_53883.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_14.0_55519.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_14.0_55519.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_14.0_56498.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_14.0_56498.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_15.0_12899.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_15.0_12899.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_15.0_44473.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_15.0_44473.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_15.0_52772.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_15.0_52772.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_15.0_61213.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_15.0_61213.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_15.0_7100.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_15.0_7100.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_15.0_7944.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_15.0_7944.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_16.0_14322.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_16.0_14322.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_16.0_18373.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_16.0_18373.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_16.0_24931.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_16.0_24931.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_16.0_25112.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_16.0_25112.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_16.0_32591.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_16.0_32591.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_16.0_58800.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_16.0_58800.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_17.0_24050.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_17.0_24050.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_17.0_32742.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_17.0_32742.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_17.0_36509.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_17.0_36509.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_17.0_55296.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_17.0_55296.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_17.0_60637.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_17.0_60637.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_17.0_9880.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_17.0_9880.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_18.0_12224.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_18.0_12224.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_18.0_12833.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_18.0_12833.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_18.0_1934.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_18.0_1934.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_18.0_30982.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_18.0_30982.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_18.0_58082.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_18.0_58082.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_18.0_6630.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_18.0_6630.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_19.0_21798.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_19.0_21798.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_19.0_28016.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_19.0_28016.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_19.0_52565.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_19.0_52565.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_19.0_53269.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_19.0_53269.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_19.0_63092.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_19.0_63092.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_19.0_63653.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_19.0_63653.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_20.0_21579.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_20.0_21579.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_20.0_282.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_20.0_282.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_20.0_34760.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_20.0_34760.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_20.0_49672.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_20.0_49672.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_20.0_51173.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_20.0_51173.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_20.0_7685.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_20.0_7685.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_21.0_20289.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_21.0_20289.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_21.0_24890.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_21.0_24890.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_21.0_37388.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_21.0_37388.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_21.0_55444.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_21.0_55444.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_21.0_59638.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_21.0_59638.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_21.0_63788.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_21.0_63788.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_22.0_28534.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_22.0_28534.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_22.0_38890.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_22.0_38890.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_22.0_41104.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_22.0_41104.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_22.0_7492.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_22.0_7492.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_22.0_7665.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_22.0_7665.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_22.0_7989.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_22.0_7989.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_23.0_10500.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_23.0_10500.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_23.0_20635.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_23.0_20635.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_23.0_24356.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_23.0_24356.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_23.0_62493.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_23.0_62493.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_23.0_6572.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_23.0_6572.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_23.0_7455.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_23.0_7455.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_24.0_15713.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_24.0_15713.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_24.0_30828.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_24.0_30828.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_24.0_32271.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_24.0_32271.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_24.0_52923.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_24.0_52923.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_24.0_8907.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_24.0_8907.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_24.0_8981.htc" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/htc_turb/tcb/Jim_Design_turb_tcb_24.0_8981.htc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/log/jim_design_step_0.05_0.6.log" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/log/jim_design_step_0.05_0.6.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/log/jim_design_step_0.05_0.7.log" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/log/jim_design_step_0.05_0.7.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/log/jim_design_step_0.05_0.8.log" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/log/jim_design_step_0.05_0.8.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/New_Design/make_htc_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/make_htc_files.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/res/Jim_Design_step_0.05_0.6.hdf5" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/res/Jim_Design_step_0.05_0.6.hdf5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/res/Jim_Design_step_0.05_0.7.hdf5" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/res/Jim_Design_step_0.05_0.7.hdf5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/res/Jim_Design_step_0.05_0.8.hdf5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/res_hawc2s/Jim_Design_contrl_tunning_0.06_0.6_ctrl_tuning.txt" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/res_hawc2s/Jim_Design_contrl_tunning_0.06_0.6_ctrl_tuning.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New_Design/running_step.py" beforeDir="false" afterPath="$PROJECT_DIR$/New_Design/running_step.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtu_10mw/make_htc_files_for_dtu_10mw.py" beforeDir="false" afterPath="$PROJECT_DIR$/dtu_10mw/make_htc_files_for_dtu_10mw.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +326,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Python Script" />
         <option value="Jupyter Notebook" />
       </list>
     </option>
@@ -47,21 +352,27 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python.Blade distributions.executor&quot;: &quot;Run&quot;,
     &quot;Python.Cp_Ct_blade_design.executor&quot;: &quot;Run&quot;,
     &quot;Python.Get_chord_and_thickness.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Running_Control_tune.executor&quot;: &quot;Run&quot;,
     &quot;Python.aero_design_functions_10MW.executor&quot;: &quot;Run&quot;,
     &quot;Python.make_htc_files (1).executor&quot;: &quot;Run&quot;,
     &quot;Python.make_htc_files.executor&quot;: &quot;Run&quot;,
     &quot;Python.make_htc_files_for_dtu_10mw.executor&quot;: &quot;Run&quot;,
     &quot;Python.make_turb_htc_files.executor&quot;: &quot;Run&quot;,
+    &quot;Python.running_step.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scratch.executor&quot;: &quot;Run&quot;,
     &quot;Python.scratch_20.executor&quot;: &quot;Run&quot;,
     &quot;Python.scratch_21.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scratch_22.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scratch_23.executor&quot;: &quot;Run&quot;,
     &quot;Python.testing.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;Jim__Personal&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jimwi/PycharmProjects/LAC/LAC/New_Design/Code&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jimwi/PycharmProjects/LAC/LAC/Last_try/Plotting&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -78,60 +389,18 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\New_Design\Code" />
+      <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\Last_try\Plotting" />
       <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\New_Design\Plotting_Code" />
-      <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\New_Design\data" />
-      <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\New_Design\control" />
-      <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\Design_new_tsr\data" />
+      <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\Last_try" />
+      <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\Assignment_1\data" />
+      <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\New_Design\Code" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\Last_try" />
+      <recent name="C:\Users\jimwi\PycharmProjects\LAC\LAC\New_Design\TEMP_htc" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.make_turb_htc_files">
-    <configuration name="Get_chord_and_thickness" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LAC" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Design_new_tsr/Blade_parameters" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Design_new_tsr/Blade_parameters/Get_chord_and_thickness.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="make_htc_files (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LAC" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Design_new_tsr" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Design_new_tsr/make_htc_files.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.scratch">
     <configuration name="make_htc_files" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LAC" />
       <option name="ENV_FILES" value="" />
@@ -141,12 +410,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/New_Design" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assignment_1" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/New_Design/make_htc_files.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assignment_1/make_htc_files.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -187,12 +456,58 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/New_Design/Code" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Last_try" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/New_Design/Code/make_turb_htc_files.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Last_try/make_turb_htc_files.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LAC" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch_22" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LAC" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_22.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -203,11 +518,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.scratch" />
         <item itemvalue="Python.make_turb_htc_files" />
-        <item itemvalue="Python.make_htc_files" />
         <item itemvalue="Python.make_htc_files_for_dtu_10mw" />
-        <item itemvalue="Python.make_htc_files (1)" />
-        <item itemvalue="Python.Get_chord_and_thickness" />
+        <item itemvalue="Python.make_htc_files" />
+        <item itemvalue="Python.scratch_22" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +565,19 @@
       <workItem from="1733141190745" duration="731000" />
       <workItem from="1733299695181" duration="10224000" />
       <workItem from="1733315046219" duration="119000" />
-      <workItem from="1733319544703" duration="3170000" />
+      <workItem from="1733319544703" duration="3757000" />
+      <workItem from="1733481370804" duration="2045000" />
+      <workItem from="1733487950917" duration="4349000" />
+      <workItem from="1733654843268" duration="3091000" />
+      <workItem from="1733690168801" duration="4241000" />
+      <workItem from="1733729979998" duration="835000" />
+      <workItem from="1733734966824" duration="21505000" />
+      <workItem from="1733821504394" duration="5131000" />
+      <workItem from="1733907011293" duration="9620000" />
+      <workItem from="1733995223134" duration="16278000" />
+      <workItem from="1734083249099" duration="19351000" />
+      <workItem from="1734119360296" duration="490000" />
+      <workItem from="1734188077211" duration="1518000" />
     </task>
     <task id="LOCAL-00001" summary="baboy">
       <option name="closed" value="true" />
@@ -300,7 +627,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732965745715</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Campell Diagram has been made">
+      <option name="closed" value="true" />
+      <created>1733324714416</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733324714416</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Campell Diagram has been made">
+      <option name="closed" value="true" />
+      <created>1733696452220</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1733696452220</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,14 +686,20 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LAC$testing.coverage" NAME="testing Coverage Results" MODIFIED="1732527337761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignment_1/Assignment_1/Part2_JIM" />
     <SUITE FILE_PATH="coverage/LAC$scratch_21.coverage" NAME="scratch_21 Coverage Results" MODIFIED="1732013908323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
-    <SUITE FILE_PATH="coverage/LAC$make_htc_files_for_dtu_10mw.coverage" NAME="make_htc_files_for_dtu_10mw Coverage Results" MODIFIED="1732880691391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dtu_10mw" />
-    <SUITE FILE_PATH="coverage/LAC$aero_design_functions_10MW.coverage" NAME="aero_design_functions_10MW Coverage Results" MODIFIED="1726780642009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part2_Jim" />
-    <SUITE FILE_PATH="coverage/LAC$make_htc_files__1_.coverage" NAME="make_htc_files (1) Coverage Results" MODIFIED="1732876215887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Design_new_tsr" />
+    <SUITE FILE_PATH="coverage/LAC$running_step.coverage" NAME="running_step Coverage Results" MODIFIED="1733748422487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/New_Design" />
+    <SUITE FILE_PATH="coverage/LAC$make_htc_files_for_dtu_10mw.coverage" NAME="make_htc_files_for_dtu_10mw Coverage Results" MODIFIED="1734015014333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dtu_10mw" />
+    <SUITE FILE_PATH="coverage/LAC$scratch_23.coverage" NAME="scratch_23 Coverage Results" MODIFIED="1733915554067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/LAC$Get_chord_and_thickness.coverage" NAME="Get_chord_and_thickness Coverage Results" MODIFIED="1732617898843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Design_new_tsr/Blade_parameters" />
-    <SUITE FILE_PATH="coverage/LAC$scratch_20.coverage" NAME="scratch_20 Coverage Results" MODIFIED="1731664476830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/LAC$Blade_distributions.coverage" NAME="Blade distributions Coverage Results" MODIFIED="1733911175078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignment_1/Assignment_1/MISSING_CODE" />
     <SUITE FILE_PATH="coverage/Cp_Ct_blade_design_py$Cp_Ct_blade_design.coverage" NAME="Cp_Ct_blade_design Coverage Results" MODIFIED="1727715660733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part2_Jim" />
     <SUITE FILE_PATH="coverage/LAC$Cp_Ct_blade_design.coverage" NAME="Cp_Ct_blade_design Coverage Results" MODIFIED="1726780501525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part2_Jim" />
-    <SUITE FILE_PATH="coverage/LAC$make_htc_files.coverage" NAME="make_htc_files Coverage Results" MODIFIED="1733302790156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/New_Design" />
-    <SUITE FILE_PATH="coverage/LAC$make_turb_htc_files.coverage" NAME="make_turb_htc_files Coverage Results" MODIFIED="1733307977681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/New_Design/Code" />
+    <SUITE FILE_PATH="coverage/LAC$make_htc_files.coverage" NAME="make_htc_files Coverage Results" MODIFIED="1734014059804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignment_1" />
+    <SUITE FILE_PATH="coverage/LAC$make_turb_htc_files.coverage" NAME="make_turb_htc_files Coverage Results" MODIFIED="1734110036667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Last_try" />
+    <SUITE FILE_PATH="coverage/LAC$Running_Control_tune.coverage" NAME="Running_Control_tune Coverage Results" MODIFIED="1733746519321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/New_Design" />
+    <SUITE FILE_PATH="coverage/LAC$scratch_22.coverage" NAME="scratch_22 Coverage Results" MODIFIED="1733916163747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/LAC$aero_design_functions_10MW.coverage" NAME="aero_design_functions_10MW Coverage Results" MODIFIED="1726780642009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/our_design/Assignment_1/Part2_Jim" />
+    <SUITE FILE_PATH="coverage/LAC$make_htc_files__1_.coverage" NAME="make_htc_files (1) Coverage Results" MODIFIED="1732876215887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Design_new_tsr" />
+    <SUITE FILE_PATH="coverage/LAC$scratch_20.coverage" NAME="scratch_20 Coverage Results" MODIFIED="1731664476830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/LAC$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1734188468510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
   </component>
 </project>

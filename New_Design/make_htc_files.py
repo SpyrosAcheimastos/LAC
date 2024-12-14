@@ -45,6 +45,7 @@ omega_rated_rpm = omega_rated * 60 / (2*np.pi)
 
 print(omega_rated_rpm)
 print(f'omega_rated generator = {omega_rated_rpm * 50}')
+print(omega_rated_rpm/60 * 2 * np.pi)
 
 
 
@@ -226,7 +227,9 @@ if __name__ == '__main__':
                         (0.06,0.6),
                         (0.06,0.8),
                         (0.05,0.8),
-                        (0.05,0.6)]  # Example values; replace with your list
+                        (0.07, 0.8),
+                        (0.05,0.6),
+                        (0.07, 0.6)]  # Example values; replace with your list
 
     # # Loop through each full_load value
     # for full_load in full_load_values:

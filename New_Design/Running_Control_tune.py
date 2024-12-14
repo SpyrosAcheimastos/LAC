@@ -6,9 +6,6 @@ SAVE_HAWC2S_DIR = '.'
 # Directory where the generated files are saved
 output_dir = SAVE_HAWC2S_DIR
 
-# File pattern to match the generated files (e.g., with '_contrl_test_opt' appended)
-# file_pattern = os.path.join(output_dir, 'Jim_Design_contrl_tunning_')  # Update if file extension is different
-
 # File pattern to match files with names like 'Jim_Design_contrl_tunning_0.05_0.6.htc'
 file_pattern = os.path.join(output_dir, 'Jim_Design_contrl_tunning_*.htc')
 

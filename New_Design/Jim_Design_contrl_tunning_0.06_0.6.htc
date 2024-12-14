@@ -339,7 +339,7 @@
       full_load	0.06 0.6;	fn [hz], zeta [-]
       gain_scheduling	2;	1 linear, 2 quadratic
       constant_power	0;	0 constant torque, 1 constant power at full load
-      regions	5 11 12 32;	Index of opt point (starting from 1) where new ctrl region starts
+      regions	5 12 12 32;	Index of opt point (starting from 1) where new ctrl region starts
     end controller_tuning;
   end hawcstab2;
 ;

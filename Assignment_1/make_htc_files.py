@@ -36,43 +36,43 @@ if __name__ == '__main__':
     SAVE_HAWC2S_DIR = '.'
 
     # ORIGINAL
-    # # make rigid hawc2s file for single-wsp opt file
-    htc = MyHTC(ORIG_PATH)
-    htc.make_hawc2s(SAVE_HAWC2S_DIR,
-                    rigid=True,
-                    append='_hawc2s_1wsp',
-                    opt_path='./data/dtu_10mw_1wsp.opt',
-                    compute_steady_states=True,
-                    genspeed=(0,50*omega_rated_rpm),
-                    minpitch = 0,
-                    opt_lambda =7.5,
-                    save_power=True)
-
-    # # make rigid hawc2s file for multi-tsr opt file
+    # # # make rigid hawc2s file for single-wsp opt file
     # htc = MyHTC(ORIG_PATH)
-    # # INSERT CODE HERE WHEN PROMPTED (A0)
-
-
-    # SPYROS
-    # make rigid hawc2s file for multi-wsp opt file
-    htc = MyHTC(ORIG_PATH)
-    htc.make_hawc2s(SAVE_HAWC2S_DIR,
-                    rigid=True,
-                    append='_hawc2s_multitsr',
-                    opt_path='./data/dtu_10mw_multitsr.opt',
-                    compute_steady_states=True,
-                    genspeed=(0, 50 * omega_rated_rpm),
-                    save_power=True)
-
-    htc.make_hawc2s(SAVE_HAWC2S_DIR,
-                    rigid=True,
-                    append='_compute_rigid_opt',
-                    opt_path='./data/dtu_10mw_rigid.opt',
-                    compute_steady_states=True,
-                    genspeed=(0, 50 * omega_rated_rpm),
-                    save_power=True,
-                    minpitch=0,
-                    opt_lambda=7.05)
+    # htc.make_hawc2s(SAVE_HAWC2S_DIR,
+    #                 rigid=True,
+    #                 append='_hawc2s_1wsp',
+    #                 opt_path='./data/dtu_10mw_1wsp.opt',
+    #                 compute_steady_states=True,
+    #                 genspeed=(0,50*omega_rated_rpm),
+    #                 minpitch = 0,
+    #                 opt_lambda =7.05,
+    #                 save_power=True)
+    #
+    # # # make rigid hawc2s file for multi-tsr opt file
+    # # htc = MyHTC(ORIG_PATH)
+    # # # INSERT CODE HERE WHEN PROMPTED (A0)
+    #
+    #
+    # # SPYROS
+    # # make rigid hawc2s file for multi-wsp opt file
+    # htc = MyHTC(ORIG_PATH)
+    # htc.make_hawc2s(SAVE_HAWC2S_DIR,
+    #                 rigid=True,
+    #                 append='_hawc2s_multitsr',
+    #                 opt_path='./data/dtu_10mw_multitsr.opt',
+    #                 compute_steady_states=True,
+    #                 genspeed=(0, 50 * omega_rated_rpm),
+    #                 save_power=True)
+    #
+    # htc.make_hawc2s(SAVE_HAWC2S_DIR,
+    #                 rigid=True,
+    #                 append='_compute_rigid_opt',
+    #                 opt_path='./data/dtu_10mw_rigid.opt',
+    #                 compute_steady_states=True,
+    #                 genspeed=(0, 50 * omega_rated_rpm),
+    #                 save_power=True,
+    #                 minpitch=0,
+    #                 opt_lambda=7.05)
 
 
     # make rigid hawc2s file for multi-tsr opt file
@@ -80,8 +80,8 @@ if __name__ == '__main__':
     # INSERT CODE HERE WHEN PROMPTED (A0)
     htc.make_hawc2s(SAVE_HAWC2S_DIR,
                     rigid=False,
-                    append='_compute_flex_opt',
-                    opt_path='./data/dtu_10mw_rigid.opt',
+                    append='_calc_power_flex',
+                    opt_path='./data/BB_redesign_compute_flex_opt.opt',
                     compute_steady_states=True,
                     genspeed=(0, 50 * omega_rated_rpm),
                     save_power=True,
