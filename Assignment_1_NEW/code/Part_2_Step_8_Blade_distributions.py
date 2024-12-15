@@ -14,7 +14,7 @@ htc_path = test_data_path + '/dtu_10_mw/DTU_10MW_RWT.htc'
 c2_def = load_c2def(htc_path)
 
 # This is used for OUR_DESIGN?
-DTU_10MW_file_original = 'dtu_10mw/data/DTU_10MW_RWT_ae.dat' #TODO
+DTU_10MW_file_original = '../dtu_10mw/data/DTU_10MW_RWT_ae.dat' #TODO
 scale_ratio_blade = 1.0263600673022995 # for BB neo
 tsr = 7.05  # Optimal TSR from single point design
 
@@ -191,7 +191,7 @@ axs2[2].set_xlim(0, R)
 axs2[2].grid(True, axis='both', linewidth=0.5, linestyle='--')
 
 fig2.tight_layout()
-fig2.savefig('code/plots/distribution_blade.pdf', dpi=300, bbox_inches='tight')
+# fig2.savefig('code/plots/distribution_blade.pdf', dpi=300, bbox_inches='tight')
 
 # # %% Plot r vs. t/c, aoa, cl, cd
 # fig3, axs3 = plt.subplots(2, 2, num=3, clear=True)
